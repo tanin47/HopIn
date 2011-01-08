@@ -1,5 +1,6 @@
 class BusController < ApplicationController
- 
+  #skip_before_filter :decode_signed_request, :only=>[:add]
+  #skip_before_filter :require_basic_information_permission, :only=>[:add]
  def test
    end
  
@@ -15,7 +16,8 @@ class BusController < ApplicationController
     @bus.why = params[:why]
     @bus.amount = params[:amount]
     @bus.capacity = params[:capacity]
-    @bus.facebook_id = params[:facebook_id]
+    print $facebook.user_id
+    @bus.facebook_id = $facebook.user_id
     @bus.deadline = params[:deadline]
     @bus.currency_code = params[:currency_code]
     @bus.hops = 0
@@ -28,10 +30,12 @@ class BusController < ApplicationController
       return
     end
     
-    render :json=>{:ok=>true ,:new_row=>render_to_string(:partial=>"row",:locals=>{:bus=>@bus})}
+    render :json=>{:ok=>true, :html=>(render_to_string :action=>:save_success),:return_view=>"save_success"}
     
   end
   
-
+  def save_success
+   
+  end
 
 end
