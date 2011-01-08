@@ -3,6 +3,12 @@
 # Specifies gem version of Rails to use when vendor/rails is not present
 RAILS_GEM_VERSION = '2.3.4' unless defined? RAILS_GEM_VERSION
 
+APP_ID = "154941261222060"
+
+DOMAIN_NAME = '72.26.225.10'
+
+FACEBOOK_APP_NAME = "wehopin"
+
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
 
