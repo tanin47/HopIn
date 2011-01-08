@@ -34,7 +34,7 @@ test:
   database: HopIn_test
   pool: 5
   username: root
-  password:
+  password: ninat
   host: localhost
 
 production:
@@ -44,5 +44,5 @@ production:
   database: HopIn_production
   pool: 5
   username: root
-  password: 
+  password: ninat
   host: localhost

@@ -1086,3 +1086,599 @@ Processing HomeController#index (for 127.0.0.1 at 2011-01-07 19:01:00) [POST]
   Parameters: {"signed_request"=>"sQwx0TiK8qjreDUPRx1vkz2CdYv3wJ-gLBZC1MWKeSI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0MDg4MDAsImlzc3VlZF9hdCI6MTI5NDQwMTY1Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi42Y2NfUUc2X2dNd3BnUWZjUDhLdzJnX18uMzYwMC4xMjk0NDA4ODAwLTYzMjgxODI0NnxPeDZhaXpDZ0huT05oVUtudjBzN0kzam5vek0iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
 Rendering home/index
 Completed in 2394ms (View: 2327, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (28.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (309.0ms)[0m   [0mCREATE TABLE `buses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `thumbnail_path` int(11) NOT NULL, `why` text NOT NULL, `amount` float NOT NULL, `capacity` int(11) NOT NULL, `parent_bus_id` int(11) DEFAULT 0 NOT NULL, `facebook_id` int(11) NOT NULL, `deadline` datetime NOT NULL, `currency_code` varchar(255) NOT NULL, `hops` int(11) DEFAULT 0 NOT NULL, `status` varchar(255) DEFAULT 'ACTIVE' NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (165.0ms)[0m   [0mCREATE TABLE `hops` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` int(11) NOT NULL, `bus_id` int(11) NOT NULL, `comment` text NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (142.0ms)[0m   [0mCREATE TABLE `currencies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `format` varchar(255), `sign` varchar(255), `separator` varchar(255), `delimiter` varchar(255), `paypal_currency_code` varchar(255), `buyer_member_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (156.0ms)[0m   [0mCREATE TABLE `error_logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `time` datetime NOT NULL, `ip_address` varchar(255), `identifier` varchar(255) NOT NULL, `description` text NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (174.0ms)[0m   [0mCREATE TABLE `charities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `desc` varchar(255), `thumbnail_pic` varchar(255), `paypal_id` varchar(255), `url` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (139.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (371.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (17.0ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (33.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (34.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mdescribe `buses`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `buses`[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSHOW FIELDS FROM `charities`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `charities`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `charities`[0m
+  [4;36;1mSQL (17.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `currencies`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `currencies`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `error_logs`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `error_logs`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `error_logs`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `hops`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `buses`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `buses`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `charities`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `charities`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `charities`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `currencies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `currencies`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `error_logs`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `error_logs`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `error_logs`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `hops`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `buses`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `buses`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `charities`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `charities`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `charities`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `currencies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `currencies`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `error_logs`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `error_logs`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `error_logs`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `hops`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `hops`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (38.0ms)[0m   [0mDROP TABLE `buses`[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mCREATE TABLE `buses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `thumbnail_path` int(11) NOT NULL, `why` text NOT NULL, `amount` float NOT NULL, `capacity` int(11) NOT NULL, `parent_bus_id` int(11) DEFAULT 0 NOT NULL, `facebook_id` int(11) NOT NULL, `deadline` datetime NOT NULL, `currency_code` varchar(255) NOT NULL, `hops` int(11) DEFAULT 0 NOT NULL, `status` varchar(255) DEFAULT 'ACTIVE' NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (35.0ms)[0m   [0;1mDROP TABLE `charities`[0m
+  [4;35;1mSQL (96.0ms)[0m   [0mCREATE TABLE `charities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `desc` varchar(255), `thumbnail_pic` varchar(255), `paypal_id` varchar(255), `url` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (24.0ms)[0m   [0mDROP TABLE `currencies`[0m
+  [4;36;1mSQL (177.0ms)[0m   [0;1mCREATE TABLE `currencies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `format` varchar(255), `sign` varchar(255), `separator` varchar(255), `delimiter` varchar(255), `paypal_currency_code` varchar(255), `buyer_member_id` int(11)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (28.0ms)[0m   [0;1mDROP TABLE `error_logs`[0m
+  [4;35;1mSQL (125.0ms)[0m   [0mCREATE TABLE `error_logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `time` datetime NOT NULL, `ip_address` varchar(255), `identifier` varchar(255) NOT NULL, `description` text NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mDROP TABLE `hops`[0m
+  [4;36;1mSQL (132.0ms)[0m   [0;1mCREATE TABLE `hops` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` int(11) NOT NULL, `bus_id` int(11) NOT NULL, `comment` text NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `buses`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `buses`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `charities`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `charities`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `charities`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `currencies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `currencies`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `error_logs`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `error_logs`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `error_logs`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `hops`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `hops`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `buses`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `buses`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `charities`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `charities`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `charities`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `currencies`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `currencies`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `error_logs`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `error_logs`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `error_logs`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `hops`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (12.0ms)[0m   [0;1mDROP DATABASE IF EXISTS `HopIn_test`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE DATABASE `HopIn_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (170.0ms)[0m   [0mCREATE TABLE `buses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `thumbnail_path` int(11) NOT NULL, `why` text NOT NULL, `amount` float NOT NULL, `capacity` int(11) NOT NULL, `parent_bus_id` int(11) DEFAULT 0 NOT NULL, `facebook_id` int(11) NOT NULL, `deadline` datetime NOT NULL, `currency_code` varchar(255) NOT NULL, `hops` int(11) DEFAULT 0 NOT NULL, `status` varchar(255) DEFAULT 'ACTIVE' NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (200.0ms)[0m   [0mCREATE TABLE `charities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `desc` varchar(255), `thumbnail_pic` varchar(255), `paypal_id` varchar(255), `url` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (164.0ms)[0m   [0mCREATE TABLE `currencies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `format` varchar(255), `sign` varchar(255), `separator` varchar(255), `delimiter` varchar(255), `paypal_currency_code` varchar(255), `buyer_member_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (124.0ms)[0m   [0mCREATE TABLE `error_logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `time` datetime NOT NULL, `ip_address` varchar(255), `identifier` varchar(255) NOT NULL, `description` text NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (131.0ms)[0m   [0mCREATE TABLE `hops` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` int(11) NOT NULL, `bus_id` int(11) NOT NULL, `comment` text NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (201.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (238.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (88.0ms)[0m   [0mDROP TABLE `buses`[0m
+  [4;36;1mSQL (145.0ms)[0m   [0;1mCREATE TABLE `buses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `thumbnail_path` int(11) NOT NULL, `why` text NOT NULL, `amount` float NOT NULL, `capacity` int(11) NOT NULL, `parent_bus_id` int(11) DEFAULT 0 NOT NULL, `facebook_id` int(11) NOT NULL, `deadline` datetime NOT NULL, `currency_code` varchar(255) NOT NULL, `hops` int(11) DEFAULT 0 NOT NULL, `status` varchar(255) DEFAULT 'ACTIVE' NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (60.0ms)[0m   [0;1mDROP TABLE `charities`[0m
+  [4;35;1mSQL (227.0ms)[0m   [0mCREATE TABLE `charities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `desc` varchar(255), `thumbnail_pic` varchar(255), `paypal_id` varchar(255), `url` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (108.0ms)[0m   [0mDROP TABLE `currencies`[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mCREATE TABLE `currencies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `format` varchar(255), `sign` varchar(255), `separator` varchar(255), `delimiter` varchar(255), `paypal_currency_code` varchar(255), `minimum` int(11)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (26.0ms)[0m   [0;1mDROP TABLE `error_logs`[0m
+  [4;35;1mSQL (88.0ms)[0m   [0mCREATE TABLE `error_logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `time` datetime NOT NULL, `ip_address` varchar(255), `identifier` varchar(255) NOT NULL, `description` text NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mDROP TABLE `hops`[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCREATE TABLE `hops` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` int(11) NOT NULL, `bus_id` int(11) NOT NULL, `comment` text NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `buses`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `buses`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `charities`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `charities`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `charities`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `currencies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `currencies`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `error_logs`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `error_logs`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `error_logs`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (234.0ms)[0m   [0;1mDROP DATABASE IF EXISTS `HopIn_test`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE DATABASE `HopIn_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (111.0ms)[0m   [0mCREATE TABLE `buses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `thumbnail_path` int(11) NOT NULL, `why` text NOT NULL, `amount` float NOT NULL, `capacity` int(11) NOT NULL, `parent_bus_id` int(11) DEFAULT 0 NOT NULL, `facebook_id` int(11) NOT NULL, `deadline` datetime NOT NULL, `currency_code` varchar(255) NOT NULL, `hops` int(11) DEFAULT 0 NOT NULL, `status` varchar(255) DEFAULT 'ACTIVE' NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (164.0ms)[0m   [0mCREATE TABLE `charities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `desc` varchar(255), `thumbnail_pic` varchar(255), `paypal_id` varchar(255), `url` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (225.0ms)[0m   [0mCREATE TABLE `currencies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `format` varchar(255), `sign` varchar(255), `separator` varchar(255), `delimiter` varchar(255), `paypal_currency_code` varchar(255), `minimum` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (180.0ms)[0m   [0mCREATE TABLE `error_logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `time` datetime NOT NULL, `ip_address` varchar(255), `identifier` varchar(255) NOT NULL, `description` text NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (151.0ms)[0m   [0mCREATE TABLE `hops` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` int(11) NOT NULL, `bus_id` int(11) NOT NULL, `comment` text NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (171.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (436.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (138.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 12:54:08) [POST]
+  Parameters: {"signed_request"=>"fF2X_9k7bGXRo-nSaUw_yykXN7YW-vlhpgR-w4eJZNg.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ2NjA4MSwidXNlciI6eyJsb2NhbGUiOiJ0aF9USCIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Redirected to http://localhost:3000/home/permission_dialog
+Filter chain halted as [:decode_signed_request] rendered_or_redirected.
+Completed in 36ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#permission_dialog (for 127.0.0.1 at 2011-01-08 12:54:09) [GET]
+Rendering home/permission_dialog
+Completed in 29ms (View: 24, DB: 2) | 200 OK [http://localhost/home/permission_dialog]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 12:54:38) [POST]
+  Parameters: {"signed_request"=>"XO8fliPp0imL3fo4hKUrxA81660_3dE22DOLDDe6M0U.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ2NjExMiwidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Redirected to http://localhost:3000/home/permission_dialog
+Filter chain halted as [:decode_signed_request] rendered_or_redirected.
+Completed in 28ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#permission_dialog (for 127.0.0.1 at 2011-01-08 12:54:38) [GET]
+Rendering home/permission_dialog
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/home/permission_dialog]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 12:54:45) [POST]
+  Parameters: {"signed_request"=>"dEAG6M6axGEdZbWL-ygvMI-DUb912FSYI4cjsHqkMSQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzAwMDAsImlzc3VlZF9hdCI6MTI5NDQ2NjEyMSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5DaVNxcjJQcHVTWVNvYXFBQ2RIblJnX18uMzYwMC4xMjk0NDcwMDAwLTEwMDAwMDIwMTI1NjY5MXxiYmg0OVJ6UkxUNzBZR01zX3p3VXMtTUJJX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "code"=>"2.CiSqr2PpuSYSoaqACdHnRg__.3600.1294470000-100000201256691|VErSHYsbkRQIcnJECds8YFs6LDw"}
+Rendering home/index
+Completed in 4378ms (View: 4328, DB: 1) | 200 OK [http://localhost/?code=2.CiSqr2PpuSYSoaqACdHnRg__.3600.1294470000-100000201256691%7CVErSHYsbkRQIcnJECds8YFs6LDw]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 12:55:36) [POST]
+  Parameters: {"signed_request"=>"--PZCw0YKEZh9TmNIajHC_4MJseFnHDq_v1u1XYIbLc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzAwMDAsImlzc3VlZF9hdCI6MTI5NDQ2NjE3MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5DaVNxcjJQcHVTWVNvYXFBQ2RIblJnX18uMzYwMC4xMjk0NDcwMDAwLTEwMDAwMDIwMTI1NjY5MXxiYmg0OVJ6UkxUNzBZR01zX3p3VXMtTUJJX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+
+ActionController::RoutingError (No route matches "/test" with {:method=>:post}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#test (for 127.0.0.1 at 2011-01-08 12:55:41) [POST]
+  Parameters: {"signed_request"=>"eNZTSCBh4DRoVKvnVRdFFp6mNfkaNbiZ7gMjpxwTzKc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzAwMDAsImlzc3VlZF9hdCI6MTI5NDQ2NjE3Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5DaVNxcjJQcHVTWVNvYXFBQ2RIblJnX18uMzYwMC4xMjk0NDcwMDAwLTEwMDAwMDIwMTI1NjY5MXxiYmg0OVJ6UkxUNzBZR01zX3p3VXMtTUJJX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+
+SyntaxError (D:/HopIn/HopIn/app/controllers/bus_controller.rb:39: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (56.0ms)
+Rendered rescues/_request_and_response (27.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 12:59:26) [POST]
+  Parameters: {"signed_request"=>"2VQ_ae4GjmflcuB-hnDvuhUNqcI5a5JIL3NXdgqpxiA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzAwMDAsImlzc3VlZF9hdCI6MTI5NDQ2NjM5OSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5DaVNxcjJQcHVTWVNvYXFBQ2RIblJnX18uMzYwMC4xMjk0NDcwMDAwLTEwMDAwMDIwMTI1NjY5MXxiYmg0OVJ6UkxUNzBZR01zX3p3VXMtTUJJX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "code"=>"2.CiSqr2PpuSYSoaqACdHnRg__.3600.1294470000-100000201256691|VErSHYsbkRQIcnJECds8YFs6LDw"}
+Rendering home/index
+Completed in 1306ms (View: 1269, DB: 0) | 200 OK [http://localhost/?code=2.CiSqr2PpuSYSoaqACdHnRg__.3600.1294470000-100000201256691%7CVErSHYsbkRQIcnJECds8YFs6LDw]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 13:24:12) [POST]
+  Parameters: {"signed_request"=>"sz_GE5JP3wNDg2Qa9glH1ttYO2w68VIxUyq0CpB1s2k.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2Nzg4Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mBus Columns (119.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (undefined method `format_error' for #<BusController:0x3d891c8>):
+  app/controllers/bus_controller.rb:32:in `add'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:24:28) [POST]
+  Parameters: {"signed_request"=>"nZdYaeAxS_ZpYn_h-0y7MpMNbzA0efQ5niKSXO9fn90.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2NzkwMiwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+Rendering bus/index
+Completed in 50ms (View: 17, DB: 0) | 200 OK [http://localhost/bus/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:25:05) [POST]
+  Parameters: {"signed_request"=>"uqigB-S3iOUSbEgbFd-0Kn75ET6pF4kR0uRKRQu6t9Q.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2NzkzOSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+Rendering bus/index
+Completed in 40ms (View: 10, DB: 0) | 200 OK [http://localhost/bus/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:30:32) [POST]
+  Parameters: {"signed_request"=>"nquLNsZonDeA09tni2CyCmiZ0-SkAEQdnjljfWVgI3U.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODI2Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+Rendering bus/index
+Completed in 27ms (View: 1, DB: 0) | 200 OK [http://localhost/bus/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:33:14) [POST]
+  Parameters: {"signed_request"=>"FCeYtIUwtxYkTC0JPVfdkOYDQ8ozSlqABnaqi6DU8N0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODQyNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+Rendering bus/index
+Completed in 39ms (View: 10, DB: 0) | 200 OK [http://localhost/bus/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:33:38) [POST]
+  Parameters: {"signed_request"=>"4mStfpiLe_tA_w1aR7etiIdJ9k9mqLOZm-uCFi3ybto.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODQ1Miwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+Rendering bus/index
+Completed in 35ms (View: 9, DB: 1) | 200 OK [http://localhost/bus/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:34:03) [POST]
+  Parameters: {"signed_request"=>"tnERlIF2kZzEt5YjToCS1Z-BH0chsMJoJmgFnrH9Dbw.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODQ3Nywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+Rendering bus/index
+Completed in 78ms (View: 9, DB: 1) | 200 OK [http://localhost/bus/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:38:01) [POST]
+  Parameters: {"signed_request"=>"tu4zvzd1wmvOycrQWd00zxPKzCNAXa_dl5eA-qfWYes.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODcxMywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+Rendering bus/index
+Completed in 41ms (View: 10, DB: 0) | 200 OK [http://localhost/bus/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:38:58) [POST]
+  Parameters: {"signed_request"=>"2hvW-qZDn6GBBzJ_HVJ_X__G2Wjj-pE1P1g7ufagnmA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODc3Miwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+Rendering bus/index
+Completed in 40ms (View: 10, DB: 1) | 200 OK [http://localhost/bus/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:41:10) [POST]
+  Parameters: {"signed_request"=>"NhYCDThkqf3uckuNJ4IXOMpXS8t_RL4LH9mwcK27k0E.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODkwNSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+Rendering bus/index
+Completed in 79ms (View: 47, DB: 1) | 200 OK [http://localhost/bus/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 13:41:12) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:43:31) [POST]
+  Parameters: {"signed_request"=>"hLVUEjFD8808B7HhIkuujLXGrHk5yo9ddkPMJ6PnRTQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTA0NSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+Rendering bus/index
+Completed in 41ms (View: 12, DB: 0) | 200 OK [http://localhost/bus/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 13:43:33) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:45:24) [POST]
+  Parameters: {"signed_request"=>"vdMsFCYj0ejSeeaCj09iecNRdAIRh7Vq83m4ogr96NQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTE1OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+Rendering bus/index
+Completed in 33ms (View: 2, DB: 0) | 200 OK [http://localhost/bus/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 13:45:29) [POST]
+  Parameters: {"authenticity_token"=>"66s1GlJKosxGkc0bhiEHD6w0s73jO3A9XQwwN4pJD54="}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.split):
+  app/controllers/application_controller.rb:17:in `decode_signed_request'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:46:37) [POST]
+  Parameters: {"signed_request"=>"X07B4LZLc7GCkLIqsPcd7ZkxMFu-Q7T_MbEge0RAy1U.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTIzMSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+Rendering bus/index
+Completed in 42ms (View: 11, DB: 1) | 200 OK [http://localhost/bus/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 13:46:53) [POST]
+  Parameters: {"authenticity_token"=>"66s1GlJKosxGkc0bhiEHD6w0s73jO3A9XQwwN4pJD54="}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.split):
+  app/controllers/application_controller.rb:17:in `decode_signed_request'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 13:46:54) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCurrency Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:52:27) [POST]
+  Parameters: {"signed_request"=>"8DJzuxoeuFTte8UbVTgRB7v8RLUiPy1EAk8cUTgTaaM.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTU4MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (38.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+Completed in 128ms (View: 55, DB: 38) | 200 OK [http://localhost/bus/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:53:03) [POST]
+  Parameters: {"signed_request"=>"Vvs5W4Wz_jAljP_xCdxwp1TKLVVHHnnpGNI0j0oMFqo.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTYxOCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering bus/index
+Completed in 37ms (View: 2, DB: 0) | 200 OK [http://localhost/bus/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (138.0ms)[0m   [0mCREATE TABLE `buses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `thumbnail_path` int(11), `why` text NOT NULL, `amount` float NOT NULL, `capacity` int(11) NOT NULL, `parent_bus_id` int(11) DEFAULT 0 NOT NULL, `facebook_id` int(11) NOT NULL, `deadline` datetime, `currency_code` varchar(255) NOT NULL, `hops` int(11) DEFAULT 0 NOT NULL, `status` varchar(255) DEFAULT 'ACTIVE' NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (196.0ms)[0m   [0mCREATE TABLE `charities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `desc` varchar(255), `thumbnail_pic` varchar(255), `paypal_id` varchar(255), `url` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (148.0ms)[0m   [0mCREATE TABLE `currencies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `format` varchar(255) NOT NULL, `sign` varchar(255) NOT NULL, `separator` varchar(255) NOT NULL, `delimiter` varchar(255) NOT NULL, `paypal_currency_code` varchar(255) NOT NULL, `minimum` int(11) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (120.0ms)[0m   [0mCREATE TABLE `error_logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `time` datetime NOT NULL, `ip_address` varchar(255), `identifier` varchar(255) NOT NULL, `description` text NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (214.0ms)[0m   [0mCREATE TABLE `hops` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` int(11) NOT NULL, `bus_id` int(11) NOT NULL, `comment` text, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (79.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (244.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (141.0ms)[0m   [0mCREATE TABLE `buses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `thumbnail_path` int(11), `why` text NOT NULL, `amount` float NOT NULL, `capacity` int(11) NOT NULL, `parent_bus_id` int(11) DEFAULT 0 NOT NULL, `facebook_id` int(11) NOT NULL, `deadline` datetime, `currency_code` varchar(255) NOT NULL, `hops` int(11) DEFAULT 0 NOT NULL, `status` varchar(255) DEFAULT 'ACTIVE' NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (73.0ms)[0m   [0mCREATE TABLE `charities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `desc` varchar(255), `thumbnail_pic` varchar(255), `paypal_id` varchar(255), `url` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (104.0ms)[0m   [0mCREATE TABLE `currencies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `format` varchar(255) NOT NULL, `sign` varchar(255) NOT NULL, `separator` varchar(255) NOT NULL, `delimiter` varchar(255) NOT NULL, `paypal_currency_code` varchar(255) NOT NULL, `minimum` int(11) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (76.0ms)[0m   [0mCREATE TABLE `error_logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `time` datetime NOT NULL, `ip_address` varchar(255), `identifier` varchar(255) NOT NULL, `description` text NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (64.0ms)[0m   [0mCREATE TABLE `hops` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` int(11) NOT NULL, `bus_id` int(11) NOT NULL, `comment` text, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (70.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (267.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (45.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mCurrency Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCurrency Create (0.0ms)[0m   [0;1mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Dollars', '%u%n', 'USD', '.', '$', ',', 1)[0m
+  [4;35;1mSQL (39.0ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCurrency Create (1.0ms)[0m   [0mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Euro', '%u%n', 'EUR', '.', '&euro;', ',', 1)[0m
+  [4;36;1mSQL (24.0ms)[0m   [0;1mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCurrency Create (1.0ms)[0m   [0;1mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Baht', '%n %u', 'THB', '.', 'baht', ',', 5)[0m
+  [4;35;1mSQL (57.0ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCurrency Create (0.0ms)[0m   [0mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Pounds', '%u%n', 'GBP', ',', '&pound', '.', 1)[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 13:55:08) [POST]
+  Parameters: {"signed_request"=>"U7Y-y-Kr8ANquHrGFyCTrOljk05AMGHbpRFgORu4Wtw.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTc0Miwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5icGVsenBna01iWV96NW9RTHVPVnJnX18uMzYwMC4xMjk0NDczNjAwLTEwMDAwMDIwMTI1NjY5MXx6MmxsYW1tMWpjb0gwZEJYWjIxOWdod0RaMDAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 44ms (View: 4, DB: 4) | 200 OK [http://localhost/bus/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 14:04:59) [POST]
+  Parameters: {"signed_request"=>"KT-grVDistp-i6_lBkIrQtAbqdd5AudFL3xqyP22h4g.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MDMzMywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5QTlU2Z09uYUx1eV9CRThTenM2dFh3X18uMzYwMC4xMjk0NDc3MjAwLTEwMDAwMDIwMTI1NjY5MXwtZU9QT2ZDVFdEUHVpdnZ4eWZreXRmSm1jS2siLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (18.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 72ms (View: 15, DB: 22) | 200 OK [http://localhost/bus/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 14:05:44) [POST]
+  Parameters: {"authenticity_token"=>"66s1GlJKosxGkc0bhiEHD6w0s73jO3A9XQwwN4pJD54="}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.split):
+  app/controllers/application_controller.rb:17:in `decode_signed_request'
+
+Rendered rescues/_trace (92.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 14:05:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
