@@ -3046,3 +3046,35 @@ Processing TemporaryImageController#index (for 127.0.0.1 at 2011-01-08 16:39:16)
   [4;36;1mTemporaryImage Update (0.0ms)[0m   [0;1mUPDATE `temporary_images` SET `name` = 'temp_2.jpg' WHERE `id` = 2[0m
   [4;35;1mSQL (34.0ms)[0m   [0mCOMMIT[0m
 Completed in 188ms (View: 1, DB: 166) | 200 OK [http://localhost/temporary_image]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 16:47:25) [POST]
+  Parameters: {"signed_request"=>"sUzB7YRZHocDNM0Jig9pz2hOIr00dY5bAPIhkR_MJM4.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ4MDA3OSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi4zVlpoY3ZmOVZpbUV0SDc2bndaTmR3X18uMzYwMC4xMjk0NDg0NDAwLTEwMDAwMDIwMTI1NjY5MXxIMjUyVTNOdUgyQmVCXzlwTHZTX3FYVmNnSDgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mMysql::Error: Table 'hopin_development.facebook_caches' doesn't exist: SELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'hopin_development.facebook_caches' doesn't exist: SELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691')  LIMIT 1):
+  app/models/facebook.rb:19:in `initialize'
+  app/controllers/application_controller.rb:43:in `new'
+  app/controllers/application_controller.rb:43:in `decode_signed_request'
+
+Rendered rescues/_trace (104.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 16:52:10) [POST]
+  Parameters: {"signed_request"=>"2wm9pqzzEQux3fSV7kMkZkkN7FxQqNbn_rzTDqgSGao.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ4MDM2NSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi4zVlpoY3ZmOVZpbUV0SDc2bndaTmR3X18uMzYwMC4xMjk0NDg0NDAwLTEwMDAwMDIwMTI1NjY5MXxIMjUyVTNOdUgyQmVCXzlwTHZTX3FYVmNnSDgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mMysql::Error: Table 'hopin_development.facebook_caches' doesn't exist: SELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'hopin_development.facebook_caches' doesn't exist: SELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691')  LIMIT 1):
+  app/models/facebook.rb:19:in `initialize'
+  app/controllers/application_controller.rb:43:in `new'
+  app/controllers/application_controller.rb:43:in `decode_signed_request'
+
+Rendered rescues/_trace (56.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
