@@ -4271,3 +4271,1270 @@ ActionController::RoutingError (No route matches "/images/button_loader.gif" wit
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:23:56) [POST]
+  Parameters: {"signed_request"=>"lwGrNQm87ww5D2HFz8s8Qofuj-48QPM8KTiMor-1MZA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NTg3MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "123"=>nil}
+
+SyntaxError (D:/HopIn/HopIn/app/controllers/bus_controller.rb:65: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:24:37) [POST]
+  Parameters: {"signed_request"=>"6USpFco6GFY1AI1BXcjhFWcGfgmv8-EaJzq_yju-ud0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NTkxMiwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "123"=>nil}
+
+SyntaxError (D:/HopIn/HopIn/app/controllers/bus_controller.rb:65: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:24:55) [POST]
+  Parameters: {"signed_request"=>"zbsXazEgHgeoa6KsQuE1d9TdHBPJQRriPVOyfXNx-ck.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NTkzMCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+
+SyntaxError (D:/HopIn/HopIn/app/controllers/bus_controller.rb:65: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:25:19) [POST]
+  Parameters: {"signed_request"=>"2vXDUS0dK5634FWykE6s7PJpOVrr_s55duopSk_Gacg.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NTk1NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 86ms (View: 38, DB: 5) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:25:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:25:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TemporaryImageController#index (for 127.0.0.1 at 2011-01-08 18:25:45) [POST]
+  Parameters: {"authenticity_token"=>"T8fGyL7hkJEx+8QMfC1PWnsnMQAPBAJu4MjTkdP2HzA=", "Filedata"=>#<File:C:/Users/NI_CS/AppData/Local/Temp/RackMultipart.2788.0>}
+  [4;35;1mTemporaryImage Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `temporary_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTemporaryImage Create (0.0ms)[0m   [0mINSERT INTO `temporary_images` (`name`, `created_date`) VALUES('', '2011-01-08 11:25:45')[0m
+  [4;36;1mSQL (49.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTemporaryImage Update (0.0ms)[0m   [0;1mUPDATE `temporary_images` SET `name` = 'temp_6.jpg' WHERE `id` = 6[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mCOMMIT[0m
+Completed in 595ms (View: 3, DB: 68) | 200 OK [http://localhost/temporary_image]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:38:23) [POST]
+  Parameters: {"signed_request"=>"qPzDEZOsKLz8mw0hnAnHZ4OSEBwpmqbR-5NBqiYaP8A.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NjczOCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 76ms (View: 27, DB: 7) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:38:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:38:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TemporaryImageController#index (for 127.0.0.1 at 2011-01-08 18:39:12) [POST]
+  Parameters: {"authenticity_token"=>"T8fGyL7hkJEx+8QMfC1PWnsnMQAPBAJu4MjTkdP2HzA=", "Filedata"=>#<File:C:/Users/NI_CS/AppData/Local/Temp/RackMultipart.2788.1>}
+  [4;35;1mTemporaryImage Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `temporary_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTemporaryImage Create (1.0ms)[0m   [0mINSERT INTO `temporary_images` (`name`, `created_date`) VALUES('', '2011-01-08 11:39:12')[0m
+  [4;36;1mSQL (51.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTemporaryImage Update (1.0ms)[0m   [0;1mUPDATE `temporary_images` SET `name` = 'temp_7.jpg' WHERE `id` = 7[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mCOMMIT[0m
+Completed in 736ms (View: 2, DB: 71) | 200 OK [http://localhost/temporary_image]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 18:39:20) [POST]
+  Parameters: {"name"=>"aaa", "signed_request"=>"qPzDEZOsKLz8mw0hnAnHZ4OSEBwpmqbR-5NBqiYaP8A.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NjczOCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "authenticity_token"=>"T8fGyL7hkJEx+8QMfC1PWnsnMQAPBAJu4MjTkdP2HzA=", "amount"=>"11", "deadline"=>"", "thumbnail_path"=>"thumb_0112x0112_temp_7.jpg", "why"=>"aa", "capacity"=>"11"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mBus Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+
+NoMethodError (undefined method `format_error' for #<BusController:0x4658a48>):
+  app/controllers/bus_controller.rb:50:in `add'
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:39:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:43:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/whowish_icon.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:43:55) [POST]
+  Parameters: {"signed_request"=>"jK4_1OgHMJIZg8clKLQqUjxRqPed9D4QDO-B5EkRR9A.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NzA2OSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 88ms (View: 11, DB: 33) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:43:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:44:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TemporaryImageController#index (for 127.0.0.1 at 2011-01-08 18:44:31) [POST]
+  Parameters: {"authenticity_token"=>"T8fGyL7hkJEx+8QMfC1PWnsnMQAPBAJu4MjTkdP2HzA=", "Filedata"=>#<File:C:/Users/NI_CS/AppData/Local/Temp/RackMultipart.2788.0>}
+  [4;36;1mTemporaryImage Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `temporary_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTemporaryImage Create (0.0ms)[0m   [0;1mINSERT INTO `temporary_images` (`name`, `created_date`) VALUES('', '2011-01-08 11:44:31')[0m
+  [4;35;1mSQL (39.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTemporaryImage Update (1.0ms)[0m   [0mUPDATE `temporary_images` SET `name` = 'temp_8.jpg' WHERE `id` = 8[0m
+  [4;36;1mSQL (36.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 678ms (View: 3, DB: 78) | 200 OK [http://localhost/temporary_image]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:47:10) [POST]
+  Parameters: {"signed_request"=>"56nCWJUNeDyKRAQ6dRf1M3NdYyz9tnqENkdaYwfEr2E.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NzI2NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 78ms (View: 27, DB: 5) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:47:12) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:47:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TemporaryImageController#index (for 127.0.0.1 at 2011-01-08 18:47:31) [POST]
+  Parameters: {"authenticity_token"=>"T8fGyL7hkJEx+8QMfC1PWnsnMQAPBAJu4MjTkdP2HzA=", "Filedata"=>#<File:C:/Users/NI_CS/AppData/Local/Temp/RackMultipart.2788.1>}
+  [4;36;1mTemporaryImage Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `temporary_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTemporaryImage Create (0.0ms)[0m   [0;1mINSERT INTO `temporary_images` (`name`, `created_date`) VALUES('', '2011-01-08 11:47:31')[0m
+  [4;35;1mSQL (29.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTemporaryImage Update (0.0ms)[0m   [0mUPDATE `temporary_images` SET `name` = 'temp_9.jpg' WHERE `id` = 9[0m
+  [4;36;1mSQL (25.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 593ms (View: 2, DB: 67) | 200 OK [http://localhost/temporary_image]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 18:47:39) [POST]
+  Parameters: {"name"=>"aaaa", "signed_request"=>"56nCWJUNeDyKRAQ6dRf1M3NdYyz9tnqENkdaYwfEr2E.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NzI2NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "authenticity_token"=>"T8fGyL7hkJEx+8QMfC1PWnsnMQAPBAJu4MjTkdP2HzA=", "amount"=>"1111", "deadline"=>"", "thumbnail_path"=>"thumb_0112x0112_temp_9.jpg", "why"=>"aa", "capacity"=>"1111"}
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mBus Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBus Create (0.0ms)[0m   [0mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `mode`, `created_date`, `thumbnail_path`, `amount`, `charity_id`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('aaaa', 'ACTIVE', '100000201256691', 'AMATEUR', '2011-01-08 11:47:39', 'thumb_bus_.jpg', 1111.0, NULL, NULL, 'aa', 1111, 0, 'USD', 0)[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/main
+Rendering bus/save_success
+Completed in 130ms (View: 2, DB: 0) | 200 OK [http://localhost/bus/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:47:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:49:46) [POST]
+  Parameters: {"signed_request"=>"ZFG8OROae5cMG6t6e_VIQDYdLcx5A6UGJKRnK71xFrQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ4NzQyMSwidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Rendering template within layouts/main
+Rendering redirect/index
+Filter chain halted as [:require_basic_information_permission] rendered_or_redirected.
+Completed in 34ms (View: 7, DB: 0) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:50:21) [POST]
+  Parameters: {"signed_request"=>"kFurQPIfJaadB6SH1DauQe9XCLo0ANoMlueHnANuyQw.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NzQ1Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 58ms (View: 12, DB: 5) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:50:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:50:30) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TemporaryImageController#index (for 127.0.0.1 at 2011-01-08 18:50:58) [POST]
+  Parameters: {"authenticity_token"=>"/MY1lZde1hkwu8j6DjTzbUAwWRZ8BIAhYqFtT+EuRmg=", "Filedata"=>#<File:C:/Users/NI_CS/AppData/Local/Temp/RackMultipart.2788.0>}
+  [4;36;1mTemporaryImage Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `temporary_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTemporaryImage Create (0.0ms)[0m   [0;1mINSERT INTO `temporary_images` (`name`, `created_date`) VALUES('', '2011-01-08 11:50:58')[0m
+  [4;35;1mSQL (58.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTemporaryImage Update (1.0ms)[0m   [0mUPDATE `temporary_images` SET `name` = 'temp_10.jpg' WHERE `id` = 10[0m
+  [4;36;1mSQL (34.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 594ms (View: 4, DB: 96) | 200 OK [http://localhost/temporary_image]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 18:51:11) [POST]
+  Parameters: {"name"=>"asdf", "signed_request"=>"kFurQPIfJaadB6SH1DauQe9XCLo0ANoMlueHnANuyQw.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NzQ1Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "authenticity_token"=>"/MY1lZde1hkwu8j6DjTzbUAwWRZ8BIAhYqFtT+EuRmg=", "amount"=>"1234", "deadline"=>"", "thumbnail_path"=>"thumb_0112x0112_temp_10.jpg", "why"=>"aaa", "capacity"=>"11"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mBus Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBus Create (0.0ms)[0m   [0mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `mode`, `created_date`, `thumbnail_path`, `amount`, `charity_id`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('asdf', 'ACTIVE', '100000201256691', 'AMATEUR', '2011-01-08 11:51:11', 'thumb_bus_.jpg', 1234.0, NULL, NULL, 'aaa', 11, 0, 'USD', 0)[0m
+  [4;36;1mSQL (90.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/main
+Rendering bus/save_success
+Completed in 207ms (View: 2, DB: 0) | 200 OK [http://localhost/bus/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:51:12) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:53:39) [POST]
+  Parameters: {"signed_request"=>"UEJ8pvb-jsm0_RLI8Q-2zJ_P-54yzB4_ujKhjkPBdoQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NzY1NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 75ms (View: 28, DB: 4) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:53:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:53:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:54:49) [POST]
+  Parameters: {"signed_request"=>"q9JwALl2xnvAmFpTOdiEi5oITlz9qwBhSQibbALNMlI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ4NzcyNCwidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Rendering template within layouts/main
+Rendering redirect/index
+Filter chain halted as [:require_basic_information_permission] rendered_or_redirected.
+Completed in 40ms (View: 9, DB: 1) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:55:36) [POST]
+  Parameters: {"signed_request"=>"k74qGkoYiJyPCSGY0HxTN_OSNv5pweE-NuMoPb1tJT0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ4Nzc3MSwidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Rendering template within layouts/main
+Rendering redirect/index
+Filter chain halted as [:require_basic_information_permission] rendered_or_redirected.
+Completed in 41ms (View: 11, DB: 1) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 18:55:51) [POST]
+  Parameters: {"signed_request"=>"UOoKgnuMba5p34bvhzg4aLcqA3RrDRejVFzVT5O1lVQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4Nzc4Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "code"=>"2.K9X_O2dy19ehULyaoIWnHw__.3600.1294491600-100000201256691|6mCzlTSNu6N9Ip1IpFyDMd9ux1Q"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mFacebookFriendCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookFriendCache Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `facebook_friend_caches`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFacebookFriendCache Create (39.0ms)[0m   [0mINSERT INTO `facebook_friend_caches` (`updated_date`, `facebook_id`, `friends`) VALUES('2011-01-08 11:55:51', '100000201256691', '{\"data\":[{\"name\":\"Jiji III\",\"id\":\"36800640\"},{\"name\":\"Salakjit Munthamraksa\",\"id\":\"36921352\"},{\"name\":\"Warisa Natty\",\"id\":\"500604115\"},{\"name\":\"Petchprao Siengkong\",\"id\":\"503736492\"},{\"name\":\"Joy Toy\",\"id\":\"506006636\"},{\"name\":\"Best Voravisuthinant\",\"id\":\"507381847\"},{\"name\":\"Pear Unthika Roekwibunsi\",\"id\":\"508013012\"},{\"name\":\"Paweena Vallapatitaya\",\"id\":\"514615222\"},{\"name\":\"Piin Samoy Smile\",\"id\":\"515780200\"},{\"name\":\"Zim Mmiz Arpapan\",\"id\":\"515789941\"},{\"name\":\"Nuchakarn Akrapongpanich\",\"id\":\"515922341\"},{\"name\":\"Praew Chalitaporn\",\"id\":\"516231418\"},{\"name\":\"Bow Santayodom\",\"id\":\"516391767\"},{\"name\":\"Mook Tanamai\",\"id\":\"516441645\"},{\"name\":\"Vim VimViriya Valerie\",\"id\":\"516552529\"},{\"name\":\"Phundharux Yuvasavee\",\"id\":\"516585509\"},{\"name\":\"Lhin Ng\",\"id\":\"516607277\"},{\"name\":\"Jeep Champaiboon\",\"id\":\"516680063\"},{\"name\":\"Poupee Po\",\"id\":\"516703724\"},{\"name\":\"Bee Supada\",\"id\":\"516739954\"},{\"name\":\"Nutnicha Chalermchuang\",\"id\":\"516851264\"},{\"name\":\"Manissa Jotisakulratana\",\"id\":\"516900763\"},{\"name\":\"Nitsawan Katerattanakul\",\"id\":\"517131451\"},{\"name\":\"Taksaorn Su.\",\"id\":\"517410957\"},{\"name\":\"Premsiri Issavanich\",\"id\":\"517519284\"},{\"name\":\"Eclipse Kong\",\"id\":\"518014691\"},{\"name\":\"Deuu Kub\",\"id\":\"518028259\"},{\"name\":\"JiBz Biz\",\"id\":\"521201510\"},{\"name\":\"Nid Dhanidporn\",\"id\":\"521753473\"},{\"name\":\"Somwung Ruangmaneepitoon\",\"id\":\"524198184\"},{\"name\":\"Arunsak Butipanka\",\"id\":\"524473023\"},{\"name\":\"Saravut \'Oat\' Anakatham\",\"id\":\"524645371\"},{\"name\":\"Veerapatr Karnjanapinchote\",\"id\":\"524660412\"},{\"name\":\"Dararat Urapanthamat\",\"id\":\"526361636\"},{\"name\":\"Chavarom Chongulia\",\"id\":\"527683457\"},{\"name\":\"Faii Tadket\",\"id\":\"528457131\"},{\"name\":\"Nikki-Nidnoi Pornprakit\",\"id\":\"529986396\"},{\"name\":\"Karnta Ek-ularnpan\",\"id\":\"532354610\"},{\"name\":\"Ariya Oat Thanadpasa\",\"id\":\"533676143\"},{\"name\":\"Pornpen Traisawatpanich\",\"id\":\"537565364\"},{\"name\":\"Chatwalai Phairojwithayaporn\",\"id\":\"537878666\"},{\"name\":\"Patanachai Tangchaisin\",\"id\":\"537952318\"},{\"name\":\"\'Beau\' Suphika\",\"id\":\"542639594\"},{\"name\":\"Cherry Chon\",\"id\":\"543011713\"},{\"name\":\"Tanet Gamchaitavonrattana\",\"id\":\"543060070\"},{\"name\":\"MooMoo Moo\",\"id\":\"543422068\"},{\"name\":\"\'Ecto Sukolsatitkul\",\"id\":\"546443212\"},{\"name\":\"Warut Surapat\",\"id\":\"549084917\"},{\"name\":\"Archara Yiengbundit\",\"id\":\"549763071\"},{\"name\":\"Slydin Slyder\",\"id\":\"550284895\"},{\"name\":\"Jha Ja\",\"id\":\"551340915\"},{\"name\":\"Nata Sukarya\",\"id\":\"557505631\"},{\"name\":\"Onpavee Nitisingkarin\",\"id\":\"558216341\"},{\"name\":\"Nutnee Thongchai\",\"id\":\"562347049\"},{\"name\":\"Golffy Shuai Ge\",\"id\":\"565128168\"},{\"name\":\"Tipaluck Mint Krityakierne\",\"id\":\"565470257\"},{\"name\":\"Kat Su\",\"id\":\"571760378\"},{\"name\":\"Bo Nantaphorn\",\"id\":\"573723429\"},{\"name\":\"Vittawat Bomb Suriyachan\",\"id\":\"578906280\"},{\"name\":\"Warut Horsimasathaporn\",\"id\":\"580180812\"},{\"name\":\"Kag Tee\",\"id\":\"580447628\"},{\"name\":\"Varunyu Suriyachan\",\"id\":\"580641118\"},{\"name\":\"Nite Merfy\",\"id\":\"582767508\"},{\"name\":\"Prachaya Intarak\",\"id\":\"584075969\"},{\"name\":\"Doungdee Dee\",\"id\":\"593459950\"},{\"name\":\"Pisit Saetia\",\"id\":\"594563096\"},{\"name\":\"Somchai Santithammakhun\",\"id\":\"595154783\"},{\"name\":\"Kittinun Vantasin\",\"id\":\"602533229\"},{\"name\":\"Thanit Nit-Big Uerkanarak\",\"id\":\"614725207\"},{\"name\":\"Mai Khunthida\",\"id\":\"616066354\"},{\"name\":\"Supaporn Ratthanapas\",\"id\":\"617950279\"},{\"name\":\"Bo Aumporn\",\"id\":\"619901688\"},{\"name\":\"Bank Spy\",\"id\":\"620228687\"},{\"name\":\"Yuppadee Ruangritwattana\",\"id\":\"621214530\"},{\"name\":\"Ae Issie\",\"id\":\"622091339\"},{\"name\":\"June Theva-Aksorn\",\"id\":\"622906142\"},{\"name\":\"LingBowling Bow\",\"id\":\"623933257\"},{\"name\":\"Narate Taerat\",\"id\":\"624506465\"},{\"name\":\"Sophon Larpphonpoonsawat\",\"id\":\"624631770\"},{\"name\":\"Nichamon Naksinehaboon\",\"id\":\"624736860\"},{\"name\":\"Pornroj Sattayasanskul\",\"id\":\"626331715\"},{\"name\":\"Mon Ng\",\"id\":\"628731921\"},{\"name\":\"Daranee Bunchongsilp\",\"id\":\"630006405\"},{\"name\":\"Chayanont Junnavech\",\"id\":\"630455424\"},{\"name\":\"\\u0e1e\\u0e31\\u0e0a\\u0e41\\u0e0a\\u0e1b \\u0e1b\\u0e1b\\u0e1b\",\"id\":\"631085701\"},{\"name\":\"Patcharin Ploysupapol\",\"id\":\"631420232\"},{\"name\":\"Tanun Niyomjit\",\"id\":\"632591624\"},{\"name\":\"Tanin Na Nakorn\",\"id\":\"632818246\"},{\"name\":\"Smile Wongruamlap\",\"id\":\"634437804\"},{\"name\":\"Numthip Ch\",\"id\":\"636258094\"},{\"name\":\"TeTe Siripattananont\",\"id\":\"637272817\"},{\"name\":\"Faith Wong-Amnitkul\",\"id\":\"637404458\"},{\"name\":\"Kristamuk Leesirichaikul\",\"id\":\"638289234\"},{\"name\":\"TaTar Siripattananont\",\"id\":\"639419907\"},{\"name\":\"Voraphol Theanpaparsit\",\"id\":\"639530947\"},{\"name\":\"PuPae Wachida\",\"id\":\"639754606\"},{\"name\":\"Cherry Wilaiporn\",\"id\":\"641489015\"},{\"name\":\"Prissana Kumthumpinij\",\"id\":\"642063993\"},{\"name\":\"Paopao Ranra\",\"id\":\"643277057\"},{\"name\":\"Yammy Wanlapa\",\"id\":\"644798928\"},{\"name\":\"Punn Punnyapastra\",\"id\":\"647275608\"},{\"name\":\"Pornpimol Satitpanaporn\",\"id\":\"655576222\"},{\"name\":\"Yotsawadee Duanchanchai\",\"id\":\"657597442\"},{\"name\":\"Sweetie Jainny\",\"id\":\"657850472\"},{\"name\":\"Nan Tiwaporn\",\"id\":\"660623884\"},{\"name\":\"Au Piyachet\",\"id\":\"665356781\"},{\"name\":\"Pasinee Tulyathan\",\"id\":\"669613880\"},{\"name\":\"\\u0e44\\u0e1e\\u0e42\\u0e23\\u0e08\\u0e19\\u0e4c \\u0e2a\\u0e38\\u0e27\\u0e23\\u0e23\\u0e13\\u0e28\\u0e23\\u0e35\\u0e2a\\u0e38\\u0e02\",\"id\":\"673427646\"},{\"name\":\"Godhand Vorapol\",\"id\":\"683442778\"},{\"name\":\"\'Tony\' Woraphot Chatwaraphithak\",\"id\":\"685031168\"},{\"name\":\"Ben JiJa\",\"id\":\"687438061\"},{\"name\":\"Narong Korn Pond Prasansinchai\",\"id\":\"688486076\"},{\"name\":\"Nutty Jiwakulchainan\",\"id\":\"689153156\"},{\"name\":\"Belle Wuthisawas\",\"id\":\"690672185\"},{\"name\":\"Pamp Taveesap\",\"id\":\"693536216\"},{\"name\":\"Tua Sarun\",\"id\":\"697766175\"},{\"name\":\"Pear Nicha\",\"id\":\"703984135\"},{\"name\":\"Nipitpan Nakawiboon\",\"id\":\"704487901\"},{\"name\":\"Natchitsa Hunsadiwit\",\"id\":\"704580678\"},{\"name\":\"Bank Bankiiez\",\"id\":\"704718280\"},{\"name\":\"Dew TyFree\",\"id\":\"704933317\"},{\"name\":\"NuAom Kubb\",\"id\":\"705223117\"},{\"name\":\"Theerapat Chingchit\",\"id\":\"705332087\"},{\"name\":\"May Bug\",\"id\":\"705336091\"},{\"name\":\"Pup Pip\",\"id\":\"705357936\"},{\"name\":\"Wijitra Mahaboonpachai\",\"id\":\"705448319\"},{\"name\":\"Phasor Suk\",\"id\":\"705547121\"},{\"name\":\"Pa Yuiky\",\"id\":\"705757310\"},{\"name\":\"Navich Tangjitrapitak\",\"id\":\"706793886\"},{\"name\":\"Natt Sincharoen\",\"id\":\"706963290\"},{\"name\":\"Nititham Mantai\",\"id\":\"707331892\"},{\"name\":\"Wiriya Chaikittirattana\",\"id\":\"714146590\"},{\"name\":\"Pat Dekpher\",\"id\":\"716913846\"},{\"name\":\"Apirom Na Nakorn\",\"id\":\"720209640\"},{\"name\":\"Pakpoom Chareonpradapsilp\",\"id\":\"722126659\"},{\"name\":\"Oohhoo Hhoohh\",\"id\":\"724300784\"},{\"name\":\"Sivaporn Bow\",\"id\":\"727265222\"},{\"name\":\"Wora Wit\",\"id\":\"728870852\"},{\"name\":\"Nooj Assawavilairat\",\"id\":\"730056806\"},{\"name\":\"Kibu Prim\",\"id\":\"730101465\"},{\"name\":\"Chatchavan Wacharamanotham\",\"id\":\"730895195\"},{\"name\":\"Preechaya Veen Sanyatit\",\"id\":\"732545494\"},{\"name\":\"Anupol Pop Anekpattanakij\",\"id\":\"733447533\"},{\"name\":\"Preaw D. Saetia\",\"id\":\"734340701\"},{\"name\":\"Gunchanok Su\",\"id\":\"740488648\"},{\"name\":\"Um Rachkhun\",\"id\":\"749424921\"},{\"name\":\"Da Pothikamjorn\",\"id\":\"750660531\"},{\"name\":\"Beeyoudee Bud\",\"id\":\"761437500\"},{\"name\":\"Mini Lkynr\",\"id\":\"764798636\"},{\"name\":\"Rasipol Khanthong\",\"id\":\"779438145\"},{\"name\":\"Nuch Trong\",\"id\":\"783502849\"},{\"name\":\"Warunya Bua Suriyachan\",\"id\":\"786930262\"},{\"name\":\"An ANt\",\"id\":\"788632467\"},{\"name\":\"Sirada Kuevibulvanich\",\"id\":\"797230857\"},{\"name\":\"Jirada Chiradamrong\",\"id\":\"800270098\"},{\"name\":\"Bee Natpanit\",\"id\":\"801770642\"},{\"name\":\"Vudhiporn Anna Maria Limprasutr\",\"id\":\"801917276\"},{\"name\":\"Golfz Jsp Horsimasathaporn\",\"id\":\"828500650\"},{\"name\":\"Mig Manyanont\",\"id\":\"844485252\"},{\"name\":\"Tanapan Lapluea\",\"id\":\"853995541\"},{\"name\":\"Happy Nuchy\",\"id\":\"867615166\"},{\"name\":\"Wongsakit Kriangvorakul\",\"id\":\"883470653\"},{\"name\":\"Praephun Limpiphipatanakorn\",\"id\":\"1035416062\"},{\"name\":\"Kamkaew Pakakaew\",\"id\":\"1038524535\"},{\"name\":\"Darunee Sawangdee\",\"id\":\"1051262434\"},{\"name\":\"Mornster A. Pat\",\"id\":\"1099585773\"},{\"name\":\"Daechatorn Ariyamongkoklert\",\"id\":\"1102613162\"},{\"name\":\"Sasikarn Sassygirl\",\"id\":\"1160194701\"},{\"name\":\"Yoo Sornsopin\",\"id\":\"1163575468\"},{\"name\":\"Sueb Pop\",\"id\":\"1180728297\"},{\"name\":\"Bon Ni\",\"id\":\"1198662219\"},{\"name\":\"Chaowalit Jittpoonkuson\",\"id\":\"1208644820\"},{\"name\":\"Nooploy Siam\",\"id\":\"1247463500\"},{\"name\":\"Bissi Bisz\",\"id\":\"1256007494\"},{\"name\":\"Panasaya Bamby C\",\"id\":\"1377408318\"},{\"name\":\"Nongluck Ajanapanya\",\"id\":\"1450791695\"},{\"name\":\"Kanokwan Buwc\",\"id\":\"1460421982\"},{\"name\":\"NaeNae Connae\",\"id\":\"1470909938\"},{\"name\":\"Sara Hee\",\"id\":\"1493499810\"},{\"name\":\"Nachie Nuchie\",\"id\":\"1541945468\"},{\"name\":\"Bee Wonder\",\"id\":\"1624082209\"},{\"name\":\"Pukarni Sirirat Akepakinwijit\",\"id\":\"1829994598\"},{\"name\":\"Planoi Ins\",\"id\":\"100000104148754\"},{\"name\":\"Dark Zyne\",\"id\":\"100000140814716\"},{\"name\":\"Annyta Kung\",\"id\":\"100000161774618\"},{\"name\":\"Ikecy Bugbunny\",\"id\":\"100000165637955\"},{\"name\":\"Arpavee Visetson\",\"id\":\"100000175765714\"},{\"name\":\"Ping Duff\",\"id\":\"100000186658407\"},{\"name\":\"Som Suriyachan\",\"id\":\"100000187566095\"},{\"name\":\"Pamkie \\u0e2d\\u0e31\\u0e19\\u0e17\\u0e2d\\u0e07\",\"id\":\"100000191683440\"},{\"name\":\"Kaekie Wararat\",\"id\":\"100000211306964\"},{\"name\":\"Apichat Waewbandhit\",\"id\":\"100000220786071\"},{\"name\":\"Somthep Srimahachota\",\"id\":\"100000224086735\"},{\"name\":\"Kritsada Somnukthan\",\"id\":\"100000234049573\"},{\"name\":\"LougTarn Thitra\",\"id\":\"100000239626320\"},{\"name\":\"Kam Thunyaporn\",\"id\":\"100000248569001\"},{\"name\":\"Ong Wanlaphit\",\"id\":\"100000260640622\"},{\"name\":\"ANotty Danuphop\",\"id\":\"100000267680615\"},{\"name\":\"\\u0e14\\u0e35\\u0e44\\u0e2d\\u0e42\\u0e2d \\u0e23\\u0e31\\u0e01\\u0e43\\u0e19\\u0e2b\\u0e25\\u0e27\\u0e07\",\"id\":\"100000282589322\"},{\"name\":\"Pisuttisak Chongboonchuer\",\"id\":\"100000306798674\"},{\"name\":\"Yaowared Navayopthin\",\"id\":\"100000312174465\"},{\"name\":\"Sparkle Bee Pansiri\",\"id\":\"100000316122977\"},{\"name\":\"Angko Ang\",\"id\":\"100000437974404\"},{\"name\":\"Puaijung Lerttripop\",\"id\":\"100000479439818\"},{\"name\":\"Paladay Bills\",\"id\":\"100000493692744\"},{\"name\":\"Lanlanlar Ka\",\"id\":\"100000495184524\"},{\"name\":\"Penprao Maneewan\",\"id\":\"100000504477354\"},{\"name\":\"Bheerathida Rattakul\",\"id\":\"100000521100352\"},{\"name\":\"Napaluck Sakburanaphet\",\"id\":\"100000539426135\"},{\"name\":\"Pui Puika\",\"id\":\"100000542144445\"},{\"name\":\"Sam Kittayapong\",\"id\":\"100000550087886\"},{\"name\":\"Sasi Oao\",\"id\":\"100000596797058\"},{\"name\":\"Suthikiat Tortist\",\"id\":\"100000597847082\"},{\"name\":\"Chatchon Luengwattanakij\",\"id\":\"100000607043775\"},{\"name\":\"Sutee Srimahachota\",\"id\":\"100000614571676\"},{\"name\":\"Ake Eakepong\",\"id\":\"100000648206323\"},{\"name\":\"Arnupap Saksiri\",\"id\":\"100000711875085\"},{\"name\":\"Tassanai Horsimasthaporn\",\"id\":\"100000747288504\"},{\"name\":\"Luck Tachavarinleart\",\"id\":\"100000805354438\"},{\"name\":\"Mangpor Wachiraporn\",\"id\":\"100000827495292\"},{\"name\":\"Surasak Tuepun\",\"id\":\"100000922494478\"},{\"name\":\"Kongkana Kanayart\",\"id\":\"100000973692662\"},{\"name\":\"Jummy Nilawan\",\"id\":\"100001082692529\"},{\"name\":\"Pa Haha\",\"id\":\"100001119373610\"},{\"name\":\"Kraisorn Unnopkraisorn\",\"id\":\"100001149183369\"},{\"name\":\"Panchalee Amarinrat\",\"id\":\"100001166781187\"},{\"name\":\"\\u0e1e\\u0e34\\u0e21\\u0e25\\u0e27\\u0e23\\u0e23\\u0e13 \\u0e1b\\u0e30\\u0e01\\u0e33\\u0e41\\u0e2b\\u0e07\",\"id\":\"100001220465986\"},{\"name\":\"Oo Kaew Oo\",\"id\":\"100001221680331\"},{\"name\":\"Noo Som\",\"id\":\"100001238631064\"},{\"name\":\"Chuty Nuna Pornjaturaprom\",\"id\":\"100001291380524\"},{\"name\":\"Pond Awika\",\"id\":\"100001465281395\"}]}')[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/main
+Rendering home/index
+Completed in 1589ms (View: 20, DB: 87) | 200 OK [http://localhost/?code=2.K9X_O2dy19ehULyaoIWnHw__.3600.1294491600-100000201256691%7C6mCzlTSNu6N9Ip1IpFyDMd9ux1Q]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:57:36) [POST]
+  Parameters: {"signed_request"=>"bDwmUkTPe2gkeQedopll0nnTsZPvXm-X6dS0TuS_qt8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4Nzg5MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 103ms (View: 57, DB: 3) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:57:38) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:57:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TemporaryImageController#index (for 127.0.0.1 at 2011-01-08 18:57:54) [POST]
+  Parameters: {"authenticity_token"=>"MPk0oRDMAKmeQ7LIhok7U48rGHuodqlfQBK2BSMMEgA=", "Filedata"=>#<File:C:/Users/NI_CS/AppData/Local/Temp/RackMultipart.2788.0>}
+  [4;36;1mTemporaryImage Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `temporary_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTemporaryImage Create (0.0ms)[0m   [0;1mINSERT INTO `temporary_images` (`name`, `created_date`) VALUES('', '2011-01-08 11:57:54')[0m
+  [4;35;1mSQL (93.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTemporaryImage Update (1.0ms)[0m   [0mUPDATE `temporary_images` SET `name` = 'temp_11.jpg' WHERE `id` = 11[0m
+  [4;36;1mSQL (73.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 787ms (View: 2, DB: 170) | 200 OK [http://localhost/temporary_image]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 18:58:10) [POST]
+  Parameters: {"name"=>"red cross", "signed_request"=>"bDwmUkTPe2gkeQedopll0nnTsZPvXm-X6dS0TuS_qt8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4Nzg5MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "authenticity_token"=>"MPk0oRDMAKmeQ7LIhok7U48rGHuodqlfQBK2BSMMEgA=", "amount"=>"100", "deadline"=>"", "thumbnail_path"=>"thumb_0112x0112_temp_11.jpg", "why"=>"to help children", "capacity"=>"100"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mBus Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBus Create (0.0ms)[0m   [0mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `mode`, `created_date`, `thumbnail_path`, `amount`, `charity_id`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('red cross', 'ACTIVE', '100000201256691', 'AMATEUR', '2011-01-08 11:58:10', 'thumb_bus_.jpg', 100.0, NULL, NULL, 'to help children', 100, 0, 'USD', 0)[0m
+  [4;36;1mSQL (171.0ms)[0m   [0;1mCOMMIT[0m
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/bus_controller.rb:65:in `+'
+  app/controllers/bus_controller.rb:65:in `add'
+
+Rendered rescues/_trace (169.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:58:12) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:59:13) [POST]
+  Parameters: {"signed_request"=>"2VyafpdKlz6LjAa7JOaMwSiejh8KWqfd0lRokf6XrNE.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4Nzk4OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mFacebookCache Load (3.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (29.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mCurrency Load (2.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 93ms (View: 13, DB: 35) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:59:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:59:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 18:59:41) [POST]
+  Parameters: {"name"=>"aaa", "signed_request"=>"2VyafpdKlz6LjAa7JOaMwSiejh8KWqfd0lRokf6XrNE.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4Nzk4OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LOVhfTzJkeTE5ZWhVTHlhb0lXbkh3X18uMzYwMC4xMjk0NDkxNjAwLTEwMDAwMDIwMTI1NjY5MXxYSzhJMGRIQ0ppU21sV0VUVlhxQlFPNmx0QzAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "authenticity_token"=>"MPk0oRDMAKmeQ7LIhok7U48rGHuodqlfQBK2BSMMEgA=", "amount"=>"111", "deadline"=>"", "thumbnail_path"=>"", "why"=>"aaaa", "capacity"=>"111"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (29.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mBus Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (0.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `mode`, `created_date`, `thumbnail_path`, `amount`, `charity_id`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('aaa', 'ACTIVE', '100000201256691', 'AMATEUR', '2011-01-08 11:59:42', 'thumb_bus_.', 111.0, NULL, NULL, 'aaaa', 111, 0, 'USD', 0)[0m
+  [4;35;1mSQL (34.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/main
+Rendering redirect/index
+Completed in 1637ms (View: 5, DB: 0) | 200 OK [http://localhost/bus/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:59:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#save_success (for 127.0.0.1 at 2011-01-08 19:00:00) [POST]
+  Parameters: {"signed_request"=>"PqgpTz2F1IZz6qMkNYzasiu0UH4D-jae9stV8pd9AG4.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODAzNiwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "code"=>"2.VWVXxoQBCO3Z3uJ_L5vubg__.3600.1294495200-100000201256691|D-WTe7FMCwPMKQCYj3jk-ixHsyI", "bus_id"=>"4"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+Rendering template within layouts/main
+Rendering bus/save_success
+
+ActionView::TemplateError (undefined local variable or method `facebook' for #<ActionView::Base:0x44f12b8>) on line #1 of app/views/bus/save_success.html.erb:
+1: <%=facebook.user_id%>Thank you for create donate
+
+    app/views/bus/save_success.html.erb:1
+
+Rendered rescues/_trace (112.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#save_success (for 127.0.0.1 at 2011-01-08 19:01:23) [POST]
+  Parameters: {"signed_request"=>"_84QKLyxJa7_SXb6oG_DbbDIqAixpzYaEZUfr2iuxC0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODExNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "code"=>"2.VWVXxoQBCO3Z3uJ_L5vubg__.3600.1294495200-100000201256691|D-WTe7FMCwPMKQCYj3jk-ixHsyI", "bus_id"=>"4"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+Rendering template within layouts/main
+Rendering bus/save_success
+
+ActionView::TemplateError (undefined local variable or method `facebook' for #<ActionView::Base:0x46ac5f8>) on line #1 of app/views/bus/save_success.html.erb:
+1: <%=facebook.user_id%>Thank you for create donate
+
+    app/views/bus/save_success.html.erb:1
+
+Rendered rescues/_trace (54.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#save_success (for 127.0.0.1 at 2011-01-08 19:01:42) [POST]
+  Parameters: {"signed_request"=>"JpB0Hj1_UpQozSBOHVlxv3jJC5Xjo3rqY8HEd_peb9A.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODEzNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "code"=>"2.VWVXxoQBCO3Z3uJ_L5vubg__.3600.1294495200-100000201256691|D-WTe7FMCwPMKQCYj3jk-ixHsyI", "bus_id"=>"4"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+Rendering template within layouts/main
+Rendering bus/save_success
+Completed in 99ms (View: 12, DB: 3) | 200 OK [http://localhost/bus/save_success?bus_id=4&code=2.VWVXxoQBCO3Z3uJ_L5vubg__.3600.1294495200-100000201256691%7CD-WTe7FMCwPMKQCYj3jk-ixHsyI]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#save_success (for 127.0.0.1 at 2011-01-08 19:02:05) [POST]
+  Parameters: {"signed_request"=>"MM7wdLsumI1tLPOXt4FtRXC0ewuSF7sV2mT1JMI-1sU.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODE2MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "code"=>"2.VWVXxoQBCO3Z3uJ_L5vubg__.3600.1294495200-100000201256691|D-WTe7FMCwPMKQCYj3jk-ixHsyI", "bus_id"=>"4"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+Rendering template within layouts/main
+Rendering bus/save_success
+Completed in 83ms (View: 12, DB: 4) | 200 OK [http://localhost/bus/save_success?bus_id=4&code=2.VWVXxoQBCO3Z3uJ_L5vubg__.3600.1294495200-100000201256691%7CD-WTe7FMCwPMKQCYj3jk-ixHsyI]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 19:02:15) [POST]
+  Parameters: {"signed_request"=>"4cpoyB5NtgJpAcrfUqcEIayr3oPdFcq-BZKr1AVqTR0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODE3MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 72ms (View: 11, DB: 4) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:02:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:02:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TemporaryImageController#index (for 127.0.0.1 at 2011-01-08 19:02:44) [POST]
+  Parameters: {"authenticity_token"=>"MPk0oRDMAKmeQ7LIhok7U48rGHuodqlfQBK2BSMMEgA=", "Filedata"=>#<File:C:/Users/NI_CS/AppData/Local/Temp/RackMultipart.2788.0>}
+  [4;35;1mTemporaryImage Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `temporary_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTemporaryImage Create (1.0ms)[0m   [0mINSERT INTO `temporary_images` (`name`, `created_date`) VALUES('', '2011-01-08 12:02:44')[0m
+  [4;36;1mSQL (103.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTemporaryImage Update (18.0ms)[0m   [0;1mUPDATE `temporary_images` SET `name` = 'temp_12.jpg' WHERE `id` = 12[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mCOMMIT[0m
+Completed in 640ms (View: 1, DB: 155) | 200 OK [http://localhost/temporary_image]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 19:03:40) [POST]
+  Parameters: {"name"=>"Red Cross", "signed_request"=>"4cpoyB5NtgJpAcrfUqcEIayr3oPdFcq-BZKr1AVqTR0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODE3MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "authenticity_token"=>"MPk0oRDMAKmeQ7LIhok7U48rGHuodqlfQBK2BSMMEgA=", "amount"=>"100", "deadline"=>"", "thumbnail_path"=>"thumb_0112x0112_temp_12.jpg", "why"=>"to help Tanin", "capacity"=>"100"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mBus Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (0.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `mode`, `created_date`, `thumbnail_path`, `amount`, `charity_id`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red Cross', 'ACTIVE', '100000201256691', 'AMATEUR', '2011-01-08 12:03:40', 'thumb_bus_.jpg', 100.0, NULL, NULL, 'to help Tanin', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (27.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/main
+Rendering bus/save_success
+Completed in 1887ms (View: 4, DB: 0) | 200 OK [http://localhost/bus/add]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:03:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#hop (for 127.0.0.1 at 2011-01-08 19:04:08) [POST]
+  Parameters: {"signed_request"=>"1a6Vw8RCjHETZS6USZGbi1td0MP4gJkApm09DBJ_vpg.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODI4Mywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "id"=>"5", "ref"=>"nf"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+
+ActionController::UnknownAction (No action responded to hop. Actions: add, decode_signed_request, format_error, index, require_basic_information_permission, save_success, save_success_with_publish, test, and view):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 19:06:48) [POST]
+  Parameters: {"signed_request"=>"JB0OeCM3r1Lq1jGncAiHeiOchFSGzHaxza2X24Gni2Q.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODQ0Mywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 57ms (View: 11, DB: 3) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:06:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:06:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TemporaryImageController#index (for 127.0.0.1 at 2011-01-08 19:07:12) [POST]
+  Parameters: {"authenticity_token"=>"MPk0oRDMAKmeQ7LIhok7U48rGHuodqlfQBK2BSMMEgA=", "Filedata"=>#<File:C:/Users/NI_CS/AppData/Local/Temp/RackMultipart.2788.1>}
+  [4;35;1mTemporaryImage Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `temporary_images`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTemporaryImage Create (0.0ms)[0m   [0mINSERT INTO `temporary_images` (`name`, `created_date`) VALUES('', '2011-01-08 12:07:12')[0m
+  [4;36;1mSQL (38.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTemporaryImage Update (0.0ms)[0m   [0;1mUPDATE `temporary_images` SET `name` = 'temp_13.jpg' WHERE `id` = 13[0m
+  [4;35;1mSQL (19.0ms)[0m   [0mCOMMIT[0m
+Completed in 563ms (View: 3, DB: 61) | 200 OK [http://localhost/temporary_image]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 19:07:27) [POST]
+  Parameters: {"name"=>"Red Cross", "signed_request"=>"JB0OeCM3r1Lq1jGncAiHeiOchFSGzHaxza2X24Gni2Q.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODQ0Mywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "authenticity_token"=>"MPk0oRDMAKmeQ7LIhok7U48rGHuodqlfQBK2BSMMEgA=", "amount"=>"100", "deadline"=>"", "thumbnail_path"=>"thumb_0112x0112_temp_13.jpg", "why"=>"to help Tanin", "capacity"=>"100"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mBus Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (0.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `mode`, `created_date`, `thumbnail_path`, `amount`, `charity_id`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red Cross', 'ACTIVE', '100000201256691', 'AMATEUR', '2011-01-08 12:07:27', '', 100.0, NULL, NULL, 'to help Tanin', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBus Update (0.0ms)[0m   [0mUPDATE `buses` SET `thumbnail_path` = 'thumb_bus_.jpg' WHERE `id` = 6[0m
+  [4;36;1mSQL (24.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/main
+Rendering bus/save_success
+Completed in 1815ms (View: 4, DB: 0) | 200 OK [http://localhost/bus/add]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:07:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 19:09:57) [POST]
+  Parameters: {"signed_request"=>"E-tm5D-7D4q8P7wcc7UyT13D5ogb1Vu5NzcT5w6EAKI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODYzMiwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 65ms (View: 13, DB: 4) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:09:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:10:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 19:10:39) [POST]
+  Parameters: {"name"=>"Red cross", "signed_request"=>"E-tm5D-7D4q8P7wcc7UyT13D5ogb1Vu5NzcT5w6EAKI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODYzMiwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "authenticity_token"=>"MPk0oRDMAKmeQ7LIhok7U48rGHuodqlfQBK2BSMMEgA=", "amount"=>"100", "deadline"=>"", "thumbnail_path"=>"", "why"=>"to help tanin", "capacity"=>"100"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mBus Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (0.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `mode`, `created_date`, `thumbnail_path`, `amount`, `charity_id`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red cross', 'ACTIVE', '100000201256691', 'AMATEUR', '2011-01-08 12:10:39', '', 100.0, NULL, NULL, 'to help tanin', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (54.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBus Update (0.0ms)[0m   [0mUPDATE `buses` SET `thumbnail_path` = 'thumb_bus_7.' WHERE `id` = 7[0m
+  [4;36;1mSQL (19.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/main
+Rendering bus/save_success
+Completed in 2177ms (View: 6, DB: 0) | 200 OK [http://localhost/bus/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:10:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 19:13:18) [POST]
+  Parameters: {"signed_request"=>"dAIFlO9PQ4bcqRBSSX-WhKk-E6O3rm58kK2bZ0cHFN8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODgzMywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 60ms (View: 12, DB: 4) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:13:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:13:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 19:14:46) [POST]
+  Parameters: {"signed_request"=>"uDP7wPg-DFqrgYCr1Meolz0chgTa9WnFKvvwll3mCEk.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODkyMCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 62ms (View: 14, DB: 6) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:14:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:14:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TemporaryImageController#index (for 127.0.0.1 at 2011-01-08 19:15:28) [POST]
+  Parameters: {"authenticity_token"=>"MPk0oRDMAKmeQ7LIhok7U48rGHuodqlfQBK2BSMMEgA=", "Filedata"=>#<File:C:/Users/NI_CS/AppData/Local/Temp/RackMultipart.2788.0>}
+  [4;35;1mTemporaryImage Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `temporary_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTemporaryImage Create (0.0ms)[0m   [0mINSERT INTO `temporary_images` (`name`, `created_date`) VALUES('', '2011-01-08 12:15:28')[0m
+  [4;36;1mSQL (56.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTemporaryImage Update (0.0ms)[0m   [0;1mUPDATE `temporary_images` SET `name` = 'temp_14.jpg' WHERE `id` = 14[0m
+  [4;35;1mSQL (24.0ms)[0m   [0mCOMMIT[0m
+Completed in 547ms (View: 3, DB: 83) | 200 OK [http://localhost/temporary_image]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 19:15:34) [POST]
+  Parameters: {"name"=>"Red Cross", "signed_request"=>"uDP7wPg-DFqrgYCr1Meolz0chgTa9WnFKvvwll3mCEk.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODkyMCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "authenticity_token"=>"MPk0oRDMAKmeQ7LIhok7U48rGHuodqlfQBK2BSMMEgA=", "amount"=>"100", "deadline"=>"", "thumbnail_path"=>"thumb_0112x0112_temp_14.jpg", "why"=>"To help Children", "capacity"=>"100"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mBus Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (0.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `mode`, `created_date`, `thumbnail_path`, `amount`, `charity_id`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red Cross', 'ACTIVE', '100000201256691', 'AMATEUR', '2011-01-08 12:15:34', '', 100.0, NULL, NULL, 'To help Children', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBus Update (1.0ms)[0m   [0mUPDATE `buses` SET `thumbnail_path` = 'thumb_bus_8.jpg' WHERE `id` = 8[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/main
+Rendering bus/save_success
+Completed in 1906ms (View: 2, DB: 0) | 200 OK [http://localhost/bus/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:15:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 19:16:45) [POST]
+  Parameters: {"signed_request"=>"MYMKdc2qXt4m4eLIWWoxqVgqzvVck59ZHy4_JaAmvpA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTA0MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 60ms (View: 12, DB: 4) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:16:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:16:54) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 19:17:15) [POST]
+  Parameters: {"name"=>"Red cross", "signed_request"=>"MYMKdc2qXt4m4eLIWWoxqVgqzvVck59ZHy4_JaAmvpA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTA0MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "authenticity_token"=>"MPk0oRDMAKmeQ7LIhok7U48rGHuodqlfQBK2BSMMEgA=", "amount"=>"100", "deadline"=>"", "thumbnail_path"=>"", "why"=>"to help tanin", "capacity"=>"100"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mBus Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (1.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `mode`, `created_date`, `thumbnail_path`, `amount`, `charity_id`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red cross', 'ACTIVE', '100000201256691', 'AMATEUR', '2011-01-08 12:17:15', '', 100.0, NULL, NULL, 'to help tanin', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (56.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/main
+Rendering bus/save_success
+Completed in 2050ms (View: 4, DB: 0) | 200 OK [http://localhost/bus/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:17:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 19:17:43) [POST]
+  Parameters: {"signed_request"=>"VU4GgI9VbAaTif1W11Tl-xsre9TXkmf-Iww1DZyZjho.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTA5OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "bus_id"=>"1", "ref"=>"nf"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+
+SyntaxError (D:/HopIn/HopIn/app/models/hop.rb:3: syntax error, unexpected tLSHFT
+<<<<<<< HEAD
+  ^
+D:/HopIn/HopIn/app/models/hop.rb:12: syntax error, unexpected tRSHFT, expecting kEND
+>>>>>>> 29502e32b5b06d483aa0db17d45014505c582267
+  ^):
+  app/controllers/hop_controller.rb:6:in `index'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 19:18:27) [POST]
+  Parameters: {"signed_request"=>"cUAAYkf3pp09xr99-Mpgyfx7PYG_Fkf28oJ6bjCtGrA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTE0Miwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "bus_id"=>"1", "ref"=>"nf"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`facebook_id` = '100000201256691' AND `hops`.`bus_id` = '1') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mHop Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (0.0ms)[0m   [0mMysql::Error: Out of range value for column 'facebook_id' at row 1: INSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(100000201256691, '2011-01-08 12:18:27', 1, '')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Out of range value for column 'facebook_id' at row 1: INSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(100000201256691, '2011-01-08 12:18:27', 1, '')):
+  app/controllers/hop_controller.rb:19:in `index'
+
+Rendered rescues/_trace (75.0ms)
+Rendered rescues/_request_and_response (95.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 19:19:48) [POST]
+  Parameters: {"signed_request"=>"eHmcmiydGqSOpJij03y7wAjBExfBxSbwyUXVAf5bX0w.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTIyMywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "bus_id"=>"1", "ref"=>"nf"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mHop Load (1.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`facebook_id` = '100000201256691' AND `hops`.`bus_id` = '1') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (0.0ms)[0m   [0;1mMysql::Error: Out of range value for column 'facebook_id' at row 1: INSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(100000201256691, '2011-01-08 12:19:48', 1, '')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Out of range value for column 'facebook_id' at row 1: INSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(100000201256691, '2011-01-08 12:19:48', 1, '')):
+  app/controllers/hop_controller.rb:19:in `index'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (45.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (168.0ms)[0m   [0mDROP TABLE `buses`[0m
+  [4;36;1mSQL (132.0ms)[0m   [0;1mCREATE TABLE `buses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `thumbnail_path` varchar(255) DEFAULT '' NOT NULL, `why` text NOT NULL, `amount` float NOT NULL, `capacity` int(11) NOT NULL, `parent_bus_id` int(11) DEFAULT 0 NOT NULL, `facebook_id` varchar(255) NOT NULL, `charity_id` int(11), `deadline` datetime, `currency_code` varchar(255) NOT NULL, `hops` int(11) DEFAULT 0 NOT NULL, `status` varchar(255) DEFAULT 'ACTIVE' NOT NULL, `created_date` datetime NOT NULL, `mode` varchar(255) DEFAULT 'AMATEUR' NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (76.0ms)[0m   [0;1mDROP TABLE `charities`[0m
+  [4;35;1mSQL (109.0ms)[0m   [0mCREATE TABLE `charities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `desc` varchar(255), `thumbnail_pic` varchar(255), `paypal_id` varchar(255), `url` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (19.0ms)[0m   [0mDROP TABLE `currencies`[0m
+  [4;36;1mSQL (134.0ms)[0m   [0;1mCREATE TABLE `currencies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `format` varchar(255), `sign` varchar(255), `separator` varchar(255), `delimiter` varchar(255), `paypal_currency_code` varchar(255), `minimum` int(11)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (18.0ms)[0m   [0;1mDROP TABLE `error_logs`[0m
+  [4;35;1mSQL (100.0ms)[0m   [0mCREATE TABLE `error_logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `time` datetime NOT NULL, `ip_address` varchar(255), `identifier` varchar(255) NOT NULL, `description` text NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mDROP TABLE `facebook_caches`[0m
+  [4;36;1mSQL (111.0ms)[0m   [0;1mCREATE TABLE `facebook_caches` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `gender` varchar(255) NOT NULL, `updated_date` datetime NOT NULL, `facebook_id` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (266.0ms)[0m   [0mCREATE UNIQUE INDEX `facebook_id` ON `facebook_caches` (`facebook_id`)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (19.0ms)[0m   [0mDROP TABLE `facebook_friend_caches`[0m
+  [4;36;1mSQL (179.0ms)[0m   [0;1mCREATE TABLE `facebook_friend_caches` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` varchar(255) NOT NULL, `friends` text NOT NULL, `updated_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (253.0ms)[0m   [0mCREATE UNIQUE INDEX `facebook_id` ON `facebook_friend_caches` (`facebook_id`)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (19.0ms)[0m   [0mDROP TABLE `hops`[0m
+  [4;36;1mSQL (134.0ms)[0m   [0;1mCREATE TABLE `hops` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` varchar(255) NOT NULL, `bus_id` int(11) NOT NULL, `comment` text NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (19.0ms)[0m   [0;1mDROP TABLE `temporary_images`[0m
+  [4;35;1mSQL (133.0ms)[0m   [0mCREATE TABLE `temporary_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `buses`[0m
+  [4;35;1mSQL (18.0ms)[0m   [0mSHOW KEYS FROM `buses`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `charities`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `charities`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `charities`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `currencies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `currencies`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `error_logs`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `error_logs`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `error_logs`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `facebook_caches`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `facebook_caches`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_friend_caches`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `facebook_friend_caches`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `facebook_friend_caches`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `hops`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `hops`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `temporary_images`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `temporary_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `temporary_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (645.0ms)[0m   [0mDROP DATABASE IF EXISTS `HopIn_test`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE DATABASE `HopIn_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (196.0ms)[0m   [0;1mCREATE TABLE `buses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `thumbnail_path` varchar(255) DEFAULT '' NOT NULL, `why` text NOT NULL, `amount` float NOT NULL, `capacity` int(11) NOT NULL, `parent_bus_id` int(11) DEFAULT 0 NOT NULL, `facebook_id` varchar(255) NOT NULL, `charity_id` int(11), `deadline` datetime, `currency_code` varchar(255) NOT NULL, `hops` int(11) DEFAULT 0 NOT NULL, `status` varchar(255) DEFAULT 'ACTIVE' NOT NULL, `created_date` datetime NOT NULL, `mode` varchar(255) DEFAULT 'AMATEUR' NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (163.0ms)[0m   [0;1mCREATE TABLE `charities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `desc` varchar(255), `thumbnail_pic` varchar(255), `paypal_id` varchar(255), `url` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (154.0ms)[0m   [0;1mCREATE TABLE `currencies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `format` varchar(255), `sign` varchar(255), `separator` varchar(255), `delimiter` varchar(255), `paypal_currency_code` varchar(255), `minimum` int(11)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (98.0ms)[0m   [0;1mCREATE TABLE `error_logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `time` datetime NOT NULL, `ip_address` varchar(255), `identifier` varchar(255) NOT NULL, `description` text NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (144.0ms)[0m   [0;1mCREATE TABLE `facebook_caches` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `gender` varchar(255) NOT NULL, `updated_date` datetime NOT NULL, `facebook_id` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (221.0ms)[0m   [0mCREATE UNIQUE INDEX `facebook_id` ON `facebook_caches` (`facebook_id`)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (132.0ms)[0m   [0mCREATE TABLE `facebook_friend_caches` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` varchar(255) NOT NULL, `friends` text NOT NULL, `updated_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (248.0ms)[0m   [0;1mCREATE UNIQUE INDEX `facebook_id` ON `facebook_friend_caches` (`facebook_id`)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (114.0ms)[0m   [0;1mCREATE TABLE `hops` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` varchar(255) NOT NULL, `bus_id` int(11) NOT NULL, `comment` text NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mCREATE TABLE `temporary_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (234.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (59.0ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCurrency Columns (29.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCurrency Create (0.0ms)[0m   [0;1mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Dollars', '%u%n', 'USD', '.', '$', ',', 1)[0m
+  [4;35;1mSQL (36.0ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCurrency Create (0.0ms)[0m   [0mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Euro', '%u%n', 'EUR', '.', '&euro;', ',', 1)[0m
+  [4;36;1mSQL (19.0ms)[0m   [0;1mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCurrency Create (0.0ms)[0m   [0;1mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Baht', '%n %u', 'THB', '.', 'baht', ',', 5)[0m
+  [4;35;1mSQL (33.0ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCurrency Create (1.0ms)[0m   [0mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Pounds', '%u%n', 'GBP', ',', '&pound', '.', 1)[0m
+  [4;36;1mSQL (18.0ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 19:21:57) [POST]
+  Parameters: {"signed_request"=>"lFTzyvRCYqZPe1bJxo1loWm7zm_Gg13CiDOI_Ulfcqg.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTM1Miwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (37.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFacebookCache Create (1.0ms)[0m   [0mINSERT INTO `facebook_caches` (`name`, `updated_date`, `facebook_id`, `gender`) VALUES('Nilobol Ariyamongkollert', '2011-01-08 12:21:57', '100000201256691', 'female')[0m
+  [4;36;1mSQL (70.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+Completed in 1605ms (View: 32, DB: 110) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:22:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:22:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#add (for 127.0.0.1 at 2011-01-08 19:22:46) [POST]
+  Parameters: {"name"=>"Red Cross", "signed_request"=>"lFTzyvRCYqZPe1bJxo1loWm7zm_Gg13CiDOI_Ulfcqg.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTM1Miwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "authenticity_token"=>"MPk0oRDMAKmeQ7LIhok7U48rGHuodqlfQBK2BSMMEgA=", "amount"=>"100", "deadline"=>"", "thumbnail_path"=>"", "why"=>"To help ...", "capacity"=>"100"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mBus Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (1.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `mode`, `created_date`, `thumbnail_path`, `amount`, `charity_id`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red Cross', 'ACTIVE', '100000201256691', 'AMATEUR', '2011-01-08 12:22:46', '', 100.0, NULL, NULL, 'To help ...', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (49.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/main
+Rendering bus/save_success
+Completed in 1749ms (View: 4, DB: 0) | 200 OK [http://localhost/bus/add]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:22:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 19:25:12) [POST]
+  Parameters: {"signed_request"=>"t9K__T8h5DBt5HjZH2_5459A5x-465F99URkRN3DKjI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTU0NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "bus_id"=>"2", "ref"=>"nf"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mHop Load (0.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`facebook_id` = '100000201256691' AND `hops`.`bus_id` = '2') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mHop Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES('100000201256691', '2011-01-08 12:25:12', 2, '')[0m
+  [4;36;1mSQL (104.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/main
+Rendering hop/index
+Completed in 257ms (View: 57, DB: 111) | 200 OK [http://localhost/hop?bus_id=2&ref=nf]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#save (for 127.0.0.1 at 2011-01-08 19:25:27) [POST]
+  Parameters: {"signed_request"=>"t9K__T8h5DBt5HjZH2_5459A5x-465F99URkRN3DKjI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTU0NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5WV1ZYeG9RQkNPM1ozdUpfTDV2dWJnX18uMzYwMC4xMjk0NDk1MjAwLTEwMDAwMDIwMTI1NjY5MXxuVlA2YVBoMW9pQ3lHNGkyX184UUQ4NVpKZHMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ", "comment"=>"Yeah กลับบ้าน", "hop_id"=>"1"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mHop Load (30.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`id` = '1') LIMIT 1[0m
+  [4;36;1mHop Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Update (0.0ms)[0m   [0;1mUPDATE `hops` SET `comment` = 'Yeah กลับบ้าน' WHERE `id` = 1[0m
+  [4;35;1mSQL (28.0ms)[0m   [0mCOMMIT[0m
+Completed in 109ms (View: 2, DB: 63) | 200 OK [http://localhost/hop/save]

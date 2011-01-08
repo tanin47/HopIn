@@ -71,7 +71,7 @@ ActiveRecord::Schema.define(:version => 0) do
   add_index "facebook_friend_caches", ["facebook_id"], :name => "facebook_id", :unique => true
 
   create_table "hops", :force => true do |t|
-    t.integer  "facebook_id",  :null => false
+    t.string   "facebook_id",  :null => false
     t.integer  "bus_id",       :null => false
     t.text     "comment",      :null => false
     t.datetime "created_date", :null => false
