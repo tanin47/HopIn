@@ -12,18 +12,20 @@
 ActiveRecord::Schema.define(:version => 0) do
 
   create_table "buses", :force => true do |t|
-    t.string   "name",                                 :null => false
-    t.string   "thumbnail_path", :default => "",       :null => false
-    t.text     "why",                                  :null => false
-    t.float    "amount",                               :null => false
-    t.integer  "capacity",                             :null => false
-    t.integer  "parent_bus_id",  :default => 0,        :null => false
-    t.integer  "facebook_id",                          :null => false
+    t.string   "name",                                  :null => false
+    t.integer  "thumbnail_path"
+    t.text     "why",                                   :null => false
+    t.float    "amount",                                :null => false
+    t.integer  "capacity",                              :null => false
+    t.integer  "parent_bus_id",  :default => 0,         :null => false
+    t.string   "facebook_id",                           :null => false
+    t.integer  "charity_id"
     t.datetime "deadline"
-    t.string   "currency_code",                        :null => false
-    t.integer  "hops",           :default => 0,        :null => false
-    t.string   "status",         :default => "ACTIVE", :null => false
-    t.datetime "created_date",                         :null => false
+    t.string   "currency_code",                         :null => false
+    t.integer  "hops",           :default => 0,         :null => false
+    t.string   "status",         :default => "ACTIVE",  :null => false
+    t.datetime "created_date",                          :null => false
+    t.string   "mode",           :default => "AMATEUR", :null => false
   end
 
   create_table "charities", :force => true do |t|
@@ -35,13 +37,13 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   create_table "currencies", :force => true do |t|
-    t.string  "name"
-    t.string  "format"
-    t.string  "sign"
-    t.string  "separator"
-    t.string  "delimiter"
-    t.string  "paypal_currency_code"
-    t.integer "buyer_member_id"
+    t.string  "name",                 :null => false
+    t.string  "format",               :null => false
+    t.string  "sign",                 :null => false
+    t.string  "separator",            :null => false
+    t.string  "delimiter",            :null => false
+    t.string  "paypal_currency_code", :null => false
+    t.integer "minimum",              :null => false
   end
 
   create_table "error_logs", :force => true do |t|
@@ -52,9 +54,14 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   create_table "hops", :force => true do |t|
-    t.integer  "facebook_id",  :null => false
+    t.string   "facebook_id",  :null => false
     t.integer  "bus_id",       :null => false
-    t.text     "comment",      :null => false
+    t.text     "comment"
+    t.datetime "created_date", :null => false
+  end
+
+  create_table "temporary_images", :force => true do |t|
+    t.string   "name",         :null => false
     t.datetime "created_date", :null => false
   end
 

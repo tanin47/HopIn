@@ -1,11 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#   
-#   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
-#   Major.create(:name => 'Daley', :city => cities.first)
-
 Currency.create({
     :id=>1,
     :name=>"Dollars",
@@ -36,7 +28,7 @@ Currency.create({
     :separator=> ".",
     :delimiter=> ",",
     :paypal_currency_code=> "THB",
-    :minimum=>10
+    :minimum=>5
 })    
 
 Currency.create({

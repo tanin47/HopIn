@@ -47,6 +47,24 @@ function get_money_errors(s)
 	return null;
 }
 
+<<<<<<< HEAD
+=======
+function get_number_errors(s)
+{
+	if( s.trim().length <= 0 )
+	{
+		return "Cannot be empty";
+	}
+	
+	if (!(s.trim().match(/^[0-9]+?$/)))
+	{
+		return "Must be a number"
+	}
+	
+	return null;
+}
+
+>>>>>>> 29502e32b5b06d483aa0db17d45014505c582267
 function get_email_errors(s)
 {
 	// check empty

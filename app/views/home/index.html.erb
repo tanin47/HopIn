@@ -1,16 +1,2 @@
-
-
-<div id="fb-root">
-	<%=$facebook.all_friends%>
-</div>
-<script src="http://static.ak.fbcdn.net/connect/en_US/core.debug.js"></script>
-<script>
-  FB.init({
-    appId  : '154941261222060',
-    status : true, // check login status
-    cookie : true, // enable cookies to allow the server to access the session
-    xfbml  : true  // parse XFBML
-  });
-  FB.Canvas.setAutoResize();
-</script>
+<%= ActiveSupport::JSON.encode $facebook.all_friends%>
 

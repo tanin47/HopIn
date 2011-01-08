@@ -5,10 +5,12 @@ class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   #protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
+  layout "main"
+
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
   
-  before_filter :decode_signed_request
+  before_filter :decode_signed_request, :require_basic_information_permission
   
   def decode_signed_request
     
@@ -47,13 +49,24 @@ class ApplicationController < ActionController::Base
     
     print ActiveSupport::JSON.encode($facebook)
     
+
+    
+  end
+  
+  def require_basic_information_permission
     if $facebook.user_id == nil
       @redirect_url = "http://www.facebook.com/dialog/oauth/?" +
+<<<<<<< HEAD
                   "client_id=154941261222060" +
                   "&redirect_uri=http://apps.facebook.com/wehopin/"
       render "redirect/index"
+=======
+                  "client_id=" + APP_ID +
+                  "&redirect_uri=http://apps.facebook.com/wehopin/"
+      render "redirect/index"
+      return
+>>>>>>> 29502e32b5b06d483aa0db17d45014505c582267
     end
-    
   end
   
   private 
