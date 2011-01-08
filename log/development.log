@@ -2219,3 +2219,152 @@ ActionController::RoutingError (No route matches "/javascripts/form_validator_he
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:21:13) [POST]
+  Parameters: {"signed_request"=>"4ifCuOK6B9hFo09xWgwA4Drm6xVTEkqBAFlKBF26TUU.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NDg3MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mFacebookFriendCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookFriendCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+Completed in 517ms (View: 261, DB: 13) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:21:49) [POST]
+  Parameters: {"signed_request"=>"EPFlyboSzlcceIS5PSH8792mTcVb--pIyy3nHc86gfo.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NDkwNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mFacebookFriendCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookFriendCache Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+Completed in 617ms (View: 381, DB: 12) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:23:27) [POST]
+  Parameters: {"signed_request"=>"0Hl-9Z1om8vm-Oyu04YLXhaPDMquPFcHMYoaGdBc9ek.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTAwNSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mFacebookFriendCache Load (5.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookFriendCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+Completed in 662ms (View: 285, DB: 20) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:24:07) [POST]
+  Parameters: {"signed_request"=>"rdYrWGFQpIMGion4YP2dYP8GOzFKsS76MMnDM-86Gqc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTA0NSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mFacebookFriendCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookFriendCache Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+Completed in 610ms (View: 372, DB: 12) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:24:51) [POST]
+  Parameters: {"signed_request"=>"ZHgigQ_KsN5MCAC9StUHCkDl32ahxhMVyFNyAcRfMUA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTA4Nywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (103.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mFacebookFriendCache Load (18.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookFriendCache Columns (57.0ms)[0m   [0mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+Completed in 688ms (View: 273, DB: 179) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:25:07) [POST]
+  Parameters: {"signed_request"=>"QK5JWiI3Yv3S9JnHmY5Xo9wbKju6NUaDGZDw9OAyLc8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTEwNiwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mFacebookFriendCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookFriendCache Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+Completed in 607ms (View: 382, DB: 11) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:25:29) [POST]
+  Parameters: {"signed_request"=>"nBxoxGdZ94Qe6kKFGmQtc_ZV-uzTbIqng2XyMYxJUdo.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTEyNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (13.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mFacebookFriendCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookFriendCache Columns (19.0ms)[0m   [0mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+Completed in 349ms (View: 42, DB: 34) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:27:24) [POST]
+  Parameters: {"signed_request"=>"D3EjMDsuQpwPgVD32Tx3Q_VC8gLfVuJ-ey9QzKBCUcA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTI0Miwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mFacebookFriendCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookFriendCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+Completed in 265ms (View: 34, DB: 12) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:28:06) [POST]
+  Parameters: {"signed_request"=>"PY2R5oAQ5QpAFuYfhITktnQq5ZE6DNEoEB029IaeymA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTI4NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mFacebookFriendCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookFriendCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+Completed in 255ms (View: 30, DB: 10) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `buses`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `buses`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSHOW FIELDS FROM `charities`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mdescribe `charities`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `charities`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `currencies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `currencies`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSHOW FIELDS FROM `error_logs`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mdescribe `error_logs`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `error_logs`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `facebook_caches`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `facebook_caches`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_friend_caches`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mdescribe `facebook_friend_caches`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `facebook_friend_caches`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `hops`[0m
