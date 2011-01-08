@@ -11,11 +11,15 @@ class Facebook
   end
   
   def all_friends
-    return get_data("friends")
+    return ActiveSupport::JSON.decode get_data("friends")
   end
   
   def generate_publish_bus_url(bus)
-   
+    
+  end
+ 
+  def publish_hop(hop)
+     
   end
   
   def publish_bus(bus)
@@ -43,7 +47,7 @@ class Facebook
     
     data['actions'] = ActiveSupport::JSON.encode(actions)
     
-    response = post_data("feed",data)
+    response = ActiveSupport::JSON.decode(post_data("feed",data))
     
     if response['error']
       if response['error']['type'] == "OAuthException"
@@ -97,7 +101,7 @@ class Facebook
       
       response = http.post(url.path,nvp)
       
-      return ActiveSupport::JSON.decode response.body
+      return response.body
     end
   
 end

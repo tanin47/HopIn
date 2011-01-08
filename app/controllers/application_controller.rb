@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
   
-  before_filter :decode_signed_request
+  before_filter :decode_signed_request, :require_basic_information_permission
   
   def decode_signed_request
     
@@ -47,15 +47,18 @@ class ApplicationController < ActionController::Base
     
     print ActiveSupport::JSON.encode($facebook)
     
+
+    
+  end
+  
+  def require_basic_information_permission
     if $facebook.user_id == nil
       @redirect_url = "http://www.facebook.com/dialog/oauth/?" +
-                  "client_id=154941261222060" +
-                  "&scope=publish_stream,user_photos" +
+                  "client_id=" + APP_ID +
                   "&redirect_uri=http://apps.facebook.com/wehopin/"
-      redirect_to :controller=>:redirect,:action=>:index
+      render "redirect/index"
       return
     end
-    
   end
   
   private 

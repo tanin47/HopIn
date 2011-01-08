@@ -1420,3 +1420,151 @@ Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:25:16) [POST]
   [4;35;1mSQL (11.0ms)[0m   [0mCOMMIT[0m
 Rendering home/index
 Completed in 4221ms (View: 2460, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:32:50) [POST]
+  Parameters: {"signed_request"=>"ZxreohkFzvH9gndCA9lNhPtHNCMbVpGaEP0K8XO86Co.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODM2OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5iOVIwX2U2YldpSGVwSnowZlhtNkxnX18uMzYwMC4xMjk0NDczNjAwLTYzMjgxODI0NnxGeFdYYXN2MnA4WXJlRlc4YXhXZi14cE5iZEUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mBus Columns (264.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (14.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (0.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `created_date`, `thumbnail_path`, `amount`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red Cross', 'ACTIVE', 632818246, '2011-01-08 06:32:50', 'bus_1.jpg', 1234.0, NULL, 'I just want to...', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (273.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/redirect
+Completed in 2638ms (DB: 551) | 302 Found [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RedirectController#index (for 127.0.0.1 at 2011-01-08 13:32:53) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.split):
+  app/controllers/application_controller.rb:17:in `decode_signed_request'
+
+Rendered rescues/_trace (153.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:33:16) [POST]
+  Parameters: {"signed_request"=>"n4CruMja1CDPEqHPQNyNO0BrJqM-Q4dECvzfNWUXPm4.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODM5NSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5iOVIwX2U2YldpSGVwSnowZlhtNkxnX18uMzYwMC4xMjk0NDczNjAwLTYzMjgxODI0NnxGeFdYYXN2MnA4WXJlRlc4YXhXZi14cE5iZEUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mBus Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (1.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `created_date`, `thumbnail_path`, `amount`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red Cross', 'ACTIVE', 632818246, '2011-01-08 06:33:16', 'bus_1.jpg', 1234.0, NULL, 'I just want to...', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/redirect
+Completed in 1770ms (DB: 17) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RedirectController#index (for 127.0.0.1 at 2011-01-08 13:33:19) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.split):
+  app/controllers/application_controller.rb:17:in `decode_signed_request'
+
+Rendered rescues/_trace (79.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:33:45) [POST]
+  Parameters: {"signed_request"=>"5BnFuMikjdrJs5HpOiBQC2NC-OK_axCvS5Uul3Y7kmQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODQyMywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5iOVIwX2U2YldpSGVwSnowZlhtNkxnX18uMzYwMC4xMjk0NDczNjAwLTYzMjgxODI0NnxGeFdYYXN2MnA4WXJlRlc4YXhXZi14cE5iZEUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mBus Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (0.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `created_date`, `thumbnail_path`, `amount`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red Cross', 'ACTIVE', 632818246, '2011-01-08 06:33:45', 'bus_1.jpg', 1234.0, NULL, 'I just want to...', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (18.0ms)[0m   [0mCOMMIT[0m
+Rendering home/index
+Completed in 4265ms (View: 2451, DB: 34) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:34:24) [POST]
+  Parameters: {"signed_request"=>"C-psXP61aF549TkC7ae1uqg6JnLsXokLSA-ydUTJlpA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODQ2Mywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5iOVIwX2U2YldpSGVwSnowZlhtNkxnX18uMzYwMC4xMjk0NDczNjAwLTYzMjgxODI0NnxGeFdYYXN2MnA4WXJlRlc4YXhXZi14cE5iZEUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mBus Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (1.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `created_date`, `thumbnail_path`, `amount`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red Cross', 'ACTIVE', 632818246, '2011-01-08 06:34:24', 'bus_1.jpg', 1234.0, NULL, 'I just want to...', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (13.0ms)[0m   [0mCOMMIT[0m
+Rendering redirect/index
+Completed in 1750ms (View: 38, DB: 25) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:35:06) [POST]
+  Parameters: {"signed_request"=>"UscPhSAV-I92hPhDCLh7lCjRpXfpTF9N6RXNA11Oxbo.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODUwNSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5iOVIwX2U2YldpSGVwSnowZlhtNkxnX18uMzYwMC4xMjk0NDczNjAwLTYzMjgxODI0NnxGeFdYYXN2MnA4WXJlRlc4YXhXZi14cE5iZEUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mBus Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (1.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `created_date`, `thumbnail_path`, `amount`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red Cross', 'ACTIVE', 632818246, '2011-01-08 06:35:07', 'bus_1.jpg', 1234.0, NULL, 'I just want to...', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCOMMIT[0m
+Rendering redirect/index
+Completed in 1668ms (View: 15, DB: 12) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:37:17) [POST]
+  Parameters: {"signed_request"=>"AQNBY7kuCsyxa4peKgYsWcgBV0vTaq4q2vBhjjX10Qg.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODYzNiwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5iOVIwX2U2YldpSGVwSnowZlhtNkxnX18uMzYwMC4xMjk0NDczNjAwLTYzMjgxODI0NnxGeFdYYXN2MnA4WXJlRlc4YXhXZi14cE5iZEUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mBus Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (1.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `created_date`, `thumbnail_path`, `amount`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red Cross', 'ACTIVE', 632818246, '2011-01-08 06:37:17', 'bus_1.jpg', 1234.0, NULL, 'I just want to...', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (24.0ms)[0m   [0mCOMMIT[0m
+Rendering redirect/index
+Completed in 2029ms (View: 5, DB: 35) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:37:20) [POST]
+  Parameters: {"signed_request"=>"UscPhSAV-I92hPhDCLh7lCjRpXfpTF9N6RXNA11Oxbo.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODUwNSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5iOVIwX2U2YldpSGVwSnowZlhtNkxnX18uMzYwMC4xMjk0NDczNjAwLTYzMjgxODI0NnxGeFdYYXN2MnA4WXJlRlc4YXhXZi14cE5iZEUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mBus Columns (14.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (2.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `created_date`, `thumbnail_path`, `amount`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red Cross', 'ACTIVE', 632818246, '2011-01-08 06:37:20', 'bus_1.jpg', 1234.0, NULL, 'I just want to...', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (22.0ms)[0m   [0mCOMMIT[0m
+Rendering redirect/index
+Completed in 1982ms (View: 5, DB: 44) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:40:02) [POST]
+  Parameters: {"signed_request"=>"ld_LmlQEKjD9d9NZVPIOR6KM88kbwifmBg60Xo6q9xk.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODgwMCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5iOVIwX2U2YldpSGVwSnowZlhtNkxnX18uMzYwMC4xMjk0NDczNjAwLTYzMjgxODI0NnxGeFdYYXN2MnA4WXJlRlc4YXhXZi14cE5iZEUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mBus Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (1.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `created_date`, `thumbnail_path`, `amount`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red Cross', 'ACTIVE', 632818246, '2011-01-08 06:40:02', 'bus_1.jpg', 1234.0, NULL, 'I just want to...', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (14.0ms)[0m   [0mCOMMIT[0m
+Rendering redirect/index
+Completed in 1906ms (View: 9, DB: 21) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:40:33) [POST]
+  Parameters: {"signed_request"=>"2pUTWSrVGCwa_ShS6CdkUNSwVqNF67B2VEQrPAuy1Kg.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODgzMSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5iOVIwX2U2YldpSGVwSnowZlhtNkxnX18uMzYwMC4xMjk0NDczNjAwLTYzMjgxODI0NnxGeFdYYXN2MnA4WXJlRlc4YXhXZi14cE5iZEUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mBus Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (2.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `created_date`, `thumbnail_path`, `amount`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red Cross', 'ACTIVE', 632818246, '2011-01-08 06:40:33', 'bus_1.jpg', 1234.0, NULL, 'I just want to...', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (13.0ms)[0m   [0mCOMMIT[0m
+Rendering redirect/index
+Completed in 7923ms (View: 5, DB: 31) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:41:19) [POST]
+  Parameters: {"signed_request"=>"30u04b3HvWp-AeAyAPxXtsmpj4T0r0R1-_F0idUeh8M.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2ODg3OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5iOVIwX2U2YldpSGVwSnowZlhtNkxnX18uMzYwMC4xMjk0NDczNjAwLTYzMjgxODI0NnxGeFdYYXN2MnA4WXJlRlc4YXhXZi14cE5iZEUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;36;1mBus Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBus Create (0.0ms)[0m   [0;1mINSERT INTO `buses` (`name`, `status`, `facebook_id`, `created_date`, `thumbnail_path`, `amount`, `deadline`, `why`, `capacity`, `parent_bus_id`, `currency_code`, `hops`) VALUES('Red Cross', 'ACTIVE', 632818246, '2011-01-08 06:41:19', 'bus_1.jpg', 1234.0, NULL, 'I just want to...', 100, 0, 'USD', 0)[0m
+  [4;35;1mSQL (13.0ms)[0m   [0mCOMMIT[0m
+Rendering home/index
+Completed in 4519ms (View: 2133, DB: 18) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]

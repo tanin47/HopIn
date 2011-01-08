@@ -1,7 +1,14 @@
 class HomeController < ApplicationController
-  skip_before_filter :decode_signed_request, :only=>[:permission_dialog]
-  
+
+  skip_before_filter :require_basic_information_permission, :only=>[:index]
+
+
   def index
+    
+  
+  end
+  
+  def test
     bus = Bus.create(
                     :name=>"Red Cross",
                     :thumbnail_path=>"bus_1.jpg",
@@ -21,10 +28,10 @@ class HomeController < ApplicationController
       $facebook.publish_bus(bus)
     rescue
       @redirect_url = "http://www.facebook.com/dialog/oauth/?" +
-                  "client_id=154941261222060" +
-                  "&scope=publish_stream,user_photos" +
-                  "&redirect_uri=http://apps.facebook.com/wehopin/"
-      redirect_to :controller=>:redirect,:action=>:index
+                  "client_id=" + APP_ID +
+                  "&scope=publish_stream" +
+                  "&redirect_uri=http://apps.facebook.com/wehopin/bus/test"
+      render "redirect/index"
     end
   end
 end
