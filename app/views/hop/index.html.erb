@@ -1,0 +1,36 @@
+<script src="/javascripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+<% if @show_wait_message == false  %>
+Thank you for help !!!<br>
+<span id="comment_area" style="display: block;">
+<textarea rows="3" cols="20" id="comment"></textarea><br>
+</span>
+<span onclick="submit_post();" id="comment_button" style="display: block;">Comment</span>
+<script language="javascript">
+	
+	function submit_post(){
+		// alert("<%=@new_hop.facebook_id%>, <%=@new_hop.bus_id%>, <%=params[:signed_request]%>");
+		params = {};
+		params["<%=:signed_request%>"] = "<%=params[:signed_request]%>";
+		params["hop_id"] = "<%=@new_hop.id%>";
+		params["comment"] = $('#comment').val();
+		$.post('/hop/save', params, function(json){
+				if (json.ok == true) {
+					$('#comment_area').css({'display': 'none'});
+					$('#comment_button').css({'display': 'none'});
+					alert("Save Complete !!!");
+				}
+				else
+				{					
+					alert(json.error_message);
+				}
+			},"json");
+	}
+
+</script>
+<% else %>
+	Please wait for <%= @wait_time %> minutes.<br>
+	You last comment is <%= @new_hop.created_date %><br>
+<% end %>
+
+
+
