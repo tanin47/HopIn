@@ -1420,3 +1420,969 @@ Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:25:16) [POST]
   [4;35;1mSQL (11.0ms)[0m   [0mCOMMIT[0m
 Rendering home/index
 Completed in 4221ms (View: 2460, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (93.6ms)[0m   [0mCREATE TABLE `buses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `thumbnail_path` varchar(255) DEFAULT '' NOT NULL, `why` text NOT NULL, `amount` float NOT NULL, `capacity` int(11) NOT NULL, `parent_bus_id` int(11) DEFAULT 0 NOT NULL, `facebook_id` int(11) NOT NULL, `deadline` datetime, `currency_code` varchar(255) NOT NULL, `hops` int(11) DEFAULT 0 NOT NULL, `status` varchar(255) DEFAULT 'ACTIVE' NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (62.4ms)[0m   [0mCREATE TABLE `charities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `desc` varchar(255), `thumbnail_pic` varchar(255), `paypal_id` varchar(255), `url` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (62.4ms)[0m   [0mCREATE TABLE `currencies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `format` varchar(255), `sign` varchar(255), `separator` varchar(255), `delimiter` varchar(255), `paypal_currency_code` varchar(255), `buyer_member_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (62.4ms)[0m   [0mCREATE TABLE `error_logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `time` datetime NOT NULL, `ip_address` varchar(255), `identifier` varchar(255) NOT NULL, `description` text NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (62.4ms)[0m   [0mCREATE TABLE `hops` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` int(11) NOT NULL, `bus_id` int(11) NOT NULL, `comment` text NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (171.6ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:40:50) [POST]
+  Parameters: {"signed_request"=>"jeonTZ81o7MA2z_1cQ3O1H0bt0RAtcN3twn57tvyTxw.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ2ODg1MiwidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Redirected to http://localhost:3000/redirect
+Filter chain halted as [:decode_signed_request] rendered_or_redirected.
+Completed in 62ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RedirectController#index (for 127.0.0.1 at 2011-01-08 13:40:51) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.split):
+  app/controllers/application_controller.rb:17:in `decode_signed_request'
+
+Rendered rescues/_trace (62.4ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:41:10) [POST]
+  Parameters: {"signed_request"=>"fRUHyvNZm8rPf8K6ytaXyW9UfLAl10BzktIrZaADRfY.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ2ODg3MywidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Redirected to http://localhost:3000/redirect
+Filter chain halted as [:decode_signed_request] rendered_or_redirected.
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RedirectController#index (for 127.0.0.1 at 2011-01-08 13:41:11) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.split):
+  app/controllers/application_controller.rb:17:in `decode_signed_request'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:41:46) [POST]
+  Parameters: {"signed_request"=>"ZG_16Z9rdyl0um2EWUS9rH9viD4aZkkoraCnOwQtoEc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ2ODkxMCwidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Redirected to http://localhost:3000/redirect
+Filter chain halted as [:decode_signed_request] rendered_or_redirected.
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RedirectController#index (for 127.0.0.1 at 2011-01-08 13:41:48) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.split):
+  app/controllers/application_controller.rb:17:in `decode_signed_request'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:43:37) [POST]
+  Parameters: {"signed_request"=>"1VHT75XbXGJFXdc86AraPQ0iWoOIjrqOKKbtHOrNCng.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ2OTAyMCwidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Rendering redirect/index
+Filter chain halted as [:decode_signed_request] rendered_or_redirected.
+Completed in 251ms (View: 219, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:44:08) [POST]
+  Parameters: {"signed_request"=>"x0_e85LbdFYwz24tr7bpJ0WWrvY2-0GI7EEbBgqWtok.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ2OTA1MSwidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Rendering redirect/index
+Filter chain halted as [:decode_signed_request] rendered_or_redirected.
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:44:22) [POST]
+  Parameters: {"signed_request"=>"4nlADThram2JEUwCP_5zrlIbV9Etcu0kqlCzWj_5tm0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTA2NSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5SczY2QUdCaUpVTXR2MVZiUUQ4UDh3X18uMzYwMC4xMjk0NDczNjAwLTcyMDIwOTY0MHxDdW02SUl3VjZnNzJIN2lWZ2RHSXVHZF9UazAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "code"=>"2.Rs66AGBiJUMtv1VbQD8P8w__.3600.1294473600-720209640|Jyq6B0kYIMzEzQe4Rgsif1jgArM"}
+Rendering home/index
+Completed in 6288ms (View: 6257, DB: 0) | 200 OK [http://localhost/?code=2.Rs66AGBiJUMtv1VbQD8P8w__.3600.1294473600-720209640%7CJyq6B0kYIMzEzQe4Rgsif1jgArM]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:50:15) [POST]
+  Parameters: {"signed_request"=>"ScVG6MRGGoS7FpCFOX-HzrWcefx3I5mNPNj7fjPTp9s.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTQxNiwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5SczY2QUdCaUpVTXR2MVZiUUQ4UDh3X18uMzYwMC4xMjk0NDczNjAwLTcyMDIwOTY0MHxDdW02SUl3VjZnNzJIN2lWZ2RHSXVHZF9UazAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering home/index
+Completed in 6303ms (View: 6257, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 13:50:30) [POST]
+  Parameters: {"signed_request"=>"9iBqYm9F_P9MtIdMKp39XVm0IONVAEMURWgwDlweDLI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTQzMywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5SczY2QUdCaUpVTXR2MVZiUUQ4UDh3X18uMzYwMC4xMjk0NDczNjAwLTcyMDIwOTY0MHxDdW02SUl3VjZnNzJIN2lWZ2RHSXVHZF9UazAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 13:50:52) [POST]
+  Parameters: {"signed_request"=>"wl4oLQ6JVR8_9kw9x-YgTMyMmV2MBJStLlVYrjrqv84.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTQ1Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5SczY2QUdCaUpVTXR2MVZiUUQ4UDh3X18uMzYwMC4xMjk0NDczNjAwLTcyMDIwOTY0MHxDdW02SUl3VjZnNzJIN2lWZ2RHSXVHZF9UazAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 62ms (View: 0, DB: 0) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 13:51:42) [POST]
+  Parameters: {"signed_request"=>"0eMp65hKhjVCEvBoxagonKFtweOpYipVtXZJRIJYld4.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTUwNCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5SczY2QUdCaUpVTXR2MVZiUUQ4UDh3X18uMzYwMC4xMjk0NDczNjAwLTcyMDIwOTY0MHxDdW02SUl3VjZnNzJIN2lWZ2RHSXVHZF9UazAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 13:52:11) [POST]
+  Parameters: {"signed_request"=>"OY1ClS68n2GdzlF2kl7KlT-F2vpdfU0nlBHSJkSTHvA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTUzNCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5SczY2QUdCaUpVTXR2MVZiUUQ4UDh3X18uMzYwMC4xMjk0NDczNjAwLTcyMDIwOTY0MHxDdW02SUl3VjZnNzJIN2lWZ2RHSXVHZF9UazAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 13:53:22) [POST]
+  Parameters: {"signed_request"=>"bx6cmf9LvRhHXaa9gb2k6rvO6W2TXbo7TivP85kl4Jg.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTYwMywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5SczY2QUdCaUpVTXR2MVZiUUQ4UDh3X18uMzYwMC4xMjk0NDczNjAwLTcyMDIwOTY0MHxDdW02SUl3VjZnNzJIN2lWZ2RHSXVHZF9UazAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 13:54:05) [POST]
+  Parameters: {"signed_request"=>"JztmlwEhoBGUHSGcJfwfLgpuUkWmHkz50iLXYm3fyXY.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTY0OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5SczY2QUdCaUpVTXR2MVZiUUQ4UDh3X18uMzYwMC4xMjk0NDczNjAwLTcyMDIwOTY0MHxDdW02SUl3VjZnNzJIN2lWZ2RHSXVHZF9UazAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 13:54:19) [POST]
+  Parameters: {"signed_request"=>"F3xK5dZEgqT7JsMKG6hG7I_OkjcM6J1nEYUWT_25Ru8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzM2MDAsImlzc3VlZF9hdCI6MTI5NDQ2OTY2Miwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5SczY2QUdCaUpVTXR2MVZiUUQ4UDh3X18uMzYwMC4xMjk0NDczNjAwLTcyMDIwOTY0MHxDdW02SUl3VjZnNzJIN2lWZ2RHSXVHZF9UazAiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:04:04) [POST]
+  Parameters: {"signed_request"=>"AqO35uSZhko_gvfgBqhhHO8dAJPMWbS3Yj0EHd0UJ1s.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MDI0Nywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 40ms (View: 6, DB: 0) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:13:21) [POST]
+  Parameters: {"signed_request"=>"vcGJpV6QShvsm-umqQJNnN5WsLbOFSGiu4-ZQJe92Vw.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MDgwMywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 77ms (View: 13, DB: 3) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:14:09) [POST]
+  Parameters: {"signed_request"=>"ON88BbXKma_Ds6KAPoivDfxWPkjSz-xMZsUGyho4jZs.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MDg1Miwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 40ms (View: 5, DB: 1) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:15:28) [POST]
+  Parameters: {"signed_request"=>"yRMzkUmY2cNc7lA6aceDywhsQiyl_aOyszntCc-FZEI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MDkzMCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 79ms (View: 6, DB: 2) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:15:39) [POST]
+  Parameters: {"signed_request"=>"tlR1EiY_y9uncv1yMy3LMQACsSfEb5O5rLfQAmjk1YQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MDk0MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 39ms (View: 6, DB: 0) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:18:08) [POST]
+  Parameters: {"signed_request"=>"M43NRxhxFnWjSZtHqTRQAq_AJJR4y6R0f-l9R0AkoG4.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MTA5MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 42ms (View: 6, DB: 2) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:20:58) [POST]
+  Parameters: {"signed_request"=>"nmiVHpZ50s6kyv6H0N4UXbx0HaZgDTpiqKtav-QDQWo.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MTI2MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 41ms (View: 5, DB: 2) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:21:23) [POST]
+  Parameters: {"signed_request"=>"1kEtoqQ8Mkiku20wBuTlN2-plhpwYb2AkW-fSkUcDJI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MTI4NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 41ms (View: 6, DB: 1) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:21:46) [POST]
+  Parameters: {"signed_request"=>"ilk1uEvKlYkTtqj9UJ23GLftsTAhErrSVls9hhk2PCA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MTMwOCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 40ms (View: 5, DB: 2) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:24:37) [POST]
+  Parameters: {"signed_request"=>"_fRCP4X92XYkgJOX4bmScNgjr6KJzp4jrR3-SDBYEeo.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MTQ4MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 42ms (View: 2, DB: 2) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:25:48) [POST]
+  Parameters: {"signed_request"=>"LwvQdWejp_zLVNE_9--LaptYBCnT33_aD94n0ZTnot8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MTU1MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 41ms (View: 2, DB: 2) | 200 OK [http://localhost/hop]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:28:27) [POST]
+  Parameters: {"signed_request"=>"EuneXZ3lOk26MLBKUyJq9r4VaSqMbL9RhHZILkuglJQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MTcxMCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 43ms (View: 2, DB: 0) | 200 OK [http://localhost/hop/index]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:29:52) [POST]
+  Parameters: {"signed_request"=>"GQtheFwiAw9PcTEiirIRYip-VLmNnideM6jDl2prIyw.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MTc5NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+Rendering hop/index
+Completed in 22949ms (View: 18, DB: 1) | 200 OK [http://localhost/hop/index]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:44:04) [POST]
+  Parameters: {"signed_request"=>"6XhPGEsoZ6g4Bf3SAn0wLSzq3q5np20P0cfQMdnwQpM.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MjY0Mywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;36;1mHop Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (0.0ms)[0m   [0;1mMysql::Error: Column 'facebook_id' cannot be null: INSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(NULL, NULL, NULL, '')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Column 'facebook_id' cannot be null: INSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(NULL, NULL, NULL, '')):
+  app/controllers/hop_controller.rb:7:in `index'
+
+Rendered rescues/_trace (100.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:46:34) [POST]
+  Parameters: {"signed_request"=>"u2M3lYVqkrnMygRLJ7JEWKVJ4M3PxUHV4yf1DVfVAaQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3Mjc5Nywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;36;1mHop Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (0.0ms)[0m   [0;1mMysql::Error: Column 'created_date' cannot be null: INSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(0, NULL, 0, '')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Column 'created_date' cannot be null: INSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(0, NULL, 0, '')):
+  app/controllers/hop_controller.rb:7:in `index'
+
+Rendered rescues/_trace (59.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:47:12) [POST]
+  Parameters: {"signed_request"=>"w_tVEvuOVKrpx2ElK4nqOwnBC5b6UrZWkENwgWnaNMk.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MjgzNSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;36;1mHop Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+
+NameError (undefined local variable or method `now' for #<HopController:0x43cc140>):
+  app/controllers/hop_controller.rb:7:in `index'
+
+Rendered rescues/_trace (75.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:48:15) [POST]
+  Parameters: {"signed_request"=>"hWtrOcaS5DGu5mT7Hkd3dcY50wZDSl1v2fv7i2kjJ5o.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3Mjg5OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;35;1mHop Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (41.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(0, '2011-01-08 07:48:15', 0, '')[0m
+  [4;36;1mSQL (65.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 428ms (View: 15, DB: 111) | 200 OK [http://localhost/hop/index]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:49:17) [POST]
+  Parameters: {"signed_request"=>"rYnSahGoA6ly_xkuIXadjdKjuq4i8aXZ3tEfG_RReH8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3Mjk2MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;35;1mHop Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(1, '2011-01-08 07:49:17', 1, '')[0m
+  [4;36;1mSQL (28.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 83ms (View: 2, DB: 37) | 200 OK [http://localhost/hop/index]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:51:49) [POST]
+  Parameters: {"signed_request"=>"xZcYPK6XT2Pjq80bRASmxAiHA3KOE6zHFKspctrCbNQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MzExMSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;35;1mHop Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(1, '2011-01-08 07:51:49', 1, '')[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 173ms (View: 10, DB: 90) | 200 OK [http://localhost/hop/index]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:55:30) [POST]
+  Parameters: {"signed_request"=>"oU0OcbHvip2wKfECtOlcX_YdbShverVnFjA7BguRDYI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MzMzMiwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;35;1mHop Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 07:55:30', 1, '')[0m
+  [4;36;1mSQL (70.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 169ms (View: 9, DB: 78) | 200 OK [http://localhost/hop/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:55:37) [POST]
+  Parameters: {"signed_request"=>"FNVNZmmNKwEagkA9P2vZ5ObMZUGQiudH569cXH4ZYxE.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MzM0MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;35;1mHop Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 07:55:37', 1, '')[0m
+  [4;36;1mSQL (79.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 167ms (View: 2, DB: 85) | 200 OK [http://localhost/hop/index]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:58:08) [POST]
+  Parameters: {"signed_request"=>"783vImq1aVIo9Iue__aZvxiRdUMjcIRz4YoEyOHySd8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MzQ5MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;35;1mHop Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 07:58:08', 1, '')[0m
+  [4;36;1mSQL (68.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 127ms (View: 11, DB: 76) | 200 OK [http://localhost/hop/index]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 14:58:31) [POST]
+  Parameters: {"signed_request"=>"dXmdtxSAvRbMorIi3OF1pS5B91Qu55p5O4pTPQIhXvA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MzUxNCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5FelNiZlNMZEpaYUdNaE5KVFZuTG5RX18uMzYwMC4xMjk0NDc3MjAwLTcyMDIwOTY0MHxBUkxNZkFVUXZzMGxyRUtqMWYxTzc0VFBta00iLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;35;1mHop Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 07:58:31', 1, '')[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 148ms (View: 6, DB: 99) | 200 OK [http://localhost/hop/index]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:16:02) [POST]
+  Parameters: {"signed_request"=>"c72H3mUYO276uiRL-NXa3NVh9c8oTrvaECHDpUFT358.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NDU2MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;35;1mHop Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (0.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:16:02', 1, '')[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 172ms (View: 14, DB: 102) | 200 OK [http://localhost/hop/index]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:16:59) [POST]
+  Parameters: {"signed_request"=>"Aw4NN4wS1X8uLpkT8ggiEAC_MT3Gfb6DeLDAIPHNpjM.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NDYyMSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;35;1mHop Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:16:59', 1, '')[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 102ms (View: 7, DB: 51) | 200 OK [http://localhost/hop/index]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:17:28) [POST]
+  Parameters: {"signed_request"=>"1jtSjTaAN7fLvDjEtbCHD0xFVAmxIxZhf5_ONPeMARg.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NDY1MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;35;1mHop Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (0.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:17:28', 1, '')[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 147ms (View: 7, DB: 95) | 200 OK [http://localhost/hop/index]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:19:44) [POST]
+  Parameters: {"signed_request"=>"1wvyZ5l4ErIUyQc0QLaoJ8k7mQNJzM29rXLbUmRqb8Y.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NDc4Nywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;35;1mHop Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:19:44', 1, '')[0m
+  [4;36;1mSQL (34.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 159ms (View: 11, DB: 44) | 200 OK [http://localhost/hop/index]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:20:40) [POST]
+  Parameters: {"signed_request"=>"w5njwLsgWzdRynuRKsRadTqBgbsxzH2YYfTbLW8fu7o.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NDg0Mywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;36;1mHop Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (1.0ms)[0m   [0;1mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:20:40', 1, '')[0m
+  [4;35;1mSQL (79.0ms)[0m   [0mCOMMIT[0m
+Rendering hop/index
+Completed in 470ms (View: 25, DB: 87) | 200 OK [http://localhost/hop/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:24:03) [POST]
+  Parameters: {"signed_request"=>"FhzScVEv54_pEFugu4A0w1nqMk7NgWCpWGDZrmBqOsw.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTA0Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;36;1mHop Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (2.0ms)[0m   [0;1mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:24:03', 1, '')[0m
+  [4;35;1mSQL (181.0ms)[0m   [0mCOMMIT[0m
+Rendering hop/index
+Completed in 553ms (View: 23, DB: 188) | 200 OK [http://localhost/hop/index]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:28:45) [POST]
+  Parameters: {"signed_request"=>"e9xo0dAZMGvNu1OQEPhU9d22OR17-81AnXYXwVkSza8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTMyNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ"}
+  [4;36;1mHop Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (1.0ms)[0m   [0;1mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:28:45', 1, '')[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mCOMMIT[0m
+Rendering hop/index
+Completed in 103ms (View: 7, DB: 46) | 200 OK [http://localhost/hop/index]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#save (for 127.0.0.1 at 2011-01-08 15:29:19) [POST]
+  Parameters: {"signed_request"=>"e9xo0dAZMGvNu1OQEPhU9d22OR17-81AnXYXwVkSza8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTMyNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "comment"=>"Test", "hop_id"=>"14"}
+  [4;36;1mHop Load (71.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`id` = '14') LIMIT 1[0m
+  [4;35;1mHop Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Update (29.0ms)[0m   [0mUPDATE `hops` SET `comment` = 'Test' WHERE `id` = 14[0m
+  [4;36;1mSQL (43.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 253ms (View: 2, DB: 152) | 200 OK [http://localhost/hop/save]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:30:10) [POST]
+  Parameters: {"signed_request"=>"Cje54Xmqvuqrs6mqL8DRwPRH2cjLK3-Sh4mvBAsY1eM.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTQxMywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"1"}
+  [4;35;1mHop Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:30:10', 1, '')[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 96ms (View: 2, DB: 48) | 200 OK [http://localhost/hop?bus_id=1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:30:18) [POST]
+  Parameters: {"signed_request"=>"Kbpy85d4ZBT209-pgt0RAwRaa_4mrPoOwgj7efpDAN0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTQyMSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"10"}
+  [4;35;1mHop Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (0.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:30:18', 10, '')[0m
+  [4;36;1mSQL (79.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 131ms (View: 2, DB: 85) | 200 OK [http://localhost/hop?bus_id=10]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#save (for 127.0.0.1 at 2011-01-08 15:30:42) [POST]
+  Parameters: {"signed_request"=>"Kbpy85d4ZBT209-pgt0RAwRaa_4mrPoOwgj7efpDAN0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTQyMSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "comment"=>"Hello world !!", "hop_id"=>"16"}
+  [4;35;1mHop Load (2.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`id` = '16') LIMIT 1[0m
+  [4;36;1mHop Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Update (1.0ms)[0m   [0;1mUPDATE `hops` SET `comment` = 'Hello world !!' WHERE `id` = 16[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCOMMIT[0m
+Completed in 138ms (View: 1, DB: 76) | 200 OK [http://localhost/hop/save]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#save (for 127.0.0.1 at 2011-01-08 15:33:06) [POST]
+  Parameters: {"signed_request"=>"Kbpy85d4ZBT209-pgt0RAwRaa_4mrPoOwgj7efpDAN0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTQyMSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "comment"=>"Hello world !!111", "hop_id"=>"16"}
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`id` = '16') LIMIT 1[0m
+  [4;35;1mHop Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Update (1.0ms)[0m   [0mUPDATE `hops` SET `comment` = 'Hello world !!111' WHERE `id` = 16[0m
+  [4;36;1mSQL (91.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 151ms (View: 3, DB: 100) | 200 OK [http://localhost/hop/save]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:36:28) [POST]
+  Parameters: {"signed_request"=>"nOwcUI1cy56o7GhOp0JSX_8RFvPI9wRt1SwfJTTPV3A.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTc5MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"1ๅ"}
+  [4;35;1mHop Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:36:28', 1, '')[0m
+  [4;36;1mSQL (41.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 101ms (View: 7, DB: 49) | 200 OK [http://localhost/hop?bus_id=1%E0%B9%85]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:36:36) [POST]
+  Parameters: {"signed_request"=>"EVRY2jGYQxESYs2DQQ2ttKTdTqtG2wRZICdHQF4Lm5M.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTgwMCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"11"}
+  [4;35;1mHop Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:36:36', 11, '')[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 163ms (View: 2, DB: 110) | 200 OK [http://localhost/hop?bus_id=11]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#save (for 127.0.0.1 at 2011-01-08 15:36:50) [POST]
+  Parameters: {"signed_request"=>"EVRY2jGYQxESYs2DQQ2ttKTdTqtG2wRZICdHQF4Lm5M.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTgwMCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "comment"=>"Hello", "hop_id"=>"18"}
+  [4;35;1mHop Load (2.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`id` = '18') LIMIT 1[0m
+  [4;36;1mHop Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Update (1.0ms)[0m   [0;1mUPDATE `hops` SET `comment` = 'Hello' WHERE `id` = 18[0m
+  [4;35;1mSQL (52.0ms)[0m   [0mCOMMIT[0m
+Completed in 147ms (View: 3, DB: 64) | 200 OK [http://localhost/hop/save]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:38:08) [POST]
+  Parameters: {"signed_request"=>"xKRpwDZgVJvTniRf6zkjqE6T97sZSUdyKfG246w6ssA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTg5MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"12"}
+  [4;36;1mHop Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (1.0ms)[0m   [0;1mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:38:08', 12, '')[0m
+  [4;35;1mSQL (184.0ms)[0m   [0mCOMMIT[0m
+Rendering hop/index
+Completed in 246ms (View: 8, DB: 197) | 200 OK [http://localhost/hop?bus_id=12]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#save (for 127.0.0.1 at 2011-01-08 15:38:16) [POST]
+  Parameters: {"signed_request"=>"xKRpwDZgVJvTniRf6zkjqE6T97sZSUdyKfG246w6ssA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTg5MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "comment"=>"GGGGGG", "hop_id"=>"19"}
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`id` = '19') LIMIT 1[0m
+  [4;35;1mHop Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Update (1.0ms)[0m   [0mUPDATE `hops` SET `comment` = 'GGGGGG' WHERE `id` = 19[0m
+  [4;36;1mSQL (160.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 263ms (View: 3, DB: 171) | 200 OK [http://localhost/hop/save]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#save (for 127.0.0.1 at 2011-01-08 15:38:21) [POST]
+  Parameters: {"signed_request"=>"xKRpwDZgVJvTniRf6zkjqE6T97sZSUdyKfG246w6ssA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NTg5MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "comment"=>"GGGGGG", "hop_id"=>"19"}
+  [4;35;1mHop Load (3.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`id` = '19') LIMIT 1[0m
+  [4;36;1mHop Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 107ms (View: 3, DB: 15) | 200 OK [http://localhost/hop/save]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:40:12) [POST]
+  Parameters: {"signed_request"=>"v3YhSbHcGHGSumO5uVB5LJ-V7EUdR5wXuofnZo4UDtM.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjAxNCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"13"}
+  [4;35;1mHop Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:40:12', 13, '')[0m
+  [4;36;1mSQL (106.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 175ms (View: 13, DB: 115) | 200 OK [http://localhost/hop?bus_id=13]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#save (for 127.0.0.1 at 2011-01-08 15:40:29) [POST]
+  Parameters: {"signed_request"=>"v3YhSbHcGHGSumO5uVB5LJ-V7EUdR5wXuofnZo4UDtM.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjAxNCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "comment"=>"^^", "hop_id"=>"20"}
+  [4;35;1mHop Load (2.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`id` = '20') LIMIT 1[0m
+  [4;36;1mHop Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Update (1.0ms)[0m   [0;1mUPDATE `hops` SET `comment` = '^^' WHERE `id` = 20[0m
+  [4;35;1mSQL (108.0ms)[0m   [0mCOMMIT[0m
+Completed in 182ms (View: 3, DB: 117) | 200 OK [http://localhost/hop/save]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:41:53) [POST]
+  Parameters: {"signed_request"=>"IACRuuqwXse2XxiJbZ0kApPPv3zJy9jqJRiP0i0ZMXI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjExNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"14"}
+  [4;36;1mHop Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (0.0ms)[0m   [0;1mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:41:54', 14, '')[0m
+  [4;35;1mSQL (48.0ms)[0m   [0mCOMMIT[0m
+Rendering hop/index
+Completed in 106ms (View: 6, DB: 53) | 200 OK [http://localhost/hop?bus_id=14]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#save (for 127.0.0.1 at 2011-01-08 15:42:06) [POST]
+  Parameters: {"signed_request"=>"IACRuuqwXse2XxiJbZ0kApPPv3zJy9jqJRiP0i0ZMXI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjExNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "comment"=>"Test Test", "hop_id"=>"21"}
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`id` = '21') LIMIT 1[0m
+  [4;35;1mHop Columns (18.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Update (1.0ms)[0m   [0mUPDATE `hops` SET `comment` = 'Test Test' WHERE `id` = 21[0m
+  [4;36;1mSQL (42.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 111ms (View: 3, DB: 65) | 200 OK [http://localhost/hop/save]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:42:14) [POST]
+  Parameters: {"signed_request"=>"fCGK13lrssEafMLuNfdLxC48EBl40O-o-Jdh_5ZDqGU.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjEzNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"15"}
+  [4;35;1mHop Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:42:14', 15, '')[0m
+  [4;36;1mSQL (41.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 93ms (View: 2, DB: 48) | 200 OK [http://localhost/hop?bus_id=15]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#save (for 127.0.0.1 at 2011-01-08 15:42:30) [POST]
+  Parameters: {"signed_request"=>"fCGK13lrssEafMLuNfdLxC48EBl40O-o-Jdh_5ZDqGU.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjEzNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "comment"=>"Test RRRRRRR", "hop_id"=>"22"}
+  [4;35;1mHop Load (1.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`id` = '22') LIMIT 1[0m
+  [4;36;1mHop Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Update (1.0ms)[0m   [0;1mUPDATE `hops` SET `comment` = 'Test RRRRRRR' WHERE `id` = 22[0m
+  [4;35;1mSQL (41.0ms)[0m   [0mCOMMIT[0m
+Completed in 102ms (View: 2, DB: 50) | 200 OK [http://localhost/hop/save]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 15:45:16) [POST]
+  Parameters: {"signed_request"=>"mhNpX-uTwg0g94YaYd4WoYo3-rvBgLEFRnhxOrwAPU8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjMxOSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5HZl9IdGpYal9mb28yMFloM3pIWE9RX18uMzYwMC4xMjk0NDgwODAwLTcyMDIwOTY0MHxOdjRWcnNrU0E1NTgybEdCeFFDbXp6eWRGNkUiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"15"}
+  [4;36;1mHop Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (1.0ms)[0m   [0;1mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 08:45:16', 15, '')[0m
+  [4;35;1mSQL (112.0ms)[0m   [0mCOMMIT[0m
+Rendering hop/index
+Completed in 182ms (View: 3, DB: 120) | 200 OK [http://localhost/hop?bus_id=15]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:03:33) [POST]
+  Parameters: {"signed_request"=>"V1K67mhqpZeEm-FvvycUf47L57MFNRHmuniqvJIf_Bw.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3NzQxNiwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"15"}
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '15' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mHop Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+Completed in 56ms (View: 7, DB: 6) | 200 OK [http://localhost/hop?bus_id=15]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:04:16) [POST]
+  Parameters: {"signed_request"=>"lYD_jX7PLw4a9Rfut423EL7BSwQwagM39O-qy8H7WE8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3NzQ2MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"16"}
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '16' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.created_date):
+  app/controllers/hop_controller.rb:7:in `index'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:07:30) [POST]
+  Parameters: {"signed_request"=>"Uynl4X_NQClNh00FL71o1YZJzEr6n7qh_hdyieyGOY4.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3NzY1Mywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"16"}
+  [4;35;1mHop Load (1.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '16' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (1.0ms)[0m   [0;1mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 09:07:30', 16, '')[0m
+  [4;35;1mSQL (41.0ms)[0m   [0mCOMMIT[0m
+Rendering hop/index
+Completed in 96ms (View: 1, DB: 51) | 200 OK [http://localhost/hop?bus_id=16]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#save (for 127.0.0.1 at 2011-01-08 16:07:49) [POST]
+  Parameters: {"signed_request"=>"Uynl4X_NQClNh00FL71o1YZJzEr6n7qh_hdyieyGOY4.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3NzY1Mywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "comment"=>"Test bus id = 16", "hop_id"=>"24"}
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`id` = '24') LIMIT 1[0m
+  [4;35;1mHop Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Update (1.0ms)[0m   [0mUPDATE `hops` SET `comment` = 'Test bus id = 16' WHERE `id` = 24[0m
+  [4;36;1mSQL (88.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 171ms (View: 3, DB: 98) | 200 OK [http://localhost/hop/save]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:07:54) [POST]
+  Parameters: {"signed_request"=>"AfXVFyYr7P_2uwvC9WLeXERHbR6vzCrBOapFDc_E_sc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3NzY3Nywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"16"}
+  [4;35;1mHop Load (2.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '16' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+Completed in 51ms (View: 1, DB: 7) | 200 OK [http://localhost/hop?bus_id=16]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:08:11) [POST]
+  Parameters: {"signed_request"=>"Gohazi4hXE0R3aVYcl0B3cORXBI3TUMmgI6cg-6WkQM.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3NzY5NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"1"}
+  [4;35;1mHop Load (2.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+Completed in 54ms (View: 2, DB: 10) | 200 OK [http://localhost/hop?bus_id=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:09:46) [POST]
+  Parameters: {"signed_request"=>"7d-aH0PGHSWuJJKI-Bb4fU4pyrRQBzKY7C3bGciSXH0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3Nzc4OSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"1"}
+  [4;35;1mHop Load (1.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+
+ActionView::TemplateError (undefined method `create_date' for #<Hop:0x41ce860>) on line #32 of app/views/hop/index.html.erb:
+29: </script>
+30: <% else %>
+31: 	Please wait for <%= @wait_time %> minutes.<br>
+32: 	You last comment is <%= @new_hop.create_date %><br>
+33: 	Now the time is <%= Time.now %>
+34: <% end %>
+
+    app/views/hop/index.html.erb:32
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:11:34) [POST]
+  Parameters: {"signed_request"=>"s8LJHEfjzRvWMoTsLBaCRABCoEB6vydcRQHX7UQvlPA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3Nzg5Nywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"1"}
+  [4;35;1mHop Load (2.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+Completed in 57ms (View: 8, DB: 7) | 200 OK [http://localhost/hop?bus_id=1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:14:30) [POST]
+  Parameters: {"signed_request"=>"GafeYhzB9S6wll_mco_6l-EuN6fG9b1kKNAwSPEnmYk.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODA3NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"15"}
+  [4;35;1mHop Load (1.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '15' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+Completed in 51ms (View: 2, DB: 6) | 200 OK [http://localhost/hop?bus_id=15]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:16:40) [POST]
+  Parameters: {"signed_request"=>"UQLJEfjia9k6vbYr1m2XIajp0Y_isjhU5OZabKk9Jos.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODIwMCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"15"}
+  [4;35;1mHop Load (1.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '15' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (1.0ms)[0m   [0;1mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 09:16:40', 15, '')[0m
+  [4;35;1mSQL (38.0ms)[0m   [0mCOMMIT[0m
+Rendering hop/index
+Completed in 122ms (View: 2, DB: 49) | 200 OK [http://localhost/hop?bus_id=15]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#save (for 127.0.0.1 at 2011-01-08 16:16:52) [POST]
+  Parameters: {"signed_request"=>"UQLJEfjia9k6vbYr1m2XIajp0Y_isjhU5OZabKk9Jos.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODIwMCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "comment"=>"Test Test", "hop_id"=>"25"}
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`id` = '25') LIMIT 1[0m
+  [4;35;1mHop Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Update (1.0ms)[0m   [0mUPDATE `hops` SET `comment` = 'Test Test' WHERE `id` = 25[0m
+  [4;36;1mSQL (88.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 142ms (View: 3, DB: 94) | 200 OK [http://localhost/hop/save]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:17:12) [POST]
+  Parameters: {"signed_request"=>"PcLrysD0svF-39k7CBSjuPDiXSmsTRRK1FhqwpJHktY.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODIzNSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"15"}
+  [4;35;1mHop Load (1.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '15' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+Completed in 49ms (View: 1, DB: 6) | 200 OK [http://localhost/hop?bus_id=15]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:18:55) [POST]
+  Parameters: {"signed_request"=>"cv5BlA9I9N7buWzfx_7LDNT6isDcdV2BYfsDz4sxTo8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODMzOCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"15"}
+  [4;35;1mHop Load (1.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '15' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+Completed in 63ms (View: 6, DB: 6) | 200 OK [http://localhost/hop?bus_id=15]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:20:04) [POST]
+  Parameters: {"signed_request"=>"2z-hAFH7nFn88DtYO2wQilAYonWJ5SWWFgjOjaC0rrI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODQwNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"15"}
+  [4;35;1mHop Load (1.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '15' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+Completed in 60ms (View: 2, DB: 7) | 200 OK [http://localhost/hop?bus_id=15]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:20:17) [POST]
+  Parameters: {"signed_request"=>"2o2qvWkbAC4H8-f7OmHtcu1AGrQ-Ld05Gy2Ihj12uCA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODQyMSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"1"}
+  [4;35;1mHop Load (1.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+Completed in 51ms (View: 1, DB: 5) | 200 OK [http://localhost/hop?bus_id=1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:21:05) [POST]
+  Parameters: {"signed_request"=>"JSoi2gEHjDCcALvLKWkbRiTnTgsYfFwF1Krm8IBc1cI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODQ2OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"16"}
+  [4;35;1mHop Load (2.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '16' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+Completed in 52ms (View: 3, DB: 9) | 200 OK [http://localhost/hop?bus_id=16]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:21:57) [POST]
+  Parameters: {"signed_request"=>"h6YKgPyLER9dBU8XO73Hkb16YmUdG_MYySaaS2J0D1o.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODUyMCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"15"}
+  [4;35;1mHop Load (1.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '15' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (1.0ms)[0m   [0;1mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 09:21:57', 15, '')[0m
+  [4;35;1mSQL (86.0ms)[0m   [0mCOMMIT[0m
+Rendering hop/index
+Completed in 136ms (View: 1, DB: 94) | 200 OK [http://localhost/hop?bus_id=15]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:22:45) [POST]
+  Parameters: {"signed_request"=>"xhq8FN2sinbeeQZT7sI8CpzqPUdxIKutPClgEDvQJ-Y.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODU2Nywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"15"}
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '15' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mHop Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+Completed in 49ms (View: 2, DB: 6) | 200 OK [http://localhost/hop?bus_id=15]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:24:40) [POST]
+  Parameters: {"signed_request"=>"AqzONrzCilmFTwHDwDUqQdowacP5YnvaA61SuYgDYFc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODY4Miwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"15"}
+  [4;36;1mHop Load (2.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '15' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mHop Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+Completed in 109ms (View: 2, DB: 8) | 200 OK [http://localhost/hop?bus_id=15]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:24:57) [POST]
+  Parameters: {"signed_request"=>"mLtd5eXguoJVzCsmWAIv6bxcewkH3iSh2sloEv3lHSc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODcwMCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"15"}
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '15' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mHop Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+Completed in 48ms (View: 1, DB: 6) | 200 OK [http://localhost/hop?bus_id=15]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:25:39) [POST]
+  Parameters: {"signed_request"=>"zk5CKeaV79hTUtp_XRoWwrvXPrOa9CmmlVYgRYv6zNM.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODc0Miwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"15"}
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '15' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mHop Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+Rendering hop/index
+Completed in 51ms (View: 1, DB: 6) | 200 OK [http://localhost/hop?bus_id=15]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 16:25:53) [POST]
+  Parameters: {"signed_request"=>"06jSEEyMWhc8edwhjrZzljh10oEnD8XX_M_cGIUpUE8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODc1Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CSGk5WnRVWkxTTEJvX1kyamVOemdRX18uMzYwMC4xMjk0NDg0NDAwLTcyMDIwOTY0MHxJbVFSOWI0UEpqclhWT1FBSGtOd2tDcTBOckkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI3MjAyMDk2NDAifQ", "bus_id"=>"15"}
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '15' AND `hops`.`facebook_id` = '720209640') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mHop Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (1.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(720209640, '2011-01-08 09:25:53', 15, '')[0m
+  [4;36;1mSQL (92.0ms)[0m   [0;1mCOMMIT[0m
+Rendering hop/index
+Completed in 143ms (View: 1, DB: 101) | 200 OK [http://localhost/hop?bus_id=15]

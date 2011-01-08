@@ -50,10 +50,8 @@ class ApplicationController < ActionController::Base
     if $facebook.user_id == nil
       @redirect_url = "http://www.facebook.com/dialog/oauth/?" +
                   "client_id=154941261222060" +
-                  "&scope=publish_stream,user_photos" +
                   "&redirect_uri=http://apps.facebook.com/wehopin/"
-      redirect_to :controller=>:redirect,:action=>:index
-      return
+      render "redirect/index"
     end
     
   end
