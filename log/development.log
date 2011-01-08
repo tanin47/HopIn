@@ -1568,3 +1568,654 @@ Processing HomeController#index (for 127.0.0.1 at 2011-01-08 13:41:19) [POST]
   [4;35;1mSQL (13.0ms)[0m   [0mCOMMIT[0m
 Rendering home/index
 Completed in 4519ms (View: 2133, DB: 18) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 14:59:33) [POST]
+  Parameters: {"signed_request"=>"JUWzLaakz26a6b4xuY40G2ZMKKmACgV5HWqEd7tgmXI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0NzcyMDAsImlzc3VlZF9hdCI6MTI5NDQ3MzU3MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5LV3VTSUtwTm9yVVpVYWFOWUVlSkdnX18uMzYwMC4xMjk0NDc3MjAwLTYzMjgxODI0Nnx1S205VmJRVjlNSm55Q3V0Qm5ZVTFOS2lTY3MiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mMysql::Error: Unknown column 'facebook_caches.faceook_id' in 'where clause': SELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`faceook_id` = '632818246') LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Unknown column 'facebook_caches.faceook_id' in 'where clause': SELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`faceook_id` = '632818246')  LIMIT 1):
+  app/models/facebook.rb:18:in `initialize'
+  app/controllers/application_controller.rb:41:in `new'
+  app/controllers/application_controller.rb:41:in `decode_signed_request'
+
+Rendered rescues/_trace (96.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:00:37) [POST]
+  Parameters: {"signed_request"=>"ixLZyDiCN0BmETsXpS-gJXxMCdMzVy8R9GfWqSqlpb8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3MzYzNiwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+
+ActiveSupport::JSON::ParseError (Invalid JSON string):
+  C:1:in `__send__'
+  C:1:in `decode'
+  app/models/facebook.rb:23:in `initialize'
+  app/controllers/application_controller.rb:41:in `new'
+  app/controllers/application_controller.rb:41:in `decode_signed_request'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:01:07) [POST]
+  Parameters: {"signed_request"=>"d3JpMd5tghdMYshP3dl7cEI1L9WwXzySpWJFV4t__-0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3MzY2NSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mFacebookCache Create (1.0ms)[0m   [0;1mINSERT INTO `facebook_caches` (`name`, `updated_date`, `facebook_id`) VALUES('Tanin Na Nakorn', '2011-01-08 08:01:07', '632818246')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+
+NameError (undefined local variable or method `friend' for #<Facebook:0x4cac4d0>):
+  app/models/facebook.rb:29:in `initialize'
+  app/controllers/application_controller.rb:41:in `new'
+  app/controllers/application_controller.rb:41:in `decode_signed_request'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:01:40) [POST]
+  Parameters: {"signed_request"=>"xiCjkB0JFdSw6_txWAhyVSAEptvSJL0-47hL-5ey6XI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3MzY5OSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mFacebookFriendCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookFriendCache Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `facebook_friend_caches`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFacebookFriendCache Create (4.0ms)[0m   [0mINSERT INTO `facebook_friend_caches` (`updated_date`, `facebook_id`, `friends`) VALUES('2011-01-08 15:01:40', '632818246', '{\"data\":[{\"name\":\"Pon Sagnanert\",\"id\":\"1214739\"},{\"name\":\"Grace Yuan Tai\",\"id\":\"2216066\"},{\"name\":\"Bo Hongsaporaneebudhra\",\"id\":\"2730069\"},{\"name\":\"Nate Hays\",\"id\":\"7300767\"},{\"name\":\"Yensukjit Benyapa\",\"id\":\"10718075\"},{\"name\":\"DaUhip Yutika Sthavornmanee\",\"id\":\"15937338\"},{\"name\":\"Anchalee Khemphet\",\"id\":\"16929764\"},{\"name\":\"Moodaeng Theparitt\",\"id\":\"24410777\"},{\"name\":\"Ali Eslami\",\"id\":\"61003851\"},{\"name\":\"Vasin Boonsobhak\",\"id\":\"61009519\"},{\"name\":\"Siddhu Warrier\",\"id\":\"61010866\"},{\"name\":\"Oliver Smith\",\"id\":\"61013328\"},{\"name\":\"Pan Piriyaprernt\",\"id\":\"61013405\"},{\"name\":\"Sandeep Kakani\",\"id\":\"221000189\"},{\"name\":\"Dia Prougestaporn\",\"id\":\"222405852\"},{\"name\":\"Yvonne Gu\",\"id\":\"223709457\"},{\"name\":\"Tao Peng\",\"id\":\"312100108\"},{\"name\":\"Petch Tilapornphat\",\"id\":\"500126087\"},{\"name\":\"Neeni Wang\",\"id\":\"502248045\"},{\"name\":\"Panumas Rohitasoon\",\"id\":\"503426958\"},{\"name\":\"Anna-Marie \'Alexa Ah-Ah\' Smith-Jones\",\"id\":\"503708261\"},{\"name\":\"Afzal Hussain\",\"id\":\"503874473\"},{\"name\":\"Christopher Farrenholz\",\"id\":\"504155507\"},{\"name\":\"Tom Noppawat Charoensinphon\",\"id\":\"504562559\"},{\"name\":\"Astrid R\\u00f6ttgen\",\"id\":\"504615938\"},{\"name\":\"Gig Pornuma Thongsawai\",\"id\":\"504802710\"},{\"name\":\"Pat Sukonthaman\",\"id\":\"505811769\"},{\"name\":\"Fhy FhyFhy\",\"id\":\"506283770\"},{\"name\":\"Sarute Nakaratanakorn\",\"id\":\"507453916\"},{\"name\":\"Pear Unthika Roekwibunsi\",\"id\":\"508013012\"},{\"name\":\"Onganan Bug Amatyakul\",\"id\":\"508013500\"},{\"name\":\"Mod Wongsajja\",\"id\":\"508936275\"},{\"name\":\"Fyne Lertviriyasawat\",\"id\":\"509064204\"},{\"name\":\"Nuttathum Chutasripanich\",\"id\":\"509680179\"},{\"name\":\"Teeruth Satitkul\",\"id\":\"509962323\"},{\"name\":\"TOn Warodom\",\"id\":\"510152522\"},{\"name\":\"Nae Chantaravisoot\",\"id\":\"510219418\"},{\"name\":\"Mongkol Jongsirivanich\",\"id\":\"511282137\"},{\"name\":\"Jeannie Pannavalee\",\"id\":\"512273006\"},{\"name\":\"Linda Anekratchadaporn\",\"id\":\"513795163\"},{\"name\":\"Prin Chamroenpanich\",\"id\":\"513935564\"},{\"name\":\"June Karnjanapinchote\",\"id\":\"514011795\"},{\"name\":\"Pattra Tangaramvong\",\"id\":\"514120596\"},{\"name\":\"Katha Nabadalung\",\"id\":\"514406426\"},{\"name\":\"Alan Ng\",\"id\":\"514991655\"},{\"name\":\"Dol Ly\",\"id\":\"515178885\"},{\"name\":\"Da Srimonjoo\",\"id\":\"515241904\"},{\"name\":\"Nattapol Hemyoo\",\"id\":\"515259691\"},{\"name\":\"Grittida Sujira\",\"id\":\"515400268\"},{\"name\":\"Blossom Zaa\",\"id\":\"515628342\"},{\"name\":\"Dolhatai Anne Likanasudh\",\"id\":\"515728171\"},{\"name\":\"Yothin Pramuanchok\",\"id\":\"515963489\"},{\"name\":\"Nathy Nath\",\"id\":\"516077498\"},{\"name\":\"Jump Sarapochay\",\"id\":\"516675326\"},{\"name\":\"PuNim Sansawatt\",\"id\":\"516771196\"},{\"name\":\"Ton Metacharoenwit\",\"id\":\"517052745\"},{\"name\":\"Thanet Knack Praneenararat\",\"id\":\"517575937\"},{\"name\":\"Prinn Sriwat\",\"id\":\"517681239\"},{\"name\":\"Eclipse Kong\",\"id\":\"518014691\"},{\"name\":\"Tarzx Shzep\",\"id\":\"518296091\"},{\"name\":\"Kankanich Phattanaphitoon\",\"id\":\"518394972\"},{\"name\":\"Pin Patinthita\",\"id\":\"518402041\"},{\"name\":\"Supatchareewan Tanboonjit\",\"id\":\"518495326\"},{\"name\":\"Hagao Yim\",\"id\":\"518911901\"},{\"name\":\"Jeepy Jeeper\",\"id\":\"519715587\"},{\"name\":\"Javier Javi Cucho\",\"id\":\"519721130\"},{\"name\":\"Chatgaew Rin Jutachalatip\",\"id\":\"520095284\"},{\"name\":\"Arisara Ruangdilokrat\",\"id\":\"521698753\"},{\"name\":\"Ayush Sharma\",\"id\":\"522215518\"},{\"name\":\"Glenn Reintsma\",\"id\":\"523161788\"},{\"name\":\"Somwung Ruangmaneepitoon\",\"id\":\"524198184\"},{\"name\":\"Arunsak Butipanka\",\"id\":\"524473023\"},{\"name\":\"Nun Ja\",\"id\":\"524475819\"},{\"name\":\"Saravut \'Oat\' Anakatham\",\"id\":\"524645371\"},{\"name\":\"Veerapatr Karnjanapinchote\",\"id\":\"524660412\"},{\"name\":\"BeLady Ann\",\"id\":\"525415647\"},{\"name\":\"Charnchai Leuwattanachotinan\",\"id\":\"525930750\"},{\"name\":\"Botun Khachongoen\",\"id\":\"526132049\"},{\"name\":\"Singhapan Sinhaseni\",\"id\":\"528485202\"},{\"name\":\"Wimonwan Lynn Lerdwohan\",\"id\":\"528791194\"},{\"name\":\"Hanh Ngoan\",\"id\":\"528877200\"},{\"name\":\"Ploypim Boonnum\",\"id\":\"530300181\"},{\"name\":\"Titinart Lertsukontaros\",\"id\":\"530730118\"},{\"name\":\"James Wit\",\"id\":\"531626411\"},{\"name\":\"Arm Boonkwan\",\"id\":\"532718283\"},{\"name\":\"Art Imcharoen\",\"id\":\"532950356\"},{\"name\":\"Tan Zheng\",\"id\":\"533226892\"},{\"name\":\"Thaweesak Chieochansin\",\"id\":\"534404070\"},{\"name\":\"Taghi Paksima\",\"id\":\"535137561\"},{\"name\":\"Deji Ogunlaja\",\"id\":\"535469231\"},{\"name\":\"Rattanasak Art Art\",\"id\":\"536327613\"},{\"name\":\"Alisa Chomjinda\",\"id\":\"537184550\"},{\"name\":\"Tum Thanitta Chitrat\",\"id\":\"537244519\"},{\"name\":\"Chatwalai Phairojwithayaporn\",\"id\":\"537878666\"},{\"name\":\"Patanachai Tangchaisin\",\"id\":\"537952318\"},{\"name\":\"Bookanova Twista\",\"id\":\"539703790\"},{\"name\":\"Jariya Laoriendee\",\"id\":\"540092515\"},{\"name\":\"Chompoo Parichat Sae-tang\",\"id\":\"540240833\"},{\"name\":\"Agathi Violin\",\"id\":\"541049202\"},{\"name\":\"Penpim Sanmeuang\",\"id\":\"542664225\"},{\"name\":\"Kittidej Koko\",\"id\":\"542795600\"},{\"name\":\"Chompoonik Kanchanabanca\",\"id\":\"542811180\"},{\"name\":\"Pab Fairy\",\"id\":\"543036292\"},{\"name\":\"Tanet Gamchaitavonrattana\",\"id\":\"543060070\"},{\"name\":\"Chakorn Patthapesin\",\"id\":\"544225022\"},{\"name\":\"Irisa Simo\",\"id\":\"544668741\"},{\"name\":\"Panitan Chumtong\",\"id\":\"544941189\"},{\"name\":\"Seaw Pood\",\"id\":\"545250125\"},{\"name\":\"Sunattha Weerasakwattana\",\"id\":\"547635590\"},{\"name\":\"Nikky At Kashiwa\",\"id\":\"548219404\"},{\"name\":\"Preeyaporn Choojan\",\"id\":\"548227872\"},{\"name\":\"Ali Sura Ozdemir\",\"id\":\"548567782\"},{\"name\":\"Warut Surapat\",\"id\":\"549084917\"},{\"name\":\"Sripoom Tungkai\",\"id\":\"549653893\"},{\"name\":\"Benz Pattharawan\",\"id\":\"550861670\"},{\"name\":\"Taey Kung\",\"id\":\"551293190\"},{\"name\":\"Ifeoma Uwadia\",\"id\":\"552060316\"},{\"name\":\"Nattanuch Arnantapunpong\",\"id\":\"553395506\"},{\"name\":\"Rahuth Comzine\",\"id\":\"553485113\"},{\"name\":\"Bunpote Matrajumroonkul\",\"id\":\"554442373\"},{\"name\":\"Joy Thansri\",\"id\":\"554534250\"},{\"name\":\"Dafferianto Trinugroho\",\"id\":\"555799933\"},{\"name\":\"Worawut Sinkoksoong\",\"id\":\"557036562\"},{\"name\":\"Tas Dhanasarnsombati\",\"id\":\"558379178\"},{\"name\":\"Ploy Yongwattana\",\"id\":\"558635580\"},{\"name\":\"Tee Phasux\",\"id\":\"559691385\"},{\"name\":\"Kate Kanoknan\",\"id\":\"559743573\"},{\"name\":\"Phontip Pa Tanompongphandh\",\"id\":\"561636586\"},{\"name\":\"Nipon Nopin\",\"id\":\"562953651\"},{\"name\":\"Thidarat Maha\",\"id\":\"563388537\"},{\"name\":\"Nuchanart Hongsanukulsant\",\"id\":\"565045716\"},{\"name\":\"Tipaluck Mint Krityakierne\",\"id\":\"565470257\"},{\"name\":\"Donrudee Suteerangkool\",\"id\":\"566088043\"},{\"name\":\"Pierre Nicoletti\",\"id\":\"566241302\"},{\"name\":\"Dissaya Pornpattananangkul\",\"id\":\"566526764\"},{\"name\":\"Nut Kan\",\"id\":\"567285985\"},{\"name\":\"Akkankiti Tananuwon\",\"id\":\"568651894\"},{\"name\":\"Monica Verma\",\"id\":\"570172503\"},{\"name\":\"Nat Arunmanee\",\"id\":\"570405915\"},{\"name\":\"Elda Paja\",\"id\":\"571159302\"},{\"name\":\"Kameu Kaki\",\"id\":\"571325836\"},{\"name\":\"Sarun Krishnalome\",\"id\":\"571349333\"},{\"name\":\"Kanin Suwannarat\",\"id\":\"571520618\"},{\"name\":\"Sirirat Sriprom\",\"id\":\"572828229\"},{\"name\":\"Gift Piyada Thanaluck\",\"id\":\"572978377\"},{\"name\":\"Rattanasak Hnk Synerry\",\"id\":\"573184999\"},{\"name\":\"Kayla Hang\",\"id\":\"573497822\"},{\"name\":\"Nokie Hathairat\",\"id\":\"573736360\"},{\"name\":\"Sandhya Prabhakaran\",\"id\":\"574234818\"},{\"name\":\"Kodak Nunoo\",\"id\":\"574263261\"},{\"name\":\"Nat Lilitkarntakul\",\"id\":\"575466344\"},{\"name\":\"Nishad Manerikar\",\"id\":\"578726147\"},{\"name\":\"Penprapa Lertviseskul\",\"id\":\"581046207\"},{\"name\":\"Jiratida Sakpaladisai\",\"id\":\"581331852\"},{\"name\":\"Panu Boonwattanopas\",\"id\":\"583595196\"},{\"name\":\"Jiraphat Wattanavekin\",\"id\":\"584071264\"},{\"name\":\"To Tu Cuong\",\"id\":\"585852057\"},{\"name\":\"Galiya Warrier\",\"id\":\"586268522\"},{\"name\":\"Ooi Wen Fong\",\"id\":\"586456464\"},{\"name\":\"Nutdanai Sriprasert\",\"id\":\"586702042\"},{\"name\":\"Darika Kedsuwan\",\"id\":\"586751236\"},{\"name\":\"Prateep Siamwalla\",\"id\":\"586927798\"},{\"name\":\"Leah Huang\",\"id\":\"586952734\"},{\"name\":\"Ariyanan Ruttanaamatakul\",\"id\":\"587219770\"},{\"name\":\"Thanut Jiratangmancharoen\",\"id\":\"588162302\"},{\"name\":\"Rattana Swangkotchakorn\",\"id\":\"588658102\"},{\"name\":\"Au Suthatip\",\"id\":\"588991598\"},{\"name\":\"Ruut Wi\",\"id\":\"589950918\"},{\"name\":\"Pom Pomm\",\"id\":\"589972241\"},{\"name\":\"Tony Nirath Singhara\",\"id\":\"591496726\"},{\"name\":\"Kwang Warithorn\",\"id\":\"591707802\"},{\"name\":\"Teerapat Ungsriwong\",\"id\":\"592006264\"},{\"name\":\"Nareerat Ai Payakkapong\",\"id\":\"593164299\"},{\"name\":\"Ae Assanee\",\"id\":\"593216375\"},{\"name\":\"Jube Padma\",\"id\":\"593358507\"},{\"name\":\"Pisit Saetia\",\"id\":\"594563096\"},{\"name\":\"Kittiphat Kitikool\",\"id\":\"594990903\"},{\"name\":\"Prapatpong Buddarangsi\",\"id\":\"595994199\"},{\"name\":\"Nid Nid\",\"id\":\"597090374\"},{\"name\":\"Juthamas Oonhawat\",\"id\":\"598843506\"},{\"name\":\"Hungy Biot\",\"id\":\"598850987\"},{\"name\":\"Parted Ov\",\"id\":\"598934539\"},{\"name\":\"Pound Kittiwangchai\",\"id\":\"599634749\"},{\"name\":\"Sasit Udomwattawee\",\"id\":\"599871832\"},{\"name\":\"Thiti Ka\",\"id\":\"600051935\"},{\"name\":\"\'\'Narongrith Srimaung\",\"id\":\"600317188\"},{\"name\":\"Navapol Krishnamra\",\"id\":\"600408693\"},{\"name\":\"Patcharapan Siriwat\",\"id\":\"600967243\"},{\"name\":\"Chatchawit Krotangkiartkul\",\"id\":\"601358156\"},{\"name\":\"Aou Pichayut\",\"id\":\"601899841\"},{\"name\":\"\\u0e20\\u0e31\\u0e17\\u0e23\\u0e1e\\u0e25 \\u0e27\\u0e07\\u0e28\\u0e4c\\u0e01\\u0e34\\u0e08\\u0e1b\\u0e23\\u0e30\\u0e40\\u0e2a\\u0e23\\u0e34\\u0e10\",\"id\":\"602072004\"},{\"name\":\"Kittinun Vantasin\",\"id\":\"602533229\"},{\"name\":\"Vorathida Sugandhavanij\",\"id\":\"603282664\"},{\"name\":\"Chitra Hapsari Ayuningtyas\",\"id\":\"604248594\"},{\"name\":\"Monica Lee\",\"id\":\"605440444\"},{\"name\":\"Kittipat Virochsiri\",\"id\":\"607140948\"},{\"name\":\"Noki Tori\",\"id\":\"607256869\"},{\"name\":\"Tanawat Junmano\",\"id\":\"608651485\"},{\"name\":\"Yan Xu\",\"id\":\"609276936\"},{\"name\":\"Qiao Mu\",\"id\":\"610380619\"},{\"name\":\"Jidsuda Saardpak\",\"id\":\"610547850\"},{\"name\":\"Arrtid Xue\",\"id\":\"611777925\"},{\"name\":\"Nukie Chaiwanichsiri\",\"id\":\"611851223\"},{\"name\":\"Frieda Meng-Fang Chung\",\"id\":\"611947757\"},{\"name\":\"Thanwa Choomsai Na Ayuthaya\",\"id\":\"612470186\"},{\"name\":\"Pairoj Buapuean\",\"id\":\"612934851\"},{\"name\":\"Note Meesuay\",\"id\":\"613773871\"},{\"name\":\"Giacomo Gatelli\",\"id\":\"613982735\"},{\"name\":\"\'Zhetodz Zc\",\"id\":\"614063520\"},{\"name\":\"Rachata Tranch\",\"id\":\"614240321\"},{\"name\":\"Thanit Nit-Big Uerkanarak\",\"id\":\"614725207\"},{\"name\":\"Sathira Tangmanophienchai\",\"id\":\"615155922\"},{\"name\":\"Mai Khunthida\",\"id\":\"616066354\"},{\"name\":\"Samuel Pe\\u00f1a Santana\",\"id\":\"616135248\"},{\"name\":\"Best BKtogether\",\"id\":\"616216404\"},{\"name\":\"Tana Taechalertpaisarn\",\"id\":\"616367603\"},{\"name\":\"\\u0e0a\\u0e34\\u0e15 \\u0e0a\\u0e34\\u0e15\",\"id\":\"617155070\"},{\"name\":\"Sutthinee Promsuwan\",\"id\":\"617786821\"},{\"name\":\"Supaporn Ratthanapas\",\"id\":\"617950279\"},{\"name\":\"Bella Charoensrisiripong\",\"id\":\"617986065\"},{\"name\":\"Chalermchat Thaipeerakul\",\"id\":\"618999982\"},{\"name\":\"Thun Changrew\",\"id\":\"619410775\"},{\"name\":\"Tan S Panda\",\"id\":\"620481067\"},{\"name\":\"Zi Yen Ler\",\"id\":\"623463392\"},{\"name\":\"Christinary Christ\",\"id\":\"624045010\"},{\"name\":\"Eddi Siswoyo\",\"id\":\"624056100\"},{\"name\":\"Thongthew Scott Wongsanguan\",\"id\":\"624133139\"},{\"name\":\"Suthawan Charoenprasert\",\"id\":\"624407259\"},{\"name\":\"Narate Taerat\",\"id\":\"624506465\"},{\"name\":\"Pathompong Yupensuk\",\"id\":\"624596035\"},{\"name\":\"Sophon Larpphonpoonsawat\",\"id\":\"624631770\"},{\"name\":\"Nichamon Naksinehaboon\",\"id\":\"624736860\"},{\"name\":\"Patanapan Vanapitaksa\",\"id\":\"624931575\"},{\"name\":\"Shuni Nee\",\"id\":\"625125684\"},{\"name\":\"Beau Penpicha\",\"id\":\"625331608\"},{\"name\":\"Milinthorn Orravetdilok\",\"id\":\"625331710\"},{\"name\":\"Kitipong Assatarakul\",\"id\":\"625800046\"},{\"name\":\"Atthasit Jintana\",\"id\":\"625971338\"},{\"name\":\"PuMpz PuMppz\",\"id\":\"626175644\"},{\"name\":\"Poompooee Saroya\",\"id\":\"626206082\"},{\"name\":\"\\u0e2a\\u0e21\\u0e2d\\u0e31\\u0e4a\\u0e1e We-sit\",\"id\":\"626765866\"},{\"name\":\"Lek Nel\",\"id\":\"626771708\"},{\"name\":\"Bezt Thanit\",\"id\":\"626810760\"},{\"name\":\"Jalalin Jin \\u0e23\\u0e31\\u0e01\\u0e43\\u0e19\\u0e2b\\u0e25\\u0e27\\u0e07\",\"id\":\"626831975\"},{\"name\":\"Salinee Khachonpisitsak\",\"id\":\"626845932\"},{\"name\":\"Lerson Vasinopas \\u0e23\\u0e31\\u0e01\\u0e43\\u0e19\\u0e2b\\u0e25\\u0e27\\u0e07\",\"id\":\"626906625\"},{\"name\":\"Vit Omikung\",\"id\":\"627091923\"},{\"name\":\"I-iris Tan\",\"id\":\"627135232\"},{\"name\":\"Cathy Yang\",\"id\":\"627750048\"},{\"name\":\"Rajalida Lipikorn\",\"id\":\"628082201\"},{\"name\":\"Maggie Chen Jing\",\"id\":\"629079663\"},{\"name\":\"Chunhui Chen\",\"id\":\"629699480\"},{\"name\":\"Nuie Nuinuie\",\"id\":\"630106735\"},{\"name\":\"Kima A Ai\",\"id\":\"630402259\"},{\"name\":\"Chayanont Junnavech\",\"id\":\"630455424\"},{\"name\":\"Karin Naak-in\",\"id\":\"630851361\"},{\"name\":\"Lattawat Wongpuvarak\",\"id\":\"631176330\"},{\"name\":\"Tue Sujaree\",\"id\":\"631221880\"},{\"name\":\"Teerapat Saelim\",\"id\":\"631621512\"},{\"name\":\"Champ Champione\",\"id\":\"631645867\"},{\"name\":\"Messi Bia Sakdapipanich\",\"id\":\"632306819\"},{\"name\":\"Tanun Niyomjit\",\"id\":\"632591624\"},{\"name\":\"Mark Kamolvisit\",\"id\":\"632688452\"},{\"name\":\"Titawat Kiatsaman\",\"id\":\"632976020\"},{\"name\":\"Unz Cr\",\"id\":\"633323578\"},{\"name\":\"Note Kelwalin\",\"id\":\"633914922\"},{\"name\":\"Niyue Tan\",\"id\":\"633921042\"},{\"name\":\"Itthichai Leelertyanon\",\"id\":\"633981845\"},{\"name\":\"Pae-pae Payungsak\",\"id\":\"634067236\"},{\"name\":\"Bo Chinravee\",\"id\":\"634513101\"},{\"name\":\"Kanokpan Pattanapiyasup\",\"id\":\"635130571\"},{\"name\":\"Santi Kijjaroenrungroj\",\"id\":\"636012483\"},{\"name\":\"Alexian Starshower\",\"id\":\"636200051\"},{\"name\":\"Panuvat Mahittharitthikorn\",\"id\":\"636247603\"},{\"name\":\"Athit Hongsurapan\",\"id\":\"636455790\"},{\"name\":\"Faith Wong-Amnitkul\",\"id\":\"637404458\"},{\"name\":\"Kaoeisz Ksz\",\"id\":\"638041119\"},{\"name\":\"Nisarath Santisukdamrong\",\"id\":\"638196447\"},{\"name\":\"Kristamuk Leesirichaikul\",\"id\":\"638289234\"},{\"name\":\"Safe Vipavee\",\"id\":\"639428644\"},{\"name\":\"Kelvin Zhang\",\"id\":\"639720695\"},{\"name\":\"Taneenart Pluempavarn\",\"id\":\"639918412\"},{\"name\":\"Sigrid Chia\",\"id\":\"639946431\"},{\"name\":\"Robert Elek\",\"id\":\"640608999\"},{\"name\":\"Jose Carlos Castro Padilla\",\"id\":\"641520384\"},{\"name\":\"Vorarat Meeprecha\",\"id\":\"641850777\"},{\"name\":\"Katto Usui\",\"id\":\"643122624\"},{\"name\":\"Judd Padmasuta\",\"id\":\"643541841\"},{\"name\":\"Shi Lei\",\"id\":\"643724493\"},{\"name\":\"Chavapan Na Nakorn\",\"id\":\"645144631\"},{\"name\":\"Yongye Sung\",\"id\":\"645219938\"},{\"name\":\"Katja Kurdyukova\",\"id\":\"646532777\"},{\"name\":\"Nikki Nopanun\",\"id\":\"647785581\"},{\"name\":\"Chanin Sirisuvuthikul\",\"id\":\"647920618\"},{\"name\":\"Pake Moungthong\",\"id\":\"648466837\"},{\"name\":\"Tu Ritprasitchai\",\"id\":\"648542414\"},{\"name\":\"Emmie Tipapa Poovanattrai\",\"id\":\"648885266\"},{\"name\":\"Inkky Muek\",\"id\":\"650281687\"},{\"name\":\"Sanderous Aronzo\",\"id\":\"650402232\"},{\"name\":\"Vina Wibowo\",\"id\":\"650652485\"},{\"name\":\"Bee Buzzica\",\"id\":\"650866967\"},{\"name\":\"Sasithorn Supatanakornkij\",\"id\":\"651450638\"},{\"name\":\"Kunchit Cham\",\"id\":\"651686084\"},{\"name\":\"Golf Naja\",\"id\":\"652623016\"},{\"name\":\"Gong Boon\",\"id\":\"652750195\"},{\"name\":\"Somz Sassyz\",\"id\":\"654029699\"},{\"name\":\"Phenphan Supawit\",\"id\":\"654360869\"},{\"name\":\"Irina Wei\\u00df-Avetisyan\",\"id\":\"654873813\"},{\"name\":\"Pond Kueakul\",\"id\":\"655523133\"},{\"name\":\"Sunchai Pitakchonlasup\",\"id\":\"655674717\"},{\"name\":\"Tanicha Suavansri\",\"id\":\"657878673\"},{\"name\":\"Yannarak Wannasai\",\"id\":\"659776617\"},{\"name\":\"Grace HH\",\"id\":\"659805129\"},{\"name\":\"Sun Udomsilpa\",\"id\":\"660310299\"},{\"name\":\"Mustafa Re\\u015fit \\u015eahin\",\"id\":\"661906066\"},{\"name\":\"Phongsathornn Nanak\",\"id\":\"662299498\"},{\"name\":\"Pueng Narumol\",\"id\":\"664888726\"},{\"name\":\"Subahshini Gunasekharan\",\"id\":\"664904941\"},{\"name\":\"Atthapon Junpun-eak\",\"id\":\"664955515\"},{\"name\":\"Au Piyachet\",\"id\":\"665356781\"},{\"name\":\"Sun Jiaojiao\",\"id\":\"665644523\"},{\"name\":\"Win Trivitayanurak\",\"id\":\"666804676\"},{\"name\":\"Chotika Angsurit\",\"id\":\"669286035\"},{\"name\":\"Dee Nontaphorn\",\"id\":\"669443911\"},{\"name\":\"Luc Aeyaey\",\"id\":\"669680645\"},{\"name\":\"Chote Feaw\",\"id\":\"671130981\"},{\"name\":\"Pom Sukasom\",\"id\":\"671290573\"},{\"name\":\"Jum Chaidarun\",\"id\":\"673560165\"},{\"name\":\"Guo Sha\",\"id\":\"674372793\"},{\"name\":\"Teddy Tairy\",\"id\":\"675398510\"},{\"name\":\"Vicky Bkk\",\"id\":\"676031706\"},{\"name\":\"Nan Li\",\"id\":\"676407462\"},{\"name\":\"Yuri Veremeyenko\",\"id\":\"677584904\"},{\"name\":\"Tatiya Angsananratana\",\"id\":\"677654251\"},{\"name\":\"Suphawat Pookcharoen\",\"id\":\"677825273\"},{\"name\":\"Adriola Faqolli\",\"id\":\"678375470\"},{\"name\":\"Hung Chia-Chun\",\"id\":\"678608510\"},{\"name\":\"Pattamone \\u0e1b\\u0e31\\u0e17\\u0e21\\u0e4c-\\u0e17\\u0e30-\\u0e42\\u0e21\\u0e19\",\"id\":\"679342887\"},{\"name\":\"Izamu Katanyoota\",\"id\":\"682126306\"},{\"name\":\"Panita Ng\",\"id\":\"683386787\"},{\"name\":\"Sarunyu Boonsanong\",\"id\":\"683389478\"},{\"name\":\"Ana De Paz\",\"id\":\"683607235\"},{\"name\":\"BLack Green\",\"id\":\"685346145\"},{\"name\":\"Win Winneamon\",\"id\":\"685525604\"},{\"name\":\"Ambar Shukla\",\"id\":\"686336987\"},{\"name\":\"Looktarn Sukawan\",\"id\":\"688325470\"},{\"name\":\"Koala Poy\",\"id\":\"689135311\"},{\"name\":\"Vivi Stefany\",\"id\":\"690176712\"},{\"name\":\"Belle Wuthisawas\",\"id\":\"690672185\"},{\"name\":\"Tim Howgego\",\"id\":\"691617564\"},{\"name\":\"\\u0e2a\\u0e38\\u0e23\\u0e40\\u0e27\\u0e0a \\u0e2d\\u0e36\\u0e49\\u0e07\\u0e1b\\u0e23\\u0e30\\u0e40\\u0e2a\\u0e23\\u0e34\\u0e10\",\"id\":\"691824793\"},{\"name\":\"Minemi Sahatnetr\",\"id\":\"691980303\"},{\"name\":\"Nattapon Gj\",\"id\":\"692200093\"},{\"name\":\"Nuttee Lueang\",\"id\":\"692279254\"},{\"name\":\"Vicky Tseng\",\"id\":\"692439277\"},{\"name\":\"Konggo Sirisakthanakun\",\"id\":\"692475192\"},{\"name\":\"Suen Suen Chan\",\"id\":\"692585660\"},{\"name\":\"Bun Home\",\"id\":\"693245132\"},{\"name\":\"Ton \\u0e15\\u0e49\\u0e19\",\"id\":\"693250432\"},{\"name\":\"Thachakorn Pattawipas\",\"id\":\"693831373\"},{\"name\":\"Krishnaprasad Raghavan\",\"id\":\"694451594\"},{\"name\":\"Kittipoj Jariyadilok\",\"id\":\"695004710\"},{\"name\":\"Myths Qulraf\",\"id\":\"695242320\"},{\"name\":\"Jessica Chen-Burger\",\"id\":\"697812601\"},{\"name\":\"Mui Kometsopa\",\"id\":\"698450102\"},{\"name\":\"Yanto Young\",\"id\":\"700787503\"},{\"name\":\"Teeranai Thamshutiporn\",\"id\":\"701447899\"},{\"name\":\"Rohin Koolwal\",\"id\":\"702501293\"},{\"name\":\"Pear Nicha\",\"id\":\"703984135\"},{\"name\":\"Matthew Na Nagara\",\"id\":\"704310509\"},{\"name\":\"Ye Myat\",\"id\":\"707887355\"},{\"name\":\"Suphakorn Athikomnantha\",\"id\":\"709048272\"},{\"name\":\"Henbe Wot Da Fuk\",\"id\":\"709149221\"},{\"name\":\"Senthilkumar Chandramohan\",\"id\":\"709461232\"},{\"name\":\"Nadol Jayasevi\",\"id\":\"709910118\"},{\"name\":\"Wongsakorn Nimsamer\",\"id\":\"710092635\"},{\"name\":\"Kani Shukla\",\"id\":\"711591010\"},{\"name\":\"Funkky Pattanaraveeroj\",\"id\":\"712971973\"},{\"name\":\"Alex Rugina\",\"id\":\"713300293\"},{\"name\":\"Ohm Chayakorn\",\"id\":\"713728053\"},{\"name\":\"Wiriya Chaikittirattana\",\"id\":\"714146590\"},{\"name\":\"Shirley Ong\",\"id\":\"716304568\"},{\"name\":\"Bua Lilit\",\"id\":\"717587994\"},{\"name\":\"Preediwan Ungsriwong\",\"id\":\"718301456\"},{\"name\":\"Chommapat Mettaprasert\",\"id\":\"719411118\"},{\"name\":\"Nobi Nobita\",\"id\":\"719941382\"},{\"name\":\"Apirom Na Nakorn\",\"id\":\"720209640\"},{\"name\":\"Kay Lin\",\"id\":\"720903896\"},{\"name\":\"PloePlae Klongtroujrok\",\"id\":\"721624577\"},{\"name\":\"Teechut Chong\",\"id\":\"721984655\"},{\"name\":\"\\u0e2d\\u0e31\\u0e08\\u0e09\\u0e23\\u0e32 \\u0e19\\u0e34\\u0e48\\u0e21\\u0e19\\u0e27\\u0e25\",\"id\":\"722856456\"},{\"name\":\"Amanda Amantakul\",\"id\":\"726865421\"},{\"name\":\"Saranont Na Nakorn\",\"id\":\"727265654\"},{\"name\":\"Nachiket Apte\",\"id\":\"727430870\"},{\"name\":\"Tk Kim\",\"id\":\"728668259\"},{\"name\":\"Wora Wit\",\"id\":\"728870852\"},{\"name\":\"Premmin Dounaum\",\"id\":\"729322846\"},{\"name\":\"Sheryl Leong\",\"id\":\"729430844\"},{\"name\":\"Divya Balaji\",\"id\":\"729585056\"},{\"name\":\"Porarat Smarkchan\",\"id\":\"730655341\"},{\"name\":\"Chatchavan Wacharamanotham\",\"id\":\"730895195\"},{\"name\":\"Thamaroj Chansawang\",\"id\":\"731398879\"},{\"name\":\"Dan Liu\",\"id\":\"731523120\"},{\"name\":\"Preechaya Veen Sanyatit\",\"id\":\"732545494\"},{\"name\":\"Pepe Assavanives\",\"id\":\"732870272\"},{\"name\":\"Sasiwan Laohasinnarong\",\"id\":\"733030234\"},{\"name\":\"Amme Toragsaskul\",\"id\":\"733170671\"},{\"name\":\"Sathasai Ponghirun\",\"id\":\"733252756\"},{\"name\":\"Peerayoot Naksooksri\",\"id\":\"733353836\"},{\"name\":\"Krissada Chalermsook\",\"id\":\"733406245\"},{\"name\":\"Anupol Pop Anekpattanakij\",\"id\":\"733447533\"},{\"name\":\"Preaw D. Saetia\",\"id\":\"734340701\"},{\"name\":\"Tooney Chandrabhai\",\"id\":\"735632155\"},{\"name\":\"Fikry Payo\",\"id\":\"737201102\"},{\"name\":\"Sirat Sirananon\",\"id\":\"738316685\"},{\"name\":\"Chatnarong Sukpanich\",\"id\":\"738660974\"},{\"name\":\"Kat Khoo\",\"id\":\"739066895\"},{\"name\":\"EOn Srirung\",\"id\":\"740640296\"},{\"name\":\"Tarinee Kasamesukapat\",\"id\":\"743111374\"},{\"name\":\"Opor Thmalibu\",\"id\":\"743621061\"},{\"name\":\"Ashk Sh\",\"id\":\"745658859\"},{\"name\":\"Suparerk Assava\",\"id\":\"746556141\"},{\"name\":\"Wanaruk Bong Chaimayo\",\"id\":\"746575370\"},{\"name\":\"Arisra Bam Panuvatvanich\",\"id\":\"747138155\"},{\"name\":\"Yishen Li\",\"id\":\"747408764\"},{\"name\":\"Moni Monsicha Poppy\",\"id\":\"747590476\"},{\"name\":\"Sutee Chaiyakulsil\",\"id\":\"748631258\"},{\"name\":\"MinhSang TranLe\",\"id\":\"749279836\"},{\"name\":\"Witsarut Duangchinda\",\"id\":\"749900122\"},{\"name\":\"Robert Fisher\",\"id\":\"750193153\"},{\"name\":\"Pound Saengcharnchai\",\"id\":\"750849508\"},{\"name\":\"Oleksandr Lobunets\",\"id\":\"751016053\"},{\"name\":\"Pirat Savettanan\",\"id\":\"751692488\"},{\"name\":\"Suparast Charoenkajornkit\",\"id\":\"753233756\"},{\"name\":\"JaRp WaRp\",\"id\":\"753820637\"},{\"name\":\"Daniel Torcolato\",\"id\":\"757288048\"},{\"name\":\"Nattachai Ungsriwong\",\"id\":\"761625488\"},{\"name\":\"Sirithon Duiem\",\"id\":\"768602169\"},{\"name\":\"Jim Peetiya\",\"id\":\"774795651\"},{\"name\":\"Angsuma Kunsirimongkhon\",\"id\":\"776243151\"},{\"name\":\"Cheevarat Jampathom\",\"id\":\"782350250\"},{\"name\":\"Chaweewan Sapcharoenkun\",\"id\":\"782669082\"},{\"name\":\"Poom Romchart\",\"id\":\"784703362\"},{\"name\":\"Kanyanad Yuakyen\",\"id\":\"784945110\"},{\"name\":\"Kuo-Fang Chiu\",\"id\":\"788310501\"},{\"name\":\"Aui Chang\",\"id\":\"789085460\"},{\"name\":\"Jariya Moongwattana\",\"id\":\"793459733\"},{\"name\":\"Naphat Sopapirom\",\"id\":\"797962416\"},{\"name\":\"Piyanut Nui Warunyuwong\",\"id\":\"799584797\"},{\"name\":\"Rungfa Joy\",\"id\":\"805998674\"},{\"name\":\"Sudarat Rojphongkasem\",\"id\":\"813585433\"},{\"name\":\"Pitchaya Laksana\",\"id\":\"817220416\"},{\"name\":\"Jackrit Singhanutta\",\"id\":\"818975461\"},{\"name\":\"Apipong Pongsawapark\",\"id\":\"819430300\"},{\"name\":\"Ferry Irawan Tantono\",\"id\":\"821725161\"},{\"name\":\"Pantharee Atjanakul\",\"id\":\"826410088\"},{\"name\":\"Lapatrada Tingting\",\"id\":\"828278495\"},{\"name\":\"Boyd Thanawijitpun\",\"id\":\"828335396\"},{\"name\":\"Golfz Jsp Horsimasathaporn\",\"id\":\"828500650\"},{\"name\":\"PiKi Sprite\",\"id\":\"829490482\"},{\"name\":\"PuY\' Prayrin Chongsringam\",\"id\":\"829825724\"},{\"name\":\"Ann Sansawate\",\"id\":\"834280034\"},{\"name\":\"Maymae Maemay\",\"id\":\"834833547\"},{\"name\":\"Sakchode Srichonthan\",\"id\":\"839985650\"},{\"name\":\"Thamonwan Jet\",\"id\":\"846025321\"},{\"name\":\"Kakisama Somon\",\"id\":\"848850439\"},{\"name\":\"Lalita S. Ngernprasertsri\",\"id\":\"857645220\"},{\"name\":\"Nat Natty\",\"id\":\"859405270\"},{\"name\":\"Nual Skaosang\",\"id\":\"862500380\"},{\"name\":\"Eingon Orn P\",\"id\":\"867545156\"},{\"name\":\"Ukrit Arunyanak\",\"id\":\"876890120\"},{\"name\":\"Oranuch Ratana\",\"id\":\"1014621179\"},{\"name\":\"Teh Teh Watana\",\"id\":\"1021417415\"},{\"name\":\"Tina Lee\",\"id\":\"1026818234\"},{\"name\":\"Pat \\u53cc\\u53cc Na Nakorn\",\"id\":\"1028066091\"},{\"name\":\"Bora Bimbari\",\"id\":\"1035096910\"},{\"name\":\"Masud Karim\",\"id\":\"1037150483\"},{\"name\":\"Rebe L\\u00f3pez\",\"id\":\"1038490617\"},{\"name\":\"Sarah Al\",\"id\":\"1040338050\"},{\"name\":\"Siriluk Prasunpangsri\",\"id\":\"1042372665\"},{\"name\":\"Pat Ni\",\"id\":\"1045558318\"},{\"name\":\"Su-arpa Chalirmkietpakdee\",\"id\":\"1046109307\"},{\"name\":\"Puly Panida\",\"id\":\"1047204900\"},{\"name\":\"Alpesh Tarapara\",\"id\":\"1048252296\"},{\"name\":\"Darunee Sawangdee\",\"id\":\"1051262434\"},{\"name\":\"Siyu Tang\",\"id\":\"1052179597\"},{\"name\":\"Pratanu \\u09aa\\u09cd\\u09b0\\u09a4\\u09a8\\u09c1 Roy \\u09b0\\u09be\\u09af\\u09bc\",\"id\":\"1053685425\"},{\"name\":\"Sun Chanukorn\",\"id\":\"1057513240\"},{\"name\":\"Chatchavarn Poom Watanakhiri\",\"id\":\"1058689317\"},{\"name\":\"Guide Emotion\",\"id\":\"1060882587\"},{\"name\":\"Prin Kotchapakdi\",\"id\":\"1061809372\"},{\"name\":\"Granlert Changlaw\",\"id\":\"1066877914\"},{\"name\":\"Kittiphong Pholpipatanaphong\",\"id\":\"1067914648\"},{\"name\":\"Umaporn Leelanuntakul\",\"id\":\"1069338096\"},{\"name\":\"Visarut Vantasin\",\"id\":\"1070025240\"},{\"name\":\"Bloo Melody\",\"id\":\"1075783048\"},{\"name\":\"Nuttara Sriprasert\",\"id\":\"1076414373\"},{\"name\":\"Pichaya Phuksawan\",\"id\":\"1087416823\"},{\"name\":\"Silpachai Na Nakorn\",\"id\":\"1093817596\"},{\"name\":\"Melli Sudjono\",\"id\":\"1100940828\"},{\"name\":\"Wattana Jr Na Nakorn\",\"id\":\"1113518098\"},{\"name\":\"Api Nan\",\"id\":\"1113519148\"},{\"name\":\"Chalisa Sangpitak\",\"id\":\"1123512611\"},{\"name\":\"Niloo Dez\",\"id\":\"1125584250\"},{\"name\":\"Yuki Zhang\",\"id\":\"1126725204\"},{\"name\":\"Alexandru Mereacre\",\"id\":\"1130466534\"},{\"name\":\"Supanun Somlok\",\"id\":\"1131696489\"},{\"name\":\"Stephanie Wong\",\"id\":\"1133272985\"},{\"name\":\"Chaiwat Panyasen\",\"id\":\"1136122562\"},{\"name\":\"Allan Lee\",\"id\":\"1136783524\"},{\"name\":\"Jirapun Sokhuma\",\"id\":\"1141234591\"},{\"name\":\"Limpanich Poriya\",\"id\":\"1145931323\"},{\"name\":\"Suppavut Chatchaisang\",\"id\":\"1153197660\"},{\"name\":\"Jaded Thepwipaporn\",\"id\":\"1161622638\"},{\"name\":\"Vi Vichairat\",\"id\":\"1161699219\"},{\"name\":\"Pair Na Nakorn\",\"id\":\"1164828379\"},{\"name\":\"Ananda Huntone\",\"id\":\"1170095562\"},{\"name\":\"Cong Zhang\",\"id\":\"1173054253\"},{\"name\":\"Anuwat Na Nakorn\",\"id\":\"1173081130\"},{\"name\":\"Thanyalak Chaisuwan\",\"id\":\"1175891788\"},{\"name\":\"Paksong Sathitrungpornchai\",\"id\":\"1186238696\"},{\"name\":\"Kasamol Sansanakul\",\"id\":\"1188867353\"},{\"name\":\"Panupat Jong Yoon\",\"id\":\"1189879239\"},{\"name\":\"Sarut Panjavan\",\"id\":\"1200486932\"},{\"name\":\"IngiNg Penpicha\",\"id\":\"1235721635\"},{\"name\":\"Moo Aood\",\"id\":\"1236157309\"},{\"name\":\"Arnon Sasserscams Ungviboonwong\",\"id\":\"1252453167\"},{\"name\":\"Liu Bin\",\"id\":\"1263501504\"},{\"name\":\"Yodyiam Saetia\",\"id\":\"1263813800\"},{\"name\":\"Dianing Galih\",\"id\":\"1278126593\"},{\"name\":\"Caro Moreno Perales\",\"id\":\"1278440672\"},{\"name\":\"Da Pakdeepanitpong\",\"id\":\"1285862039\"},{\"name\":\"Beau Yeongmin Shinigami\",\"id\":\"1307438862\"},{\"name\":\"Tao Why \'s Love\",\"id\":\"1307924410\"},{\"name\":\"Somchai Vantasin\",\"id\":\"1309829237\"},{\"name\":\"Ploy Ployavee\",\"id\":\"1310384979\"},{\"name\":\"Christie Eamranond\",\"id\":\"1317357708\"},{\"name\":\"Sanjay Khadayate\",\"id\":\"1323398977\"},{\"name\":\"Pearapat Opatsamutchai\",\"id\":\"1335938052\"},{\"name\":\"PingPing Na Nakorn\",\"id\":\"1349220109\"},{\"name\":\"Khao-Oat Boonkwan\",\"id\":\"1349793069\"},{\"name\":\"Rattanan Kammix\",\"id\":\"1362305039\"},{\"name\":\"Pu Chanida Leelanuntakul\",\"id\":\"1364740085\"},{\"name\":\"Jovi Wang\",\"id\":\"1365274053\"},{\"name\":\"Frankin Fin\",\"id\":\"1377542750\"},{\"name\":\"Tongyan Ning\",\"id\":\"1416183433\"},{\"name\":\"Alexander Ferrein\",\"id\":\"1416543059\"},{\"name\":\"Olga Ivchenko\",\"id\":\"1421561407\"},{\"name\":\"Wittawas Tiewsomboonkit\",\"id\":\"1428801495\"},{\"name\":\"Bolo Ophatsodsai\",\"id\":\"1435899674\"},{\"name\":\"Elsa Hsieh-wei Lien\",\"id\":\"1451452429\"},{\"name\":\"Pawee Sriwareerat\",\"id\":\"1464144866\"},{\"name\":\"Wenjing Wang\",\"id\":\"1469820611\"},{\"name\":\"Jing Chen\",\"id\":\"1487003065\"},{\"name\":\"Natta Blahblahblah\",\"id\":\"1490208366\"},{\"name\":\"Matthias Berg\",\"id\":\"1494456423\"},{\"name\":\"\\u0150r\\u00e4nGe Za\",\"id\":\"1500860755\"},{\"name\":\"Helen Xie\",\"id\":\"1513081349\"},{\"name\":\"Zhangru Nan\",\"id\":\"1518031334\"},{\"name\":\"Lili Ma\",\"id\":\"1558758693\"},{\"name\":\"Krerkkiet Kirk Sanmuang\",\"id\":\"1565983910\"},{\"name\":\"Rangricky Na Nakorn\",\"id\":\"1568042730\"},{\"name\":\"Smith Prasarttongosoth\",\"id\":\"1600184088\"},{\"name\":\"Yiyi Yan\",\"id\":\"1616191013\"},{\"name\":\"Tianyang Peng\",\"id\":\"1651104671\"},{\"name\":\"Can Liu\",\"id\":\"1661152285\"},{\"name\":\"Namwaan Ja\",\"id\":\"1661348166\"},{\"name\":\"Watchara Laenoi\",\"id\":\"1666051617\"},{\"name\":\"Kitsana Saenphet\",\"id\":\"1668798856\"},{\"name\":\"Aunnop Na Nakorn\",\"id\":\"1686630875\"},{\"name\":\"Sujitra \\u0e40\\u0e23\\u0e32\\u0e23\\u0e31\\u0e01\\u0e43\\u0e19\\u0e2b\\u0e25\\u0e27\\u0e07\",\"id\":\"1708406787\"},{\"name\":\"Na Darayar\",\"id\":\"1720048515\"},{\"name\":\"Inn Wannaluck\",\"id\":\"1721540228\"},{\"name\":\"Bj\\u00f6rn Sondermann\",\"id\":\"1736689688\"},{\"name\":\"KoKo Wanajessada\",\"id\":\"1741217142\"},{\"name\":\"Nopporn Kongton\",\"id\":\"1760487110\"},{\"name\":\"Arthit Yermyunyong\",\"id\":\"1763676621\"},{\"name\":\"Saowaluck Yammuen-Art\",\"id\":\"1764290744\"},{\"name\":\"Andreas Zimmermann\",\"id\":\"1775445968\"},{\"name\":\"Distat Leartpiches\",\"id\":\"1781310837\"},{\"name\":\"Umpika Kapium\",\"id\":\"1790893776\"},{\"name\":\"TongZaa Ter\",\"id\":\"1809905314\"},{\"name\":\"Markus Schlattmann\",\"id\":\"1837992299\"},{\"name\":\"Anocha Na Nakorn\",\"id\":\"1847907963\"},{\"name\":\"Mongkol Plengkreangkai\",\"id\":\"100000030301158\"},{\"name\":\"McDucation Study Scotland\",\"id\":\"100000075877631\"},{\"name\":\"Preecha Vanichakornphongs\",\"id\":\"100000114321621\"},{\"name\":\"Sirima Na Nakorn\",\"id\":\"100000118772235\"},{\"name\":\"Piyawut Pattamanon\",\"id\":\"100000121494698\"},{\"name\":\"Orakarn Napavejavij\",\"id\":\"100000124010318\"},{\"name\":\"Panyawat Phasipol\",\"id\":\"100000138041427\"},{\"name\":\"Jee Moh\",\"id\":\"100000140959904\"},{\"name\":\"Akkankiti Tananuwon\",\"id\":\"100000147082320\"},{\"name\":\"J-bo Tanakorn\",\"id\":\"100000156954288\"},{\"name\":\"Chutchamon Sirisopanaporn\",\"id\":\"100000176556997\"},{\"name\":\"KuNg Na NaKorn\",\"id\":\"100000179778801\"},{\"name\":\"Jirayu Udomsilpa\",\"id\":\"100000183576013\"},{\"name\":\"Pathompong Na Nakorn\",\"id\":\"100000185190817\"},{\"name\":\"Kamonpan Na Nakorn\",\"id\":\"100000195259706\"},{\"name\":\"Nilobol Ariyamongkollert\",\"id\":\"100000201256691\"},{\"name\":\"Sarawut Saephoo\",\"id\":\"100000208381565\"},{\"name\":\"Tharinee Mamai Ruangwong\",\"id\":\"100000222813152\"},{\"name\":\"Sangchoke Sibunruang\",\"id\":\"100000223261768\"},{\"name\":\"Somthep Srimahachota\",\"id\":\"100000224086735\"},{\"name\":\"Birdie Wongsanguan\",\"id\":\"100000228635972\"},{\"name\":\"Zhenwei He\",\"id\":\"100000245616064\"},{\"name\":\"Ney -Aoffy\",\"id\":\"100000246451556\"},{\"name\":\"Pitcha Na Nakorn\",\"id\":\"100000253988937\"},{\"name\":\"Ann Thitima Pratoomtip\",\"id\":\"100000261354114\"},{\"name\":\"Tanaporn Jiravimolkij\",\"id\":\"100000262294655\"},{\"name\":\"Faikahoney Sukhapinda\",\"id\":\"100000262480948\"},{\"name\":\"Pattinee Pear Chaichanavong\",\"id\":\"100000265724292\"},{\"name\":\"Surapee Na Nakorn\",\"id\":\"100000272198239\"},{\"name\":\"Wipada Boonmak\",\"id\":\"100000275605935\"},{\"name\":\"Nutchapon Suwanwej\",\"id\":\"100000283338269\"},{\"name\":\"Oruma Na Nakorn\",\"id\":\"100000294630186\"},{\"name\":\"Note Neno\",\"id\":\"100000299544537\"},{\"name\":\"Kamolsak Panichpisal\",\"id\":\"100000299631240\"},{\"name\":\"Guniez Keaukoon\",\"id\":\"100000308090125\"},{\"name\":\"Teck Laosmesook\",\"id\":\"100000314580779\"},{\"name\":\"Yodyos Sudathip\",\"id\":\"100000315245251\"},{\"name\":\"Au Na Nakorn\",\"id\":\"100000326719251\"},{\"name\":\"Noo-yim \\u0e23\\u0e31\\u0e01\\u0e04\\u0e23\\u0e2d\\u0e1a\\u0e04\\u0e23\\u0e31\\u0e27\",\"id\":\"100000344520663\"},{\"name\":\"Pornprom Bhudthapornpong\",\"id\":\"100000349233594\"},{\"name\":\"Nuttaphol Lipiphan\",\"id\":\"100000352380105\"},{\"name\":\"Alongkorn Chaiyapak\",\"id\":\"100000359264696\"},{\"name\":\"Kulisara Chooraksa\",\"id\":\"100000363182618\"},{\"name\":\"Mark Horizonman\",\"id\":\"100000378428148\"},{\"name\":\"Ping Pingbook\",\"id\":\"100000379322753\"},{\"name\":\"Star Namfon\",\"id\":\"100000426966313\"},{\"name\":\"Thanop Somprasong\",\"id\":\"100000431297973\"},{\"name\":\"Rungnapa Pornpapat\",\"id\":\"100000445464803\"},{\"name\":\"Fifi Blake\",\"id\":\"100000452697834\"},{\"name\":\"Sakon Leesawan\",\"id\":\"100000486018730\"},{\"name\":\"Lanlanlar Ka\",\"id\":\"100000495184524\"},{\"name\":\"Ekachai Udomprasertdee\",\"id\":\"100000499182060\"},{\"name\":\"Ragit Mayteesuttinun\",\"id\":\"100000503768061\"},{\"name\":\"Penprao Maneewan\",\"id\":\"100000504477354\"},{\"name\":\"Tanate Chairudee\",\"id\":\"100000509734854\"},{\"name\":\"Pongsak Pianpanawate\",\"id\":\"100000511504471\"},{\"name\":\"Niloofar Dezfuli Khalilbeigi\",\"id\":\"100000513605621\"},{\"name\":\"Neth Tii\",\"id\":\"100000515552986\"},{\"name\":\"Ma-Krae Bouloy\",\"id\":\"100000517523538\"},{\"name\":\"Chakra Veerakul\",\"id\":\"100000521292579\"},{\"name\":\"Sasima Srisukh\",\"id\":\"100000531155336\"},{\"name\":\"Sam Kittayapong\",\"id\":\"100000550087886\"},{\"name\":\"Oi Blue\",\"id\":\"100000552957369\"},{\"name\":\"Boot Panithi Nobthai\",\"id\":\"100000558180478\"},{\"name\":\"Kittisak Thitaratanaphol\",\"id\":\"100000558625591\"},{\"name\":\"Napa Lim\",\"id\":\"100000570289890\"},{\"name\":\"Jakaphan Khiewphan\",\"id\":\"100000600139332\"},{\"name\":\"Tum Sujaree\",\"id\":\"100000642085716\"},{\"name\":\"Ake Eakepong\",\"id\":\"100000648206323\"},{\"name\":\"Actboyz Prince\",\"id\":\"100000650855041\"},{\"name\":\"Bbl Bblpaitiewgun\",\"id\":\"100000682801073\"},{\"name\":\"Gentlemen Vajiravudh\",\"id\":\"100000699013469\"},{\"name\":\"Darin Vongthanatavornkul\",\"id\":\"100000712281215\"},{\"name\":\"Yeo Hee Kim\",\"id\":\"100000728036625\"},{\"name\":\"NovelCaf\\u00e9 Koreatown\",\"id\":\"100000771891438\"},{\"name\":\"AutoAgente Medios\",\"id\":\"100000780170976\"},{\"name\":\"Chayada Na Nakorn\",\"id\":\"100000803188628\"},{\"name\":\"Manussanun Na Nakorn\",\"id\":\"100000822446290\"},{\"name\":\"Jirawat Na Nakorn\",\"id\":\"100000865230385\"},{\"name\":\"Saenfa Manajunyapong\",\"id\":\"100000877997319\"},{\"name\":\"Mokteer Geepee\",\"id\":\"100000888716855\"},{\"name\":\"Patcharapa Limwanichroongrueng\",\"id\":\"100000897636998\"},{\"name\":\"Panern Na Nakorn\",\"id\":\"100000904383935\"},{\"name\":\"\\u0e08\\u0e31\\u0e01\\u0e23\\u0e1e\\u0e31\\u0e19\\u0e18\\u0e4c Na Nakorn\",\"id\":\"100000906115177\"},{\"name\":\"Tanya Na Ayudhya\",\"id\":\"100000911890555\"},{\"name\":\"Jukajan Pogust\",\"id\":\"100000931760229\"},{\"name\":\"\\u0e2b\\u0e19\\u0e39\\u0e2b\\u0e19\\u0e34\\u0e07 \\u0e19\\u0e30\\u0e08\\u0e4a\\u0e30\",\"id\":\"100000983300298\"},{\"name\":\"We Sit\",\"id\":\"100000995703551\"},{\"name\":\"Rutnati Padmasuta\",\"id\":\"100001018818318\"},{\"name\":\"Aoffy Wanjun\",\"id\":\"100001026813683\"},{\"name\":\"Yongyudh Na Nagara\",\"id\":\"100001041573686\"},{\"name\":\"Yan Lin\",\"id\":\"100001086108237\"},{\"name\":\"Patawin Ingpochai\",\"id\":\"100001094776521\"},{\"name\":\"Kittipob Sukhapinda\",\"id\":\"100001095587591\"},{\"name\":\"Zhongkai Zhu\",\"id\":\"100001101630978\"},{\"name\":\"Samkwan Teeranattapong\",\"id\":\"100001103072540\"},{\"name\":\"Monsawan Pariyamon\",\"id\":\"100001128781447\"},{\"name\":\"Vajiravudh Centennial\",\"id\":\"100001420760843\"},{\"name\":\"Shantea Mac\",\"id\":\"100001428580492\"},{\"name\":\"Chatnarong Sukpanich\",\"id\":\"100001498460202\"},{\"name\":\"Sivakorn Na NaKorn\",\"id\":\"100001539402754\"},{\"name\":\"Teerapong Suwannawete\",\"id\":\"100001545406524\"},{\"name\":\"Apirak Areeyamitr\",\"id\":\"100001687700378\"},{\"name\":\"\\u0e2d\\u0e15\\u0e34\\u0e20\\u0e31\\u0e17\\u0e23\\u0e4c \\u0e2d\\u0e15\\u0e34\\u0e01\\u0e19\\u0e34\\u0e29\\u0e10\",\"id\":\"100001915167010\"}]}')[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCOMMIT[0m
+Rendering home/index
+  [4;35;1mFacebookFriendCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+
+ActionView::TemplateError (no implicit conversion to float from string) on line #4 of app/views/home/index.html.erb:
+1: 
+2: 
+3: <div id="fb-root">
+4: 	<%=$facebook.all_friends%>
+5: </div>
+6: <script src="http://static.ak.fbcdn.net/connect/en_US/core.debug.js"></script>
+7: <script>
+
+    app/models/facebook.rb:55:in `all_friends'
+    app/views/home/index.html.erb:4
+
+Rendered rescues/_trace (162.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:02:40) [POST]
+  Parameters: {"signed_request"=>"Ekbt2HOxsHC9Y2yoxJlIRyegWL2BWYj1UdqrOYOEet8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3Mzc1Nywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mFacebookFriendCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookFriendCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_friend_caches`[0m
+
+TypeError (no implicit conversion to float from string):
+  app/models/facebook.rb:55:in `all_friends'
+  app/controllers/home_controller.rb:7:in `index'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:02:55) [POST]
+  Parameters: {"signed_request"=>"JjtPXRjWM70u2ToMA1gg-4kDQ2e_iRy0IMpDx8cTrh0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3Mzc3NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mFacebookFriendCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookFriendCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_friend_caches`[0m
+
+TypeError (no implicit conversion to float from string):
+  app/models/facebook.rb:55:in `all_friends'
+  app/controllers/home_controller.rb:7:in `index'
+
+Rendered rescues/_trace (146.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:04:03) [POST]
+  Parameters: {"signed_request"=>"QVYr9wVVpNDMUq6hnxrwgDmjeUXRpS4aceWyk1J89rk.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3Mzg0Miwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;36;1mFacebookCache Load (19.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mFacebookFriendCache Load (12.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookFriendCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering home/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+Completed in 673ms (View: 322, DB: 44) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:12:43) [POST]
+  Parameters: {"signed_request"=>"piCu8Ni9rJdNefWwlXbRefVGkUAR5zwKhrElrpP7TN0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NDM2MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;36;1mFacebookCache Load (3.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mFacebookFriendCache Load (2.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookFriendCache Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+Completed in 1337ms (View: 511, DB: 17) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:12:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:12:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.json.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:12:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.error_log.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:12:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.loading_button.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:12:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.relative_offset.1.0.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:12:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.whowish_default_text.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:12:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/form_validator_helper.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:12:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.error_log.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:12:48) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.loading_button.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:12:50) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.json.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:12:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/form_validator_helper.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:13:22) [POST]
+  Parameters: {"signed_request"=>"xaORtQWDARebjQOMNShXPgXyb14Y77jbfjqCojCv1Oc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NDQwMCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mFacebookFriendCache Load (2.0ms)[0m   [0mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookFriendCache Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+Completed in 578ms (View: 354, DB: 11) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.relative_offset.1.0.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.error_log.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.whowish_default_text.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.loading_button.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.json.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/form_validator_helper.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.relative_offset.1.0.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.whowish_default_text.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.error_log.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.loading_button.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.json.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/form_validator_helper.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:13:40) [POST]
+  Parameters: {"signed_request"=>"xqL0ebz81ErG-tn_7AmaWJ2YSxJPd4U_4DVJIZ5rlfc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NDQxOSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;36;1mFacebookCache Load (18.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (23.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mFacebookFriendCache Load (4.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookFriendCache Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+Completed in 636ms (View: 253, DB: 51) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.relative_offset.1.0.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:43) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.error_log.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:43) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.whowish_default_text.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:43) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.loading_button.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:43) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.json.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:44) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/form_validator_helper.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:44) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.error_log.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.loading_button.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.json.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:13:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/form_validator_helper.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 15:14:13) [POST]
+  Parameters: {"signed_request"=>"J1FELFP1XdvGigcIcFsmJ3XWRErF6t11mG6-DdGBPns.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NDQ1MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5KMTRBU0NYQ1dzZ042RTBDaE1LMnlBX18uMzYwMC4xMjk0NDgwODAwLTYzMjgxODI0NnxhUGFaT1dJVGVPTzB5eTRTV0p0dC1IUVRsQmMiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246|B463V8Cy5goEx8vXoIdVDNOIlQc"}
+  [4;35;1mFacebookCache Load (19.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (30.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mFacebookFriendCache Load (77.0ms)[0m   [0mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookFriendCache Columns (40.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+Completed in 749ms (View: 275, DB: 166) | 200 OK [http://localhost/?code=2.b9R0_e6bWiHepJz0fXm6Lg__.3600.1294473600-632818246%7CB463V8Cy5goEx8vXoIdVDNOIlQc]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:14:15) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:14:15) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.relative_offset.1.0.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:14:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.loading_button.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:14:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.error_log.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:14:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.whowish_default_text.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:14:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.json.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:14:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/form_validator_helper.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:14:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.error_log.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:14:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.loading_button.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:14:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.json.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:14:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/form_validator_helper.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

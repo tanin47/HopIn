@@ -4,7 +4,7 @@ class HomeController < ApplicationController
 
 
   def index
-    
+    $facebook.all_friends
   
   end
   
