@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(:version => 0) do
     t.float    "amount",                                :null => false
     t.integer  "capacity",                              :null => false
     t.integer  "parent_bus_id",   :default => 0,        :null => false
-    t.integer  "facebook_id",                           :null => false
+    t.string   "facebook_id",                           :null => false
     t.datetime "deadline"
     t.string   "currency_code",                         :null => false
     t.integer  "hops",            :default => 0,        :null => false
@@ -37,13 +37,13 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   create_table "currencies", :force => true do |t|
-    t.string  "name"
-    t.string  "format"
-    t.string  "sign"
-    t.string  "separator"
-    t.string  "delimiter"
-    t.string  "paypal_currency_code"
-    t.integer "minimum"
+    t.string "name"
+    t.string "format"
+    t.string "sign"
+    t.string "separator"
+    t.string "delimiter"
+    t.string "paypal_currency_code"
+    t.float  "minimum"
   end
 
   create_table "error_logs", :force => true do |t|
@@ -71,11 +71,12 @@ ActiveRecord::Schema.define(:version => 0) do
   add_index "facebook_friend_caches", ["facebook_id"], :name => "facebook_id", :unique => true
 
   create_table "hops", :force => true do |t|
-    t.integer  "facebook_id",  :null => false
-    t.integer  "bus_id",       :null => false
-    t.text     "comment",      :null => false
-    t.float    "amount",       :null => false
-    t.datetime "created_date", :null => false
+    t.string   "facebook_id",           :null => false
+    t.integer  "bus_id",                :null => false
+    t.string   "bus_owner_facebook_id", :null => false
+    t.text     "comment",               :null => false
+    t.float    "amount",                :null => false
+    t.datetime "created_date",          :null => false
   end
 
   create_table "paypal_ipns", :force => true do |t|

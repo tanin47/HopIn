@@ -9,6 +9,7 @@
 		<%= javascript_include_tag "jquery.error_log.js"%>
 		<%= javascript_include_tag "jquery.loading_button.js"%>
 		<%= javascript_include_tag "jquery.json.js"%>
+		<%= javascript_include_tag "jquery.ruby_alert.js"%>
 		<%= javascript_include_tag "form_validator_helper.js"%>
 		<%=stylesheet_link_tag("/swfupload/swfupload.css")%>
 		<%= javascript_include_tag "/swfupload/ajaxupload.js" %>
@@ -20,20 +21,8 @@
 				<tr>
 					<td>
 						<img src="http://graph.facebook.com/<%=$facebook.user_id%>/picture?type=square">
-						<%=$facebook.name%><br/>
-						
-						<%
-							connection = ActiveRecord::Base.connection();
-							total_donation = connection.execute("SELECT SUM(donated_amount) FROM `buses` WHERE `status`='"+Bus::STATUS_FINISHED+"' AND `facebook_id` = '"+$facebook.user_id+"'").fetch_row()[0].to_i
-						%>
-						
-						Donation: <%=format_currency_by_code("USD",total_donation)%><br/>
-						
-						<%
-							total_hop = connection.execute("SELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '"+$facebook.user_id+"'").fetch_row()[0].to_i
-						%>
-						
-						Hop: <%=format_currency_by_code("USD",total_hop)%><br/>
+						<%=$facebook.name%><br/>				
+						<%=render :partial=>"home/top_hop" if $facebook.user_id%>
 					</td>
 					<td><%=yield%></td>
 				</tr>	

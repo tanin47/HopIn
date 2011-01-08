@@ -1,0 +1,30 @@
+						
+<%
+	connection = ActiveRecord::Base.connection();
+	total_donation = connection.execute("SELECT SUM(donated_amount) FROM `buses` WHERE `status`='"+Bus::STATUS_FINISHED+"' AND `facebook_id` = '"+$facebook.user_id+"'").fetch_row()[0].to_i
+%>
+
+Donation: <%=format_currency_by_code("USD",total_donation)%><br/>
+
+<%
+	total_hop = connection.execute("SELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '"+$facebook.user_id+"'").fetch_row()[0].to_i
+%>
+
+Hop: <%=format_currency_by_code("USD",total_hop)%><br/>
+
+<%
+	top_hops = connection.execute("SELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '"+$facebook.user_id+"' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3")
+
+	while true
+		row = top_hops.fetch_row()
+
+		break if !row
+
+		facebook_id = row[0]
+		data = get_facebook_info(facebook_id)
+%>
+	<img src="http://graph.facebook.com/<%=data.facebook_id%>/picture?type=square">
+	<%=data.name%><br/>
+<% 
+	end
+%>

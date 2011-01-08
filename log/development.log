@@ -2749,3 +2749,929 @@ Rendering hop/index
   [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
 Completed in 239ms (View: 99, DB: 19) | 200 OK [http://localhost/hop?bus_id=1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 18:19:46) [POST]
+  Parameters: {"signed_request"=>"OxcqIYyTIgAk94XxVK9eq_4OkoAGWALdwu7RnG-9vWA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NTU4NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mFacebookFriendCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookFriendCache Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mCurrency Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+Completed in 490ms (View: 214, DB: 30) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:21:22) [POST]
+  Parameters: {"signed_request"=>"kWDAKqo4sOAc-UxDnG__uiCu2JaIpjwE_ItNnGRLFwc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NTY4MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mCurrency Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+Completed in 228ms (View: 117, DB: 12) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:21:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:21:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:21:30) [POST]
+  Parameters: {"signed_request"=>"TIXmV4pFHEDZYkvSKotpoG24H0tuSwati2kTyICraAw.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NTY4OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mCurrency Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+Completed in 204ms (View: 88, DB: 14) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:21:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:21:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:22:22) [POST]
+  Parameters: {"signed_request"=>"Q9IkWCxGoJDdUiwwqgOosiXqCFq5r-j7Q_8mr8FYZzg.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NTc0MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mCurrency Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+Completed in 189ms (View: 78, DB: 13) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:22:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:22:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:23:00) [POST]
+  Parameters: {"signed_request"=>"yEPAfxXNzmzlvI_rg4AnPFEy8EaTlQiV6VNEmirkkq0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NTc3OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mCurrency Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+Completed in 217ms (View: 101, DB: 12) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:23:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:23:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mdescribe `buses`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `buses`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `charities`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mdescribe `charities`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `charities`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `currencies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `currencies`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSHOW FIELDS FROM `error_logs`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mdescribe `error_logs`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `error_logs`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `facebook_caches`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `facebook_caches`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_friend_caches`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mdescribe `facebook_friend_caches`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `facebook_friend_caches`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `hops`[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSHOW FIELDS FROM `paypal_ipns`[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mdescribe `paypal_ipns`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `paypal_ipns`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:35:13) [POST]
+  Parameters: {"signed_request"=>"ykm6npz1LyFEOx_q4qvmyW3FFBEdGdYJEr0_yr11YZs.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NjUxMSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mCurrency Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '632818246' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3[0m
+Completed in 252ms (View: 121, DB: 16) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:35:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:35:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:38:36) [POST]
+  Parameters: {"signed_request"=>"kcrGGpuT0SMsiYxsiv94iBcXviPdgXFKtz2hK8aDQbk.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NjcxNCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;35;1mCurrency Load (7.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mCurrency Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mSELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '632818246' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `get_data' for #<ActionView::Base:0x8a3b8b4>) on line #48 of app/views/layouts/main.html.erb:
+45: 								break if !row
+46: 
+47: 								facebook_id = row[0]
+48: 								data = get_facebook_info(facebook_id)
+49: 						%>
+50: 							<img src="http://graph.facebook.com/<%=data.facebook_id%>/picture?type=square">
+51: 							<%=data.name%><br/>
+
+    app/helpers/application_helper.rb:19:in `get_facebook_info'
+    app/views/layouts/main.html.erb:48
+
+Rendered rescues/_trace (195.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:39:56) [POST]
+  Parameters: {"signed_request"=>"3GfIQBQH06UWEN6wVBG4FbO7XbfK6nHNxOqjS0yXxgs.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4Njc5NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mCurrency Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '632818246' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+
+ActionView::TemplateError (can't convert nil into String) on line #48 of app/views/layouts/main.html.erb:
+45: 								break if !row
+46: 
+47: 								facebook_id = row[0]
+48: 								data = get_facebook_info(facebook_id)
+49: 						%>
+50: 							<img src="http://graph.facebook.com/<%=data.facebook_id%>/picture?type=square">
+51: 							<%=data.name%><br/>
+
+    app/helpers/application_helper.rb:45:in `+'
+    app/helpers/application_helper.rb:45:in `get_data'
+    app/helpers/application_helper.rb:19:in `get_facebook_info'
+    app/views/layouts/main.html.erb:48
+
+Rendered rescues/_trace (108.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:40:22) [POST]
+  Parameters: {"signed_request"=>"J-HA14lL5eDN15T3Inob9oq0JNH9ye96ZmVHVVpOUAI.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NjgyMCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mCurrency Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mSELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '632818246' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+
+ActionView::TemplateError (can't convert nil into String) on line #48 of app/views/layouts/main.html.erb:
+45: 								break if !row
+46: 
+47: 								facebook_id = row[0]
+48: 								data = get_facebook_info(facebook_id)
+49: 						%>
+50: 							<img src="http://graph.facebook.com/<%=data.facebook_id%>/picture?type=square">
+51: 							<%=data.name%><br/>
+
+    app/helpers/application_helper.rb:45:in `+'
+    app/helpers/application_helper.rb:45:in `get_data'
+    app/helpers/application_helper.rb:19:in `get_facebook_info'
+    app/views/layouts/main.html.erb:48
+
+Rendered rescues/_trace (191.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:43:18) [POST]
+  Parameters: {"signed_request"=>"cfdVrT43c3YAtZ22aQHOyDuyj-yRMDCkIIelqiRa75g.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4Njk5Nywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mCurrency Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '632818246' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+
+ActionView::TemplateError (can't convert nil into String) on line #48 of app/views/layouts/main.html.erb:
+45: 								break if !row
+46: 
+47: 								facebook_id = row[0]
+48: 								data = get_facebook_info(facebook_id)
+49: 						%>
+50: 							<img src="http://graph.facebook.com/<%=data.facebook_id%>/picture?type=square">
+51: 							<%=data.name%><br/>
+
+    app/helpers/application_helper.rb:45:in `+'
+    app/helpers/application_helper.rb:45:in `get_data'
+    app/helpers/application_helper.rb:19:in `get_facebook_info'
+    app/views/layouts/main.html.erb:48
+
+Rendered rescues/_trace (100.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:44:27) [POST]
+  Parameters: {"signed_request"=>"tuBTJHAwXZEgLU5_18DciQHV9_XBSf7Gr0nWaulxsuQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NzA2NSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mCurrency Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mSELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '632818246' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+
+ActionView::TemplateError (can't convert nil into String) on line #48 of app/views/layouts/main.html.erb:
+45: 								break if !row
+46: 
+47: 								facebook_id = row[0]
+48: 								data = get_facebook_info(facebook_id)
+49: 						%>
+50: 							<img src="http://graph.facebook.com/<%=data.facebook_id%>/picture?type=square">
+51: 							<%=data.name%><br/>
+
+    app/helpers/application_helper.rb:45:in `+'
+    app/helpers/application_helper.rb:45:in `get_data'
+    app/helpers/application_helper.rb:19:in `get_facebook_info'
+    app/views/layouts/main.html.erb:48
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:44:49) [POST]
+  Parameters: {"signed_request"=>"RzKpsoSbIUShehjPK5lsg0gt5PcTgOOVRUC0MJEvP-4.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NzA4OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mCurrency Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mSELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '632818246' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+
+ActionView::TemplateError (can't convert nil into String) on line #48 of app/views/layouts/main.html.erb:
+45: 								break if !row
+46: 
+47: 								facebook_id = row[0]
+48: 								data = get_facebook_info(facebook_id)
+49: 						%>
+50: 							<img src="http://graph.facebook.com/<%=data.facebook_id%>/picture?type=square">
+51: 							<%=data.name%><br/>
+
+    app/helpers/application_helper.rb:46:in `+'
+    app/helpers/application_helper.rb:46:in `get_data'
+    app/helpers/application_helper.rb:19:in `get_facebook_info'
+    app/views/layouts/main.html.erb:48
+
+Rendered rescues/_trace (106.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:45:46) [POST]
+  Parameters: {"signed_request"=>"8q6jT06_415D5r5Kktej3jMhx2Gog-QQpPSbCd_HZb0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NzE0NSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mCurrency Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '632818246' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+
+ActionView::TemplateError (can't convert nil into String) on line #48 of app/views/layouts/main.html.erb:
+45: 								break if !row
+46: 
+47: 								facebook_id = row[0]
+48: 								data = get_facebook_info(facebook_id)
+49: 						%>
+50: 							<img src="http://graph.facebook.com/<%=data.facebook_id%>/picture?type=square">
+51: 							<%=data.name%><br/>
+
+    app/helpers/application_helper.rb:47:in `+'
+    app/helpers/application_helper.rb:47:in `get_data'
+    app/helpers/application_helper.rb:20:in `get_facebook_info'
+    app/views/layouts/main.html.erb:48
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:46:07) [POST]
+  Parameters: {"signed_request"=>"3AXPZHsNrERSztVHIxw-T5ujlPRTej6-v6QLzf_geMc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NzE2Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mCurrency Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '632818246' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+
+ActionView::TemplateError (can't convert nil into String) on line #48 of app/views/layouts/main.html.erb:
+45: 								break if !row
+46: 
+47: 								facebook_id = row[0]
+48: 								data = get_facebook_info(facebook_id)
+49: 						%>
+50: 							<img src="http://graph.facebook.com/<%=data.facebook_id%>/picture?type=square">
+51: 							<%=data.name%><br/>
+
+    app/helpers/application_helper.rb:47:in `+'
+    app/helpers/application_helper.rb:47:in `get_data'
+    app/helpers/application_helper.rb:20:in `get_facebook_info'
+    app/views/layouts/main.html.erb:48
+
+Rendered rescues/_trace (194.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:47:50) [POST]
+  Parameters: {"signed_request"=>"U4PW9biKYPo-sSEuHWkAGgtt4pT5h2DALOp_2z4ZsAE.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NzI2OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering template within layouts/main
+Rendering bus/index
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mCurrency Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mSELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '632818246' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFacebookCache Create (1.0ms)[0m   [0mINSERT INTO `facebook_caches` (`name`, `updated_date`, `facebook_id`, `gender`) VALUES('Nilobol Ariyamongkollert', '2011-01-08 11:47:51', '100000201256691', 'female')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 1491ms (View: 1353, DB: 26) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:47:54) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 18:47:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:49:44) [POST]
+  Parameters: {"signed_request"=>"NRCaKCayY1NkW6d6CYVREtak-TMrY9hZDATx-v-TKvY.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ4NzM4MiwidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Rendering template within layouts/main
+Rendering redirect/index
+
+ActionView::TemplateError (can't convert nil into String) on line #28 of app/views/layouts/main.html.erb:
+25: 						
+26: 						<%
+27: 							connection = ActiveRecord::Base.connection();
+28: 							total_donation = connection.execute("SELECT SUM(donated_amount) FROM `buses` WHERE `status`='"+Bus::STATUS_FINISHED+"' AND `facebook_id` = '"+$facebook.user_id+"'").fetch_row()[0].to_i
+29: 						%>
+30: 						
+31: 						Donation: <%=format_currency_by_code("USD",total_donation)%><br/>
+
+    app/views/layouts/main.html.erb:28:in `+'
+    app/views/layouts/main.html.erb:28
+    app/controllers/application_controller.rb:62:in `require_basic_information_permission'
+
+Rendered rescues/_trace (178.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:49:49) [POST]
+  Parameters: {"signed_request"=>"266sDrRD2-QJSVt41Tjrn3Bi1wijkzdvx_0eaLablQM.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ4NzM4NywidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Rendering template within layouts/main
+Rendering redirect/index
+
+ActionView::TemplateError (can't convert nil into String) on line #28 of app/views/layouts/main.html.erb:
+25: 						
+26: 						<%
+27: 							connection = ActiveRecord::Base.connection();
+28: 							total_donation = connection.execute("SELECT SUM(donated_amount) FROM `buses` WHERE `status`='"+Bus::STATUS_FINISHED+"' AND `facebook_id` = '"+$facebook.user_id+"'").fetch_row()[0].to_i
+29: 						%>
+30: 						
+31: 						Donation: <%=format_currency_by_code("USD",total_donation)%><br/>
+
+    app/views/layouts/main.html.erb:28:in `+'
+    app/views/layouts/main.html.erb:28
+    app/controllers/application_controller.rb:62:in `require_basic_information_permission'
+
+Rendered rescues/_trace (97.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 18:50:18) [POST]
+  Parameters: {"signed_request"=>"tQ_2ib32lagTjgdQClsh2CA5os-_7k86CeV-VcqmohA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ4NzQxNiwidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Rendering template within layouts/main
+Rendering home/index
+
+ActionView::TemplateError (can't convert nil into String) on line #28 of app/views/layouts/main.html.erb:
+25: 						
+26: 						<%
+27: 							connection = ActiveRecord::Base.connection();
+28: 							total_donation = connection.execute("SELECT SUM(donated_amount) FROM `buses` WHERE `status`='"+Bus::STATUS_FINISHED+"' AND `facebook_id` = '"+$facebook.user_id+"'").fetch_row()[0].to_i
+29: 						%>
+30: 						
+31: 						Donation: <%=format_currency_by_code("USD",total_donation)%><br/>
+
+    app/views/layouts/main.html.erb:28:in `+'
+    app/views/layouts/main.html.erb:28
+
+Rendered rescues/_trace (198.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 18:51:17) [POST]
+  Parameters: {"signed_request"=>"a_Y_7IlUpn2vKvESaAVy4iuvuisyveTjlmuRpigvlMY.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ4NzQ3NSwidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Rendering template within layouts/main
+Rendering home/index
+Completed in 109ms (View: 38, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:52:36) [POST]
+  Parameters: {"signed_request"=>"Mk63mrUjR33kQdTZ02ZJjSAB0ff9P_jguSsZtDJeIXg.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ4NzU1NCwidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Rendering template within layouts/main
+Rendering redirect/index
+Filter chain halted as [:require_basic_information_permission] rendered_or_redirected.
+Completed in 103ms (View: 36, DB: 0) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:53:13) [POST]
+  Parameters: {"signed_request"=>"vAVlvkRmaNEnY-RYOsOGyR_2hCLD5mT_1l1hq31L2pM.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ4NzU5MSwidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Rendering template within layouts/main
+Rendering redirect/index
+Filter chain halted as [:require_basic_information_permission] rendered_or_redirected.
+Completed in 112ms (View: 32, DB: 0) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 18:53:28) [POST]
+  Parameters: {"signed_request"=>"CcnwQCMSxngCKy5gdiRqoqwRI7DjFRB3HSDli7S1cEk.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTI5NDQ4NzYwNywidXNlciI6eyJsb2NhbGUiOiJlbl9VUyIsImNvdW50cnkiOiJ0aCJ9fQ"}
+Rendering template within layouts/main
+Rendering redirect/index
+Filter chain halted as [:require_basic_information_permission] rendered_or_redirected.
+Completed in 169ms (View: 18, DB: 1) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-01-08 18:55:19) [POST]
+  Parameters: {"signed_request"=>"gaLGcpoG1V6b72WRXoZesTgr5lYExsgZ22zX5WHPNz0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NzcxOCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.NxJ6TEpza3thlNJNzycL3A__.3600.1294491600-632818246|mqsMnSk0tt9NrqV2eed_mfzp5EU"}
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mFacebookFriendCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_friend_caches` WHERE (`facebook_friend_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookFriendCache Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_friend_caches`[0m
+Rendering template within layouts/main
+Rendering home/index
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mCurrency Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '632818246' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+Completed in 320ms (View: 97, DB: 26) | 200 OK [http://localhost/?code=2.NxJ6TEpza3thlNJNzycL3A__.3600.1294491600-632818246%7CmqsMnSk0tt9NrqV2eed_mfzp5EU]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 19:16:09) [POST]
+  Parameters: {"signed_request"=>"Y2452y1U7kkZWKPIoOzq0LptggFxHLI7AA5EDegdx4M.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODk2Nywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CbHJkQlJ1anp0S2Zsa0JDUURvMHFnX18uMzYwMC4xMjk0NDk1MjAwLTYzMjgxODI0NnwtY3BCU2hLZnY1N2hSMHBtNDE5V21tSXhYMFkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"1"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+
+SyntaxError (C:/Users/Tanin/My Documents/Aptana RadRails Workspace/HopIn/app/models/hop.rb:9: syntax error, unexpected tRSHFT, expecting kEND
+>>>>>>> 29502e32b5b06d483aa0db17d45014505c582267
+  ^):
+  app/controllers/hop_controller.rb:6:in `index'
+
+Rendered rescues/_trace (81.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 19:16:24) [POST]
+  Parameters: {"signed_request"=>"nQrTHeCAnmWVCF514EJFEMgmqfK0epcjzFfK0MMZAgo.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4ODk3OSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CbHJkQlJ1anp0S2Zsa0JDUURvMHFnX18uMzYwMC4xMjk0NDk1MjAwLTYzMjgxODI0NnwtY3BCU2hLZnY1N2hSMHBtNDE5V21tSXhYMFkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"1"}
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mHop Load (1.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '632818246') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (0.0ms)[0m   [0;1mMysql::Error: Column 'bus_owner_facebook_id' cannot be null: INSERT INTO `hops` (`facebook_id`, `bus_owner_facebook_id`, `created_date`, `amount`, `bus_id`, `comment`) VALUES('632818246', NULL, '2011-01-08 12:16:24', 1.23, 1, '')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Column 'bus_owner_facebook_id' cannot be null: INSERT INTO `hops` (`facebook_id`, `bus_owner_facebook_id`, `created_date`, `amount`, `bus_id`, `comment`) VALUES('632818246', NULL, '2011-01-08 12:16:24', 1.23, 1, '')):
+  app/controllers/hop_controller.rb:21:in `index'
+
+Rendered rescues/_trace (108.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 19:17:15) [POST]
+  Parameters: {"signed_request"=>"n6Zhr9vvnQbW0gpo4hLSQNipX8CUEDZBSDc6H_Aq5vA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTAzMywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CbHJkQlJ1anp0S2Zsa0JDUURvMHFnX18uMzYwMC4xMjk0NDk1MjAwLTYzMjgxODI0NnwtY3BCU2hLZnY1N2hSMHBtNDE5V21tSXhYMFkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"1"}
+
+SyntaxError (C:/Users/Tanin/My Documents/Aptana RadRails Workspace/HopIn/app/controllers/hop_controller.rb:10: syntax error, unexpected kIF, expecting ')'
+    if @new_hop.nil?
+      ^):
+  
+
+Rendered rescues/_trace (71.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 19:17:47) [POST]
+  Parameters: {"signed_request"=>"LLTaUZTLnDeTb_vBM92vNkqOQVUXgiy7jW2I10lbAiE.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTA2Mywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CbHJkQlJ1anp0S2Zsa0JDUURvMHFnX18uMzYwMC4xMjk0NDk1MjAwLTYzMjgxODI0NnwtY3BCU2hLZnY1N2hSMHBtNDE5V21tSXhYMFkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"1"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mHop Load (3.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '632818246') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mBus Load (1.0ms)[0m   [0mSELECT * FROM `buses` WHERE (`buses`.`id` = '1') LIMIT 1[0m
+  [4;36;1mHop Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mBus Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (2.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `bus_owner_facebook_id`, `created_date`, `amount`, `bus_id`, `comment`) VALUES('632818246', 632818246, '2011-01-08 12:17:47', 1.23, 1, '')[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mBus Load (3.0ms)[0m   [0mSELECT * FROM `buses` WHERE (`buses`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/main
+Rendering redirect/index
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mCurrency Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mSELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '632818246' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3[0m
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+Rendered home/_top_hop (62.0ms)
+Completed in 1998ms (View: 137, DB: 55) | 200 OK [http://localhost/hop?bus_id=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#publish (for 127.0.0.1 at 2011-01-08 19:17:58) [POST]
+  Parameters: {"signed_request"=>"a0C0J00ELoh4L0LWKaUUc_kmLNNcy-7RJC0iaHcKtWs.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTA3Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CbHJkQlJ1anp0S2Zsa0JDUURvMHFnX18uMzYwMC4xMjk0NDk1MjAwLTYzMjgxODI0NnwtY3BCU2hLZnY1N2hSMHBtNDE5V21tSXhYMFkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "code"=>"2.BlrdBRujztKflkBCQDo0qg__.3600.1294495200-632818246|EkwbLnrMwHVCAgMQ3cfgTcYk9Tc", "hop_id"=>"4"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (26.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mHop Load (3.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`id` = '4') LIMIT 1[0m
+  [4;35;1mHop Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mBus Load (3.0ms)[0m   [0;1mSELECT * FROM `buses` WHERE (`buses`.`id` = 1) LIMIT 1[0m
+  [4;35;1mBus Columns (14.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+
+ActionView::MissingTemplate (Missing template hop/publish.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `buses`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `buses`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSHOW FIELDS FROM `charities`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `charities`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `charities`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `currencies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `currencies`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `error_logs`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mdescribe `error_logs`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `error_logs`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `facebook_caches`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `facebook_caches`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_friend_caches`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mdescribe `facebook_friend_caches`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `facebook_friend_caches`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `hops`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `hops`[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSHOW FIELDS FROM `paypal_ipns`[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mdescribe `paypal_ipns`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `paypal_ipns`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `buses`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `buses`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `charities`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `charities`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `charities`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `currencies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `currencies`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `error_logs`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mdescribe `error_logs`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `error_logs`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `facebook_caches`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `facebook_caches`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_friend_caches`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `facebook_friend_caches`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `facebook_friend_caches`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `hops`[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSHOW FIELDS FROM `paypal_ipns`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mdescribe `paypal_ipns`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `paypal_ipns`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 19:25:10) [POST]
+  Parameters: {"signed_request"=>"bqIYYSDL87vAcqvnTZTS0H6_eS1zw5AjXc45WZbLbI4.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTUwOSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CbHJkQlJ1anp0S2Zsa0JDUURvMHFnX18uMzYwMC4xMjk0NDk1MjAwLTYzMjgxODI0NnwtY3BCU2hLZnY1N2hSMHBtNDE5V21tSXhYMFkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"1"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mHop Load (0.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '632818246') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mBus Load (0.0ms)[0m   [0mSELECT * FROM `buses` WHERE (`buses`.`id` = '1') LIMIT 1[0m
+  [4;36;1mHop Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mBus Load (0.0ms)[0m   [0mSELECT * FROM `buses` WHERE (`buses`.`id` = 1) LIMIT 1[0m
+  [4;36;1mBus Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+Rendering template within layouts/main
+Rendering hop/index
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mCurrency Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mSELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '632818246' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3[0m
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+Rendered home/_top_hop (102.0ms)
+Completed in 2053ms (View: 111, DB: 37) | 200 OK [http://localhost/hop?bus_id=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 19:25:18) [POST]
+  Parameters: {"signed_request"=>"DMHB6RqJTO_n-5bY84wwyoax5SA3005KAnhmqgdvQOA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTUxNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CbHJkQlJ1anp0S2Zsa0JDUURvMHFnX18uMzYwMC4xMjk0NDk1MjAwLTYzMjgxODI0NnwtY3BCU2hLZnY1N2hSMHBtNDE5V21tSXhYMFkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"2"}
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mHop Load (0.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '2' AND `hops`.`facebook_id` = '632818246') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mBus Load (0.0ms)[0m   [0;1mSELECT * FROM `buses` WHERE (`buses`.`id` = '2') LIMIT 1[0m
+  [4;35;1mHop Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mBus Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `buses`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (0.0ms)[0m   [0;1mINSERT INTO `hops` (`facebook_id`, `bus_owner_facebook_id`, `created_date`, `amount`, `bus_id`, `comment`) VALUES('632818246', '632818246', '2011-01-08 12:25:18', 1.23, 2, '')[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mBus Load (0.0ms)[0m   [0;1mSELECT * FROM `buses` WHERE (`buses`.`id` = 2) LIMIT 1[0m
+Rendering template within layouts/main
+Rendering hop/index
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mCurrency Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSELECT facebook_id FROM `hops` WHERE `bus_owner_facebook_id` = '632818246' GROUP BY `facebook_id` ORDER BY SUM(amount) LIMIT 3[0m
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '100000201256691') LIMIT 1[0m
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+Rendered home/_top_hop (82.0ms)
+Completed in 1861ms (View: 104, DB: 37) | 200 OK [http://localhost/hop?bus_id=2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#save (for 127.0.0.1 at 2011-01-08 19:25:28) [POST]
+  Parameters: {"signed_request"=>"DMHB6RqJTO_n-5bY84wwyoax5SA3005KAnhmqgdvQOA.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTUyMDAsImlzc3VlZF9hdCI6MTI5NDQ4OTUxNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5CbHJkQlJ1anp0S2Zsa0JDUURvMHFnX18uMzYwMC4xMjk0NDk1MjAwLTYzMjgxODI0NnwtY3BCU2hLZnY1N2hSMHBtNDE5V21tSXhYMFkiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "comment"=>"wh34h34h", "hop_id"=>"5"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mHop Load (0.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`id` = '5') LIMIT 1[0m
+  [4;36;1mHop Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Update (1.0ms)[0m   [0;1mUPDATE `hops` SET `comment` = 'wh34h34h' WHERE `id` = 5[0m
+  [4;35;1mSQL (13.0ms)[0m   [0mCOMMIT[0m
+Completed in 224ms (View: 3, DB: 24) | 200 OK [http://localhost/hop/save]

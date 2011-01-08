@@ -62,7 +62,7 @@ class Facebook
       friend.save
     end
 
-    return ActiveSupport::JSON.decode friend.friends
+    return ActiveSupport::JSON.decode(friend.friends)
   end
   
   def generate_publish_bus_url(bus)
@@ -78,10 +78,10 @@ class Facebook
     data = {}
     data['message'] = ""
     
-    if bus.thumbnail_path == ""
-      data['picture'] = "http://"+DOMAIN_NAME+"/upload/bus/" + bus.thumbnail_path
+    if bus.thumbnail_path != ""
+      data['picture'] = "http://"+DOMAIN_NAME+"/uploads/bus/" + bus.thumbnail_path
     else
-      data['picture'] = "http://"+DOMAIN_NAME+"/upload/bus/default_news_feed.jpg"
+      data['picture'] = "http://"+DOMAIN_NAME+"/uploads/bus/default_news_feed.jpg"
     end
     
     data['link'] = "http://apps.facebook.com/"+FACEBOOK_APP_NAME+"/bus/view?id="+bus.id.to_s
@@ -91,7 +91,7 @@ class Facebook
     data['privacy'] = "{'value':'EVERYONE'}"
     
     actions = [
-                {"name" => "Hop along", "link"=> "http://apps.facebook.com/"+FACEBOOK_APP_NAME+"/bus/hop?id="+bus.id.to_s}
+                {"name" => "Hop along", "link"=> "http://apps.facebook.com/"+FACEBOOK_APP_NAME+"/hop?bus_id="+bus.id.to_s}
                ]
     
     data['actions'] = ActiveSupport::JSON.encode(actions)
@@ -112,10 +112,10 @@ class Facebook
     data = {}
     data['message'] = ""
     
-    if bus.thumbnail_path == ""
-      data['picture'] = "http://"+DOMAIN_NAME+"/upload/bus/" + bus.thumbnail_path
+    if bus.thumbnail_path != ""
+      data['picture'] = "http://"+DOMAIN_NAME+"/uploads/bus/" + bus.thumbnail_path
     else
-      data['picture'] = "http://"+DOMAIN_NAME+"/upload/bus/default_news_feed.jpg"
+      data['picture'] = "http://"+DOMAIN_NAME+"/uploads/bus/default_news_feed.jpg"
     end
     
     data['link'] = "http://apps.facebook.com/"+FACEBOOK_APP_NAME+"/bus/view?id="+bus.id.to_s
@@ -125,7 +125,7 @@ class Facebook
     data['privacy'] = "{'value':'EVERYONE'}"
     
     actions = [
-                {"name" => "Hop", "link"=> "http://apps.facebook.com/"+FACEBOOK_APP_NAME+"/bus/hop?id="+bus.id.to_s}
+                {"name" => "Hop", "link"=> "http://apps.facebook.com/"+FACEBOOK_APP_NAME+"/hop?bus_id="+bus.id.to_s}
                ]
     
     data['actions'] = ActiveSupport::JSON.encode(actions)

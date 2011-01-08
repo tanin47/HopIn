@@ -6,5 +6,4 @@ class Hop < ActiveRecord::Base
   validates_presence_of :created_date, :message => "created_date must not be empty."
  
 
->>>>>>> 29502e32b5b06d483aa0db17d45014505c582267
 end
