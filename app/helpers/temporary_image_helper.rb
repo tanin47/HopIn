@@ -1,0 +1,2 @@
+module TemporaryImageHelper
+end

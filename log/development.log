@@ -2321,3 +2321,728 @@ Processing BusController#index (for 127.0.0.1 at 2011-01-08 15:06:09) [POST]
 Rendering bus/index
   [4;35;1mCurrency Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
 Completed in 73ms (View: 10, DB: 5) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 15:17:12) [POST]
+  Parameters: {"signed_request"=>"XAvqzFbq1W6c3BBTZQtI2Sp1Fvl7YW92bVlvpEyX6-Q.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NDY2Nywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5lanpFUmQzY0N2d2Frc1pWSDVtcGRBX18uMzYwMC4xMjk0NDgwODAwLTEwMDAwMDIwMTI1NjY5MXxCUU1uVWhMM25EeDlFQjRpLXRsY2pJTkJMX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;35;1mCurrency Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+Completed in 95ms (View: 34, DB: 7) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:17:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:17:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 15:21:29) [POST]
+  Parameters: {"signed_request"=>"wgnN_vyROV_rXRk2mbccd9is7Ng9h4G4ga6TgDUHxfE.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NDkyNCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5lanpFUmQzY0N2d2Frc1pWSDVtcGRBX18uMzYwMC4xMjk0NDgwODAwLTEwMDAwMDIwMTI1NjY5MXxCUU1uVWhMM25EeDlFQjRpLXRsY2pJTkJMX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;35;1mCurrency Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+Completed in 58ms (View: 21, DB: 3) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:21:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 15:41:45) [POST]
+  Parameters: {"signed_request"=>"LVeH9OymISDbDBE_UQ6-hpF7_gg7SjytuV7_W3J1v64.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjEzOSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5lanpFUmQzY0N2d2Frc1pWSDVtcGRBX18uMzYwMC4xMjk0NDgwODAwLTEwMDAwMDIwMTI1NjY5MXxCUU1uVWhMM25EeDlFQjRpLXRsY2pJTkJMX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering bus/index
+
+ActionView::TemplateError (undefined method `each' for 1:Fixnum) on line #281 of app/views/bus/index.html.erb:
+278: 			<span  >Pic:</span> 
+279: 			<span class="swfupload_pic light_green_bg">
+280: 				<span id="swfupload_image_container">
+281: 					<% (1).each do |i| %>
+282: 						<span class="swfupload_dialogbox_empty_image"><input type="hidden" id="swfupload_image_<%=i%>"></span>
+283: 					<% end %>
+284: 				</span>
+
+    app/views/bus/index.html.erb:281
+
+Rendered rescues/_trace (98.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 15:42:08) [POST]
+  Parameters: {"signed_request"=>"RBtxvS1GjVqXAldD716zTyob-zyqfWTJHNSFvLhlGTs.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjE2Mywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5lanpFUmQzY0N2d2Frc1pWSDVtcGRBX18uMzYwMC4xMjk0NDgwODAwLTEwMDAwMDIwMTI1NjY5MXxCUU1uVWhMM25EeDlFQjRpLXRsY2pJTkJMX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 68ms (View: 27, DB: 4) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:42:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 15:42:34) [POST]
+  Parameters: {"signed_request"=>"uvHZ4pKyeU6GmlSo6T6LkhSNbpQJYMBoGaT3_8TJU4A.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjE4OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5lanpFUmQzY0N2d2Frc1pWSDVtcGRBX18uMzYwMC4xMjk0NDgwODAwLTEwMDAwMDIwMTI1NjY5MXxCUU1uVWhMM25EeDlFQjRpLXRsY2pJTkJMX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 64ms (View: 26, DB: 5) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:42:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 15:43:23) [POST]
+  Parameters: {"signed_request"=>"vKCuvA6KLssc1uCWrory0ogGWBt4SL7EnA-T-kHzXPE.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjIzNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5lanpFUmQzY0N2d2Frc1pWSDVtcGRBX18uMzYwMC4xMjk0NDgwODAwLTEwMDAwMDIwMTI1NjY5MXxCUU1uVWhMM25EeDlFQjRpLXRsY2pJTkJMX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 87ms (View: 36, DB: 4) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:43:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 15:44:54) [POST]
+  Parameters: {"signed_request"=>"fN_BTXrVRsdy9x9mFyRfAU0QsAnIR4PzQRg0355EZgc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjMyOSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5lanpFUmQzY0N2d2Frc1pWSDVtcGRBX18uMzYwMC4xMjk0NDgwODAwLTEwMDAwMDIwMTI1NjY5MXxCUU1uVWhMM25EeDlFQjRpLXRsY2pJTkJMX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 102ms (View: 44, DB: 6) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:44:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 15:46:42) [POST]
+  Parameters: {"signed_request"=>"PC7kk4DZDi9kcnKZi6UQLIGth4_-7dy4sMzkzWNc3rU.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjQzNiwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5lanpFUmQzY0N2d2Frc1pWSDVtcGRBX18uMzYwMC4xMjk0NDgwODAwLTEwMDAwMDIwMTI1NjY5MXxCUU1uVWhMM25EeDlFQjRpLXRsY2pJTkJMX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 122ms (View: 33, DB: 5) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:46:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 15:47:50) [POST]
+  Parameters: {"signed_request"=>"d9neYGDXmJodUJK6QnQlCUEpiS46PIYkdsZH99VsPtg.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjUwNSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5lanpFUmQzY0N2d2Frc1pWSDVtcGRBX18uMzYwMC4xMjk0NDgwODAwLTEwMDAwMDIwMTI1NjY5MXxCUU1uVWhMM25EeDlFQjRpLXRsY2pJTkJMX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 91ms (View: 31, DB: 3) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:47:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 15:50:11) [POST]
+  Parameters: {"signed_request"=>"7a-byk6OLG-NhoNxdOqIVhcKm_P7dXuPqOymtuuC8gE.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjY0Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5lanpFUmQzY0N2d2Frc1pWSDVtcGRBX18uMzYwMC4xMjk0NDgwODAwLTEwMDAwMDIwMTI1NjY5MXxCUU1uVWhMM25EeDlFQjRpLXRsY2pJTkJMX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 107ms (View: 68, DB: 5) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:50:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 15:50:33) [POST]
+  Parameters: {"signed_request"=>"iV6RbZ_H-Ocnv_A6ToXHQpNHtjNDUhhTCy0II5tSgqc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjY2Miwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5lanpFUmQzY0N2d2Frc1pWSDVtcGRBX18uMzYwMC4xMjk0NDgwODAwLTEwMDAwMDIwMTI1NjY5MXxCUU1uVWhMM25EeDlFQjRpLXRsY2pJTkJMX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 67ms (View: 27, DB: 5) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 15:50:39) [POST]
+  Parameters: {"signed_request"=>"kKBHXS_blSWCkQV9OZbD-g8Vf0uTfDolcJ4LFQvfPvc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODA4MDAsImlzc3VlZF9hdCI6MTI5NDQ3NjY3MSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5lanpFUmQzY0N2d2Frc1pWSDVtcGRBX18uMzYwMC4xMjk0NDgwODAwLTEwMDAwMDIwMTI1NjY5MXxCUU1uVWhMM25EeDlFQjRpLXRsY2pJTkJMX0kiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 46ms (View: 9, DB: 4) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 15:50:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 16:03:46) [POST]
+  Parameters: {"signed_request"=>"6s9t4D9gEvjZtHd_5XG3nKaFVqHV-wd07N3CRyQBk9A.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3NzQ2MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi4zVlpoY3ZmOVZpbUV0SDc2bndaTmR3X18uMzYwMC4xMjk0NDg0NDAwLTEwMDAwMDIwMTI1NjY5MXxIMjUyVTNOdUgyQmVCXzlwTHZTX3FYVmNnSDgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 89ms (View: 8, DB: 3) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:03:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 16:08:39) [POST]
+  Parameters: {"signed_request"=>"dK_kz_onJQKPPgrLB0Fr1EMvtNVsPlJyMYLtl9e6vY8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3Nzc1NCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi4zVlpoY3ZmOVZpbUV0SDc2bndaTmR3X18uMzYwMC4xMjk0NDg0NDAwLTEwMDAwMDIwMTI1NjY5MXxIMjUyVTNOdUgyQmVCXzlwTHZTX3FYVmNnSDgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 45ms (View: 9, DB: 4) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:08:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:08:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 16:10:59) [POST]
+  Parameters: {"signed_request"=>"3eJYH82oOrlUGVWlHWekbgY1b8XInhTU4fMsk5O-stM.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3Nzg5MCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi4zVlpoY3ZmOVZpbUV0SDc2bndaTmR3X18uMzYwMC4xMjk0NDg0NDAwLTEwMDAwMDIwMTI1NjY5MXxIMjUyVTNOdUgyQmVCXzlwTHZTX3FYVmNnSDgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 64ms (View: 26, DB: 5) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:11:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:12:13) [GET]
+
+ActionController::RoutingError (No route matches "/swfupload/swfupload_button.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 16:13:42) [POST]
+  Parameters: {"signed_request"=>"gkWsvpH4Sc1CAMPBnkGOFGCZzesOPs-giujTCE5hgb8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3Nzk2OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi4zVlpoY3ZmOVZpbUV0SDc2bndaTmR3X18uMzYwMC4xMjk0NDg0NDAwLTEwMDAwMDIwMTI1NjY5MXxIMjUyVTNOdUgyQmVCXzlwTHZTX3FYVmNnSDgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 97ms (View: 35, DB: 4) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:13:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:14:04) [GET]
+
+ActionController::RoutingError (No route matches "/swfupload/swfupload_button.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 16:14:13) [POST]
+  Parameters: {"signed_request"=>"gkWsvpH4Sc1CAMPBnkGOFGCZzesOPs-giujTCE5hgb8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3Nzk2OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi4zVlpoY3ZmOVZpbUV0SDc2bndaTmR3X18uMzYwMC4xMjk0NDg0NDAwLTEwMDAwMDIwMTI1NjY5MXxIMjUyVTNOdUgyQmVCXzlwTHZTX3FYVmNnSDgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 60ms (View: 10, DB: 4) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:14:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:14:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:15:18) [GET]
+
+ActionController::RoutingError (No route matches "/swfupload/swfupload_button.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:15:55) [POST]
+  Parameters: {"Filename"=>"A4696908-10.jpg", "authenticity_token"=>"66s1GlJKosxGkc0bhiEHD6w0s73jO3A9XQwwN4pJD54=", "Upload"=>"Submit Query", "Filedata"=>#<File:C:/Users/NI_CS/AppData/Local/Temp/RackMultipart.156.0>}
+
+ActionController::RoutingError (No route matches "/temporary_image" with {:method=>:post}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:16:19) [POST]
+  Parameters: {"authenticity_token"=>"66s1GlJKosxGkc0bhiEHD6w0s73jO3A9XQwwN4pJD54=", "Filedata"=>#<File:C:/Users/NI_CS/AppData/Local/Temp/RackMultipart.156.1>}
+
+ActionController::RoutingError (No route matches "/temporary_image" with {:method=>:post}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 16:20:09) [POST]
+  Parameters: {"signed_request"=>"x1xba3uuVakk1ZP7aJ2t7OmVI21tWMWgLu2yuv_rAp0.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODQ0Mywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi4zVlpoY3ZmOVZpbUV0SDc2bndaTmR3X18uMzYwMC4xMjk0NDg0NDAwLTEwMDAwMDIwMTI1NjY5MXxIMjUyVTNOdUgyQmVCXzlwTHZTX3FYVmNnSDgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;35;1mCurrency Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+Completed in 175ms (View: 125, DB: 3) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:20:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mDROP TABLE `buses`[0m
+  [4;36;1mSQL (108.0ms)[0m   [0;1mCREATE TABLE `buses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `thumbnail_path` int(11), `why` text NOT NULL, `amount` float NOT NULL, `capacity` int(11) NOT NULL, `parent_bus_id` int(11) DEFAULT 0 NOT NULL, `facebook_id` varchar(255) NOT NULL, `charity_id` int(11), `deadline` datetime, `currency_code` varchar(255) NOT NULL, `hops` int(11) DEFAULT 0 NOT NULL, `status` varchar(255) DEFAULT 'ACTIVE' NOT NULL, `created_date` datetime NOT NULL, `mode` varchar(255) DEFAULT 'AMATEUR' NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (37.0ms)[0m   [0;1mDROP TABLE `charities`[0m
+  [4;35;1mSQL (132.0ms)[0m   [0mCREATE TABLE `charities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `desc` varchar(255), `thumbnail_pic` varchar(255), `paypal_id` varchar(255), `url` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (38.0ms)[0m   [0mDROP TABLE `currencies`[0m
+  [4;36;1mSQL (142.0ms)[0m   [0;1mCREATE TABLE `currencies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `format` varchar(255) NOT NULL, `sign` varchar(255) NOT NULL, `separator` varchar(255) NOT NULL, `delimiter` varchar(255) NOT NULL, `paypal_currency_code` varchar(255) NOT NULL, `minimum` int(11) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (37.0ms)[0m   [0;1mDROP TABLE `error_logs`[0m
+  [4;35;1mSQL (159.0ms)[0m   [0mCREATE TABLE `error_logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `time` datetime NOT NULL, `ip_address` varchar(255), `identifier` varchar(255) NOT NULL, `description` text NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (25.0ms)[0m   [0mDROP TABLE `hops`[0m
+  [4;36;1mSQL (132.0ms)[0m   [0;1mCREATE TABLE `hops` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` varchar(255) NOT NULL, `bus_id` int(11) NOT NULL, `comment` text, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (163.0ms)[0m   [0;1mCREATE TABLE `temporary_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `buses`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `buses`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `charities`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `charities`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `charities`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mdescribe `currencies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `currencies`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `error_logs`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `error_logs`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `error_logs`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `hops`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `hops`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW FIELDS FROM `temporary_images`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `temporary_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `temporary_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (289.0ms)[0m   [0mDROP DATABASE IF EXISTS `HopIn_test`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE DATABASE `HopIn_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (155.0ms)[0m   [0;1mCREATE TABLE `buses` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `thumbnail_path` int(11), `why` text NOT NULL, `amount` float NOT NULL, `capacity` int(11) NOT NULL, `parent_bus_id` int(11) DEFAULT 0 NOT NULL, `facebook_id` varchar(255) NOT NULL, `charity_id` int(11), `deadline` datetime, `currency_code` varchar(255) NOT NULL, `hops` int(11) DEFAULT 0 NOT NULL, `status` varchar(255) DEFAULT 'ACTIVE' NOT NULL, `created_date` datetime NOT NULL, `mode` varchar(255) DEFAULT 'AMATEUR' NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (314.0ms)[0m   [0;1mCREATE TABLE `charities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `desc` varchar(255), `thumbnail_pic` varchar(255), `paypal_id` varchar(255), `url` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (215.0ms)[0m   [0;1mCREATE TABLE `currencies` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `format` varchar(255) NOT NULL, `sign` varchar(255) NOT NULL, `separator` varchar(255) NOT NULL, `delimiter` varchar(255) NOT NULL, `paypal_currency_code` varchar(255) NOT NULL, `minimum` int(11) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (237.0ms)[0m   [0;1mCREATE TABLE `error_logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `time` datetime NOT NULL, `ip_address` varchar(255), `identifier` varchar(255) NOT NULL, `description` text NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (130.0ms)[0m   [0;1mCREATE TABLE `hops` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `facebook_id` varchar(255) NOT NULL, `bus_id` int(11) NOT NULL, `comment` text, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (140.0ms)[0m   [0;1mCREATE TABLE `temporary_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `created_date` datetime NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (149.0ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (297.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCurrency Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCurrency Create (28.0ms)[0m   [0;1mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Dollars', '%u%n', 'USD', '.', '$', ',', 1)[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCurrency Create (0.0ms)[0m   [0mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Euro', '%u%n', 'EUR', '.', '&euro;', ',', 1)[0m
+  [4;36;1mSQL (69.0ms)[0m   [0;1mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCurrency Create (0.0ms)[0m   [0;1mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Baht', '%n %u', 'THB', '.', 'baht', ',', 5)[0m
+  [4;35;1mSQL (72.0ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCurrency Create (0.0ms)[0m   [0mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Pounds', '%u%n', 'GBP', ',', '&pound', '.', 1)[0m
+  [4;36;1mSQL (38.0ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:24:13) [GET]
+
+ActionController::RoutingError (No route matches "/swfupload/swfupload_button.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 16:24:14) [POST]
+  Parameters: {"signed_request"=>"0X0phkQ_W3ADx9M3pLe3xCVa77q_ZJzOaaaAENVVM4A.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODY4OSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi4zVlpoY3ZmOVZpbUV0SDc2bndaTmR3X18uMzYwMC4xMjk0NDg0NDAwLTEwMDAwMDIwMTI1NjY5MXxIMjUyVTNOdUgyQmVCXzlwTHZTX3FYVmNnSDgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;35;1mCurrency Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+Completed in 48ms (View: 8, DB: 4) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:24:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:25:32) [GET]
+
+ActionController::RoutingError (No route matches "/swfupload/swfupload_button.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 16:25:33) [POST]
+  Parameters: {"signed_request"=>"B1DXXXH1ouY9hcH6Mv-7UK4G7ptPadIlDRM4ReV5d3I.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3ODc2OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi4zVlpoY3ZmOVZpbUV0SDc2bndaTmR3X18uMzYwMC4xMjk0NDg0NDAwLTEwMDAwMDIwMTI1NjY5MXxIMjUyVTNOdUgyQmVCXzlwTHZTX3FYVmNnSDgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;35;1mCurrency Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+Completed in 89ms (View: 49, DB: 4) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:25:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:35:21) [GET]
+
+ActionController::RoutingError (No route matches "/swfupload/swfupload_button.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TemporaryImageController#index (for 127.0.0.1 at 2011-01-08 16:36:20) [POST]
+  Parameters: {"authenticity_token"=>"66s1GlJKosxGkc0bhiEHD6w0s73jO3A9XQwwN4pJD54=", "Filedata"=>#<File:C:/Users/NI_CS/AppData/Local/Temp/RackMultipart.2272.0>}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.split):
+  app/controllers/application_controller.rb:17:in `decode_signed_request'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 16:37:07) [POST]
+  Parameters: {"signed_request"=>"ZBsOgTQGcjlGdf3ICuzj6HgRm2VcQ9gBOYb2uKOJDwc.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3OTQ2Miwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi4zVlpoY3ZmOVZpbUV0SDc2bndaTmR3X18uMzYwMC4xMjk0NDg0NDAwLTEwMDAwMDIwMTI1NjY5MXxIMjUyVTNOdUgyQmVCXzlwTHZTX3FYVmNnSDgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mCurrency Load (0.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;35;1mCurrency Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+Completed in 50ms (View: 10, DB: 3) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:37:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:37:18) [GET]
+
+ActionController::RoutingError (No route matches "/swfupload/swfupload_button.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 16:37:21) [POST]
+  Parameters: {"signed_request"=>"41QpgBa69Rp7xUoMjImvVYd_M83U9TI5idMH089dvLk.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3OTQ3Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi4zVlpoY3ZmOVZpbUV0SDc2bndaTmR3X18uMzYwMC4xMjk0NDg0NDAwLTEwMDAwMDIwMTI1NjY5MXxIMjUyVTNOdUgyQmVCXzlwTHZTX3FYVmNnSDgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;35;1mCurrency Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+Completed in 49ms (View: 9, DB: 4) | 200 OK [http://localhost/bus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:37:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:37:29) [GET]
+
+ActionController::RoutingError (No route matches "/swfupload/swfupload_button.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TemporaryImageController#index (for 127.0.0.1 at 2011-01-08 16:37:31) [POST]
+  Parameters: {"authenticity_token"=>"66s1GlJKosxGkc0bhiEHD6w0s73jO3A9XQwwN4pJD54=", "Filedata"=>#<File:C:/Users/NI_CS/AppData/Local/Temp/RackMultipart.2272.1>}
+  [4;36;1mTemporaryImage Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `temporary_images`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTemporaryImage Create (1.0ms)[0m   [0;1mINSERT INTO `temporary_images` (`name`, `created_date`) VALUES('', '2011-01-08 09:37:31')[0m
+  [4;35;1mSQL (125.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTemporaryImage Update (52.0ms)[0m   [0mUPDATE `temporary_images` SET `name` = 'temp_1.jpg' WHERE `id` = 1[0m
+  [4;36;1mSQL (25.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 407ms (View: 2, DB: 206) | 200 OK [http://localhost/temporary_image]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BusController#index (for 127.0.0.1 at 2011-01-08 16:39:09) [POST]
+  Parameters: {"signed_request"=>"41QpgBa69Rp7xUoMjImvVYd_M83U9TI5idMH089dvLk.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODQ0MDAsImlzc3VlZF9hdCI6MTI5NDQ3OTQ3Niwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi4zVlpoY3ZmOVZpbUV0SDc2bndaTmR3X18uMzYwMC4xMjk0NDg0NDAwLTEwMDAwMDIwMTI1NjY5MXxIMjUyVTNOdUgyQmVCXzlwTHZTX3FYVmNnSDgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiIxMDAwMDAyMDEyNTY2OTEifQ"}
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` [0m
+Rendering bus/index
+  [4;36;1mCurrency Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+Completed in 62ms (View: 24, DB: 4) | 200 OK [http://localhost/bus]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:39:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-08 16:39:12) [GET]
+
+ActionController::RoutingError (No route matches "/images/button_loader.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TemporaryImageController#index (for 127.0.0.1 at 2011-01-08 16:39:16) [POST]
+  Parameters: {"authenticity_token"=>"66s1GlJKosxGkc0bhiEHD6w0s73jO3A9XQwwN4pJD54=", "Filedata"=>#<File:C:/Users/NI_CS/AppData/Local/Temp/RackMultipart.2272.0>}
+  [4;35;1mTemporaryImage Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `temporary_images`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTemporaryImage Create (0.0ms)[0m   [0mINSERT INTO `temporary_images` (`name`, `created_date`) VALUES('', '2011-01-08 09:39:16')[0m
+  [4;36;1mSQL (128.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mTemporaryImage Update (0.0ms)[0m   [0;1mUPDATE `temporary_images` SET `name` = 'temp_2.jpg' WHERE `id` = 2[0m
+  [4;35;1mSQL (34.0ms)[0m   [0mCOMMIT[0m
+Completed in 188ms (View: 1, DB: 166) | 200 OK [http://localhost/temporary_image]

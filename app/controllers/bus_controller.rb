@@ -16,8 +16,16 @@ class BusController < ApplicationController
     @bus.why = params[:why]
     @bus.amount = params[:amount]
     @bus.capacity = params[:capacity]
-    print $facebook.user_id
+    
     @bus.facebook_id = $facebook.user_id
+    
+    if params[:mode] == Bus::MODE_OFFICIAL
+      @bus.mode = Bus::MODE_OFFICIAL
+      @bus.charity_id = params[:charity_id]
+    else
+      @bus.mode = Bus::MODE_AMATEUR
+    end
+    
     @bus.deadline = params[:deadline]
     @bus.currency_code = params[:currency_code]
     @bus.hops = 0

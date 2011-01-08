@@ -1,7 +1,11 @@
 class Bus < ActiveRecord::Base
 
+  STATUS_ACTIVE = "PENDING"
   STATUS_ACTIVE = "ACTIVE"
   STATUS_FINISHED = "FINISHED"
+  
+  MODE_AMATEUR = "AMATEUR"
+  MODE_OFFICIAL = "OFFICIAL"
   
   validates_presence_of :name, :message => "Name must not be empty."
   validates_presence_of :why, :message => "Why must not be empty."
