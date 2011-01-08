@@ -37,13 +37,13 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   create_table "currencies", :force => true do |t|
-    t.string "name"
-    t.string "format"
-    t.string "sign"
-    t.string "separator"
-    t.string "delimiter"
-    t.string "paypal_currency_code"
-    t.float  "minimum"
+    t.string  "name"
+    t.string  "format"
+    t.string  "sign"
+    t.string  "separator"
+    t.string  "delimiter"
+    t.string  "paypal_currency_code"
+    t.integer "minimum"
   end
 
   create_table "error_logs", :force => true do |t|

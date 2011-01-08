@@ -43,7 +43,18 @@ class BusController < ApplicationController
   end
   
   def save_success
-   
+    
+    begin
+      $facebook.publish_bus(@bus)
+    rescue
+      @redirect_url = "http://www.facebook.com/dialog/oauth/?" +
+                  "bus_id=" + @bus.id +
+                  "client_id=" + APP_ID +
+                  "&scope=publish_stream" +
+                  "&redirect_uri=http://apps.facebook.com/wehopin/bus/test"
+      render "redirect/index"
+    end
+
   end
    
   def cancel_payment

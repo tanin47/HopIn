@@ -56,6 +56,7 @@ class ApplicationController < ActionController::Base
   def require_basic_information_permission
     if $facebook.user_id == nil
       @redirect_url = "http://www.facebook.com/dialog/oauth/?" +
+
                   "client_id=" + APP_ID +
                   "&redirect_uri=http://apps.facebook.com/wehopin/"
       render "redirect/index"
