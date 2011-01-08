@@ -13,7 +13,7 @@ ActiveRecord::Schema.define(:version => 0) do
 
   create_table "buses", :force => true do |t|
     t.string   "name",                                  :null => false
-    t.string   "thumbnail_path", :default => "",       :null => false
+    t.string   "thumbnail_path", :default => "",        :null => false
     t.text     "why",                                   :null => false
     t.float    "amount",                                :null => false
     t.integer  "capacity",                              :null => false
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(:version => 0) do
     t.string  "separator"
     t.string  "delimiter"
     t.string  "paypal_currency_code"
-    t.integer "buyer_member_id"
+    t.integer "minimum"
   end
 
   create_table "error_logs", :force => true do |t|

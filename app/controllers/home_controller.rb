@@ -4,9 +4,7 @@ class HomeController < ApplicationController
 
 
   def index
-<<<<<<< HEAD
-    
-=======
+
     $facebook.all_friends
   
   end
@@ -36,6 +34,6 @@ class HomeController < ApplicationController
                   "&redirect_uri=http://apps.facebook.com/wehopin/bus/test"
       render "redirect/index"
     end
->>>>>>> 29502e32b5b06d483aa0db17d45014505c582267
+
   end
 end

@@ -1,4 +1,4 @@
-module Paypal
+module PaypalHelper
 
   def request_preapproval_key(bus)
     
