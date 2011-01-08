@@ -64,6 +64,22 @@ class ApplicationController < ActionController::Base
     end
   end
   
+  def format_error(error_obj)
+    
+    errors = {}
+    
+    error_obj.each { |attr,err_msg|
+      if !errors[attr]
+        errors[attr] = [err_msg]
+      else
+        errors[attr].push(err_msg)
+      end
+    }
+    
+    return errors
+  end
+  
+  
   private 
   
     def base64_urlsafe_decode(str)

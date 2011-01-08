@@ -1,7 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 	<head>
-		
+		<%= javascript_include_tag "jquery-1.4.2.min.js"%>
+		<%= javascript_include_tag "jquery.loading_button.js"%>
+		<%= javascript_include_tag "form_validator_helper.js"%>
+		<%= javascript_include_tag "jquery.ruby_alert.js" %>
+		<%= javascript_include_tag "jquery.relative_offset.1.0.js"%>
 		<%=stylesheet_link_tag("/swfupload/swfupload.css")%>
 		<%= javascript_include_tag "/swfupload/ajaxupload.js" %>
 		
@@ -43,6 +47,62 @@
 		}
 	}
 
+	function submit_bus()
+	{
+		if (!bus_form_validator.validate_form()) return;
+		try {
+			$('#bus_submit_button').loading_button(true);
+			$.ajax({
+				type: "POST",
+				url: '/bus/add',
+				cache: false,
+				data: {
+					authenticity_token: "<%=form_authenticity_token%>",
+					"name": $('#bus_name').val(),
+					"why": $('#bus_why').val(),
+					"amount": $('#bus_amount').val(),
+					"capacity": $('#bus_capacity').val(),
+					"signed_request":"<%=params[:signed_request]%>",
+					"deadline": $('#bus_deadline').val(),
+					"currency_code": $('#bus_currency_code').val(),
+					"thumbnail_path": get_swfupload_uploaded_files()
+				},
+				success: function(data){
+					try {
+						if (data.ok == true) {
+							$('#bus_flow_content').html(data.html);
+						}
+						else {
+							for (var i in data.error_message) {
+								try {
+									$('#bus_' + i).ruby_error(error_obj[i], true);
+								} 
+								catch (e) {
+								
+								}
+							}
+							
+							$('#bus_submit_button').loading_button(false);
+						}
+					} 
+					catch (e) {
+						$.error_log('submit_bus', e);
+						alert(e);
+					}
+					
+				},
+				error: function(req, status, e){
+					$('#bus_submit_button').loading_button(false);
+					alert('Cannot connect to the server. Please try again later.');
+				}
+			});
+		} catch (e)
+		{
+			$('#bus_submit_button').loading_button(false);
+			$.error_log('submit_bus',e);
+			alert(e);
+		}
+	}		
 	
 </script>
 	</head>
@@ -51,6 +111,7 @@
 	
 	<span>
 		<span >
+			<span  ><%=$facebook.user_id%></span> 
 			<span  >Name:</span> 
 			<span >
 				<input type="text" id="bus_name" onkeyup="bus_form_validator.validate(this);" />
@@ -89,7 +150,7 @@
 			</span>
 		</span>
 		<span  >
-			<span >Currency</span>	
+			<span >USD</span>	
 			
 		</span>
 		<span  >
@@ -120,3 +181,124 @@
 	</body>
 	
 </html>
+<script language="javascript">
+	
+	function get_swfupload_uploaded_files()
+	{
+		var image = $.trim($('#swfupload_image_1').val());
+		return image;
+	}
+	
+	var swfupload_is_loading = false;
+	function start_swfupload_loading()
+	{
+		swfupload_is_loading = true;
+		$('#swfupload_upload_loading').show();
+		$('#swfupload_simple_upload_image_button').hide();
+	}
+	
+	function stop_swfupload_loading()
+	{
+		swfupload_is_loading = false;
+		$('#swfupload_upload_loading').hide();
+		$('#swfupload_simple_upload_image_button').show();
+	}
+
+	new AjaxUpload('swfupload_simple_upload_image_button', {
+			action: '/temporary_image',
+			name: 'Filedata',
+			responseType: "json",
+			data:{authenticity_token: "<%=form_authenticity_token%>"},
+
+			onSubmit: function(file, extension) {
+				if (swfupload_is_loading == true) return;
+				start_swfupload_loading();
+				
+				if (extension && /^(jpg|png|jpeg|gif)$/.test(extension.toLowerCase())) {
+					$('#swfupload_simple_upload_image_button').attr('disabled', 'disabled');
+					$('#swfupload_upload_loading').show();
+				}
+				else
+				{
+					alert("Only JPEG, GIF, and PNG are allowed.");
+					return false;
+				}
+			},
+			onComplete : function(file,response){
+				try {
+					if (response.ok == true) {
+						var available_span = $('#swfupload_image_container > span[class=swfupload_dialogbox_empty_image]');
+						if (available_span.length > 0) {
+							available_span = available_span[0];
+							$(available_span).removeClass('swfupload_dialogbox_empty_image').addClass('swfupload_dialogbox_image_unit');
+							
+							$("input", available_span).val(response.filename);
+							$(available_span).css({
+								"background-image": "url(/uploads/temp/" + response.filename + ")"
+							})
+							$(available_span).bind('mouseenter', function(){
+							
+								if ($('.swfupload_dialogbox_delete_image_overlay', this).length == 0) {
+									$(this).append(' \
+									<div class="swfupload_dialogbox_delete_image_overlay"> \
+										<span class="swfupload_dialogbox_delete_image_overlay_caption"> \
+											<table cellpadding="0" cellspacing="0" border="0"><tr><td> \
+												<span class="swfupload_dialogbox_delete_image_overlay_icon"></span> \
+											</td><td> \
+												delete \
+											</td></tr></table> \
+										</span>\
+									</div>\
+								');
+									
+									$('.swfupload_dialogbox_delete_image_overlay_caption', this).bind('click', function(){
+										var container = $(this).parents(".swfupload_dialogbox_image_unit")[0];
+										
+										$(container).css({
+											"background-image": ""
+										})
+										$(container).children("input").val("");
+										
+										$(container).addClass('swfupload_dialogbox_empty_image').removeClass('swfupload_dialogbox_image_unit');
+										
+										$(container).unbind('mouseenter');
+										$(container).unbind('mouseleave');
+										
+										$(this).parent(".swfupload_dialogbox_delete_image_overlay").remove();
+									});
+								}
+								
+							});
+							
+							
+							$(available_span).bind('mouseleave', function(){
+								$('.swfupload_dialogbox_delete_image_overlay', this).remove();
+							});
+							
+						}
+					}
+					else {
+						alert(response.error_message);
+						$.error_log('ajaxupload(response.ok=false)', response.error_message);
+					}
+					
+					stop_swfupload_loading();
+				} catch (e)
+				{
+					$.error_log('ajaxupload.onComplete', e);
+				}
+				
+				
+			},
+			onError: function (errorObj)
+			{
+				alert(errorObj);
+				$.error_log('ajaxupload.onError',errorObj);
+				stop_swfupload_loading();
+			}
+		});	
+		
+
+	
+</script>
+
