@@ -2368,3 +2368,384 @@ Completed in 255ms (View: 30, DB: 10) | 200 OK [http://localhost/?code=2.b9R0_e6
   [4;35;1mSQL (4.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
   [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `hops`[0m
   [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `hops`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Sat Jan 08 17:03:40 +0700 2011
+  Status: 500 Internal Server Error
+  C:/Users/Tanin/My Documents/Aptana RadRails Workspace/HopIn/app/controllers/application_controller.rb:59: syntax error, unexpected tLSHFT
+<<<<<<< HEAD
+  ^
+C:/Users/Tanin/My Documents/Aptana RadRails Workspace/HopIn/app/controllers/application_controller.rb:63: syntax error, unexpected tEQQ, expecting kEND
+=======
+   ^
+C:/Users/Tanin/My Documents/Aptana RadRails Workspace/HopIn/app/controllers/application_controller.rb:68: syntax error, unexpected tRSHFT, expecting kEND
+>>>>>>> 29502e32b5b06d483aa0db17d45014505c582267
+  ^
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:380:in `load_file'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:379:in `load_file'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:259:in `require_or_load'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:80:in `const_missing'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:92:in `const_missing'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/Users/Tanin/My Documents/Aptana RadRails Workspace/HopIn/script/server:3
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+/!\ FAILSAFE /!\  Sat Jan 08 17:04:03 +0700 2011
+  Status: 500 Internal Server Error
+  Expected C:/Users/Tanin/My Documents/Aptana RadRails Workspace/HopIn/app/helpers/paypal_helper.rb to define PaypalHelper
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:426:in `load_missing_constant'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:80:in `const_missing'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:92:in `const_missing'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/inflector.rb:361:in `constantize'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/inflector.rb:360:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/inflector.rb:360:in `constantize'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/helpers.rb:137:in `helper'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/helpers.rb:115:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/helpers.rb:115:in `helper'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/helpers.rb:120:in `helper'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/helpers.rb:115:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/helpers.rb:115:in `helper'
+    C:/Users/Tanin/My Documents/Aptana RadRails Workspace/HopIn/app/controllers/application_controller.rb:5
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:380:in `load_file'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:379:in `load_file'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:259:in `require_or_load'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:80:in `const_missing'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:92:in `const_missing'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    C:/Users/Tanin/My Documents/Aptana RadRails Workspace/HopIn/script/server:3
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 17:05:09) [POST]
+  Parameters: {"signed_request"=>"OrWVUIXsQ4DYOjfOx3It4sAZkUY9sNX1GqFtWGTDWuk.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODgwMDAsImlzc3VlZF9hdCI6MTI5NDQ4MTEwNSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5iUkR2ZzRqX0dyaFVEVG9lSENFVmV3X18uMzYwMC4xMjk0NDg4MDAwLTYzMjgxODI0NnxybndPM3R1TDJSckhtdWU0T1RoeXlSeldRc1UiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"1"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+
+SyntaxError (C:/Users/Tanin/My Documents/Aptana RadRails Workspace/HopIn/app/models/hop.rb:3: syntax error, unexpected tLSHFT
+<<<<<<< HEAD
+  ^
+C:/Users/Tanin/My Documents/Aptana RadRails Workspace/HopIn/app/models/hop.rb:12: syntax error, unexpected tRSHFT, expecting kEND
+>>>>>>> 29502e32b5b06d483aa0db17d45014505c582267
+  ^):
+  app/controllers/hop_controller.rb:6:in `index'
+
+Rendered rescues/_trace (163.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 17:05:27) [POST]
+  Parameters: {"signed_request"=>"mg7FBMGMTFBynVsemH0Nz2goZ0iSj8oqZUtVLf3O7VQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODgwMDAsImlzc3VlZF9hdCI6MTI5NDQ4MTEyNSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5iUkR2ZzRqX0dyaFVEVG9lSENFVmV3X18uMzYwMC4xMjk0NDg4MDAwLTYzMjgxODI0NnxybndPM3R1TDJSckhtdWU0T1RoeXlSeldRc1UiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"1"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (71.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mHop Load (8.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '632818246') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mHop Columns (24.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (0.0ms)[0m   [0mINSERT INTO `hops` (`facebook_id`, `created_date`, `bus_id`, `comment`) VALUES(632818246, '2011-01-08 10:05:27', 1, '')[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/main
+Rendering hop/index
+Completed in 774ms (View: 89, DB: 112) | 200 OK [http://localhost/hop?bus_id=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#save (for 127.0.0.1 at 2011-01-08 17:05:34) [POST]
+  Parameters: {"signed_request"=>"mg7FBMGMTFBynVsemH0Nz2goZ0iSj8oqZUtVLf3O7VQ.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODgwMDAsImlzc3VlZF9hdCI6MTI5NDQ4MTEyNSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5iUkR2ZzRqX0dyaFVEVG9lSENFVmV3X18uMzYwMC4xMjk0NDg4MDAwLTYzMjgxODI0NnxybndPM3R1TDJSckhtdWU0T1RoeXlSeldRc1UiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "comment"=>"ertherh", "hop_id"=>"1"}
+  [4;35;1mFacebookCache Load (2.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mHop Load (4.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`id` = '1') LIMIT 1[0m
+  [4;36;1mHop Columns (92.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (18.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Update (0.0ms)[0m   [0;1mUPDATE `hops` SET `comment` = 'ertherh' WHERE `id` = 1[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCOMMIT[0m
+Completed in 252ms (View: 4, DB: 129) | 200 OK [http://localhost/hop/save]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 17:37:58) [POST]
+  Parameters: {"signed_request"=>"4OPDi7RvYhxM75qJMZ7XYKcXDFA08igP-vEG1LmgaGY.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0ODgwMDAsImlzc3VlZF9hdCI6MTI5NDQ4MzA3NSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5iUkR2ZzRqX0dyaFVEVG9lSENFVmV3X18uMzYwMC4xMjk0NDg4MDAwLTYzMjgxODI0NnxybndPM3R1TDJSckhtdWU0T1RoeXlSeldRc1UiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"1"}
+  [4;36;1mFacebookCache Load (4.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mHop Load (6.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '632818246') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mHop Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+Rendering template within layouts/main
+Rendering hop/index
+Completed in 160ms (View: 18, DB: 25) | 200 OK [http://localhost/hop?bus_id=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 18:04:19) [POST]
+  Parameters: {"signed_request"=>"pjdx-GKfdJggeV5N2HGvwTcv9JrLD5enp13BN7nqRL8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NDY1Nywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"1"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mHop Load (0.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '632818246') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mHop Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+Rendering template within layouts/main
+Rendering hop/index
+
+ActionView::TemplateError (can't convert Fixnum into String) on line #25 of app/views/layouts/main.html.erb:
+22: 						
+23: 						<%
+24: 							connection = ActiveRecord::Base.connection();
+25: 							total_donation = connection.execute("SELECT SUM(donated_amount) FROM `buses` WHERE `status`='"+Bus::STATUS_FINISHED+"' AND `facebook_id` = '"+$facebook.id+"'").fetch_row()[0].to_i
+26: 						%>
+27: 						
+28: 						Donation: <%=format_currency_by_code("USD",total_donation)%><br/>
+
+    app/views/layouts/main.html.erb:25:in `+'
+    app/views/layouts/main.html.erb:25
+
+Rendered rescues/_trace (117.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 18:04:50) [POST]
+  Parameters: {"signed_request"=>"GQbRSExXvnKJFADpqoldx7YINcNq0w6W-32ckx2Ul1k.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NDY4OCwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"1"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '632818246') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mHop Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+Rendering template within layouts/main
+Rendering hop/index
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;35;1mCurrency Load (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.sign) on line #28 of app/views/layouts/main.html.erb:
+25: 							total_donation = connection.execute("SELECT SUM(donated_amount) FROM `buses` WHERE `status`='"+Bus::STATUS_FINISHED+"' AND `facebook_id` = '"+$facebook.user_id+"'").fetch_row()[0].to_i
+26: 						%>
+27: 						
+28: 						Donation: <%=format_currency_by_code("USD",total_donation)%><br/>
+29: 						
+30: 						<%
+31: 							total_hop = connection.execute("SELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '"+$facebook.user_id+"'").fetch_row()[0].to_i
+
+    app/helpers/application_helper.rb:10:in `format_currency_by_code'
+    app/views/layouts/main.html.erb:28
+
+Rendered rescues/_trace (107.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCurrency Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCurrency Create (1.0ms)[0m   [0;1mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Dollars', '%u%n', 'USD', '.', '$', ',', 1.0)[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCurrency Create (0.0ms)[0m   [0mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Euro', '%u%n', 'EUR', '.', '&euro;', ',', 1.0)[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCurrency Create (0.0ms)[0m   [0;1mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Baht', '%n %u', 'THB', '.', 'baht', ',', 5.0)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCOMMIT[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCurrency Create (0.0ms)[0m   [0mINSERT INTO `currencies` (`name`, `format`, `paypal_currency_code`, `separator`, `sign`, `delimiter`, `minimum`) VALUES('Pounds', '%u%n', 'GBP', ',', '&pound', '.', 1.0)[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mSHOW FIELDS FROM `buses`[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mdescribe `buses`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW KEYS FROM `buses`[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSHOW FIELDS FROM `charities`[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mdescribe `charities`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `charities`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mdescribe `currencies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `currencies`[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSHOW FIELDS FROM `error_logs`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `error_logs`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `error_logs`[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mdescribe `facebook_caches`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `facebook_caches`[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_friend_caches`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mdescribe `facebook_friend_caches`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `facebook_friend_caches`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `hops`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW KEYS FROM `hops`[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mSHOW FIELDS FROM `paypal_ipns`[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mdescribe `paypal_ipns`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `paypal_ipns`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 18:05:59) [POST]
+  Parameters: {"signed_request"=>"yE6ON0WFKEs9WeErQUDAeSGxAird1egct2Nm0jbJ05w.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NDc1Nywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"1"}
+  [4;36;1mFacebookCache Load (0.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '632818246') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mHop Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHop Create (0.0ms)[0m   [0mMysql::Error: Column 'amount' cannot be null: INSERT INTO `hops` (`facebook_id`, `created_date`, `amount`, `bus_id`, `comment`) VALUES(632818246, '2011-01-08 11:05:59', NULL, 1, '')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Column 'amount' cannot be null: INSERT INTO `hops` (`facebook_id`, `created_date`, `amount`, `bus_id`, `comment`) VALUES(632818246, '2011-01-08 11:05:59', NULL, 1, '')):
+  app/controllers/hop_controller.rb:19:in `index'
+
+Rendered rescues/_trace (115.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 18:07:00) [POST]
+  Parameters: {"signed_request"=>"IutqOOb7abpK7qMC6SrWjvewF06oBW_JcWgb-0QzVP8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NDgxOSwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"1"}
+  [4;35;1mFacebookCache Load (0.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mHop Load (1.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '632818246') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHop Create (1.0ms)[0m   [0;1mINSERT INTO `hops` (`facebook_id`, `created_date`, `amount`, `bus_id`, `comment`) VALUES(632818246, '2011-01-08 11:07:01', 1.23, 1, '')[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/main
+Rendering hop/index
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mCurrency Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+Completed in 235ms (View: 92, DB: 27) | 200 OK [http://localhost/hop?bus_id=1]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 18:07:09) [POST]
+  Parameters: {"signed_request"=>"QhFq6pweeVr3moinkLVFZxz0WSF6OqSLJ7lIKwL0q34.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NDgyNywib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"1"}
+  [4;35;1mFacebookCache Load (1.0ms)[0m   [0mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;36;1mFacebookCache Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;35;1mHop Load (0.0ms)[0m   [0mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '632818246') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;36;1mHop Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `hops`[0m
+Rendering template within layouts/main
+Rendering hop/index
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;36;1mCurrency Load (1.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;35;1mCurrency Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `currencies`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+Completed in 216ms (View: 92, DB: 29) | 200 OK [http://localhost/hop?bus_id=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HopController#index (for 127.0.0.1 at 2011-01-08 18:15:18) [POST]
+  Parameters: {"signed_request"=>"SHz8P67aJJSdE3CXwPSivO5R_oMUQ0MNLqZGd67_fus.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImV4cGlyZXMiOjEyOTQ0OTE2MDAsImlzc3VlZF9hdCI6MTI5NDQ4NTMxNiwib2F1dGhfdG9rZW4iOiIxNTQ5NDEyNjEyMjIwNjB8Mi5OeEo2VEVwemEzdGhsTkpOenljTDNBX18uMzYwMC4xMjk0NDkxNjAwLTYzMjgxODI0NnwxdDJXUU1jaDFwNEZobDBnTTNIWHhQbDJieTgiLCJ1c2VyIjp7ImxvY2FsZSI6ImVuX1VTIiwiY291bnRyeSI6InRoIn0sInVzZXJfaWQiOiI2MzI4MTgyNDYifQ", "bus_id"=>"1"}
+  [4;36;1mFacebookCache Load (1.0ms)[0m   [0;1mSELECT * FROM `facebook_caches` WHERE (`facebook_caches`.`facebook_id` = '632818246') LIMIT 1[0m
+  [4;35;1mFacebookCache Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `facebook_caches`[0m
+  [4;36;1mHop Load (1.0ms)[0m   [0;1mSELECT * FROM `hops` WHERE (`hops`.`bus_id` = '1' AND `hops`.`facebook_id` = '632818246') ORDER BY hops.id DESC LIMIT 1[0m
+  [4;35;1mHop Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `hops`[0m
+Rendering template within layouts/main
+Rendering hop/index
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT SUM(donated_amount) FROM `buses` WHERE `status`='FINISHED' AND `facebook_id` = '632818246'[0m
+  [4;35;1mCurrency Load (1.0ms)[0m   [0mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+  [4;36;1mCurrency Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `currencies`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '632818246'[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `currencies` WHERE (`currencies`.`paypal_currency_code` = 'USD') LIMIT 1[0m
+Completed in 239ms (View: 99, DB: 19) | 200 OK [http://localhost/hop?bus_id=1]

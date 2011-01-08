@@ -14,7 +14,7 @@ class PaypalIpnController < ApplicationController
     entity.created_date = Time.now
     entity.remote_host = request.remote_ip
     entity.status = PaypalIpn::STATUS_PENDING
-    entity.buy_offer_id = 0
+    entity.bus_id = 0
     
     params.each_pair { |key, value|
       if eval("defined?(entity."+key+")") != nil
@@ -49,25 +49,21 @@ class PaypalIpnController < ApplicationController
       return
     end
     
-    buy_offer = BuyOffer.first(:conditions=>{:unique_key=>params[:key]})
+    bus = Bus.first(:conditions=>{:id=>params[:bus_id]})
     
-    if !buy_offer
+    if bus
       entity.status = PaypalIpn::STATUS_BUY_OFFER_INVALID
-      entity.buy_offer_id = buy_offer.id
+      entity.bus_id = bus.id
       entity.save
     end
 
     entity.status = PaypalIpn::STATUS_VERIFIED
-    entity.buy_offer_id = buy_offer.id
+    entity.bus_id = bus.id
     entity.save
     
-    offer = Offer.first(:conditions=>{:id=>buy_offer.offer_id})
-    
     # processed
-    if entity.payment_status == "Completed" and offer.status == Offer::STATUS_ACTIVE
-      
-      successfully_buy_offer(buy_offer)
-
+    if entity.payment_status == "Completed" and bus.status == Bus::STATUS_PENDING
+      successfully_pay_bus(bus)
     end
   
     render :text=>"VERIFIED"

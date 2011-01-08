@@ -1,8 +1,8 @@
 class BusController < ApplicationController
-  #skip_before_filter :decode_signed_request, :only=>[:add]
-  #skip_before_filter :require_basic_information_permission, :only=>[:add]
- def test
-   end
+  include PaypalHelper
+  
+  skip_before_filter :decode_signed_request, :only=>[:cancel_payment]
+  skip_before_filter :require_basic_information_permission, :only=>[:paid]
  
   def index
     @currencies = Currency.all()
@@ -44,6 +44,38 @@ class BusController < ApplicationController
   
   def save_success
    
+  end
+   
+  def cancel_payment
+     bus = Bus.first(:conditions=>{:id=>params[:bus_id]})
+     
+     if bus.status == Bus::STATUS_PENDING
+       if confirm_preapproval(bus)
+         
+         successfully_pay_bus(bus)
+         
+         render :save_success
+         return
+         
+       end
+     end
+     
+     render :cancel_payment
+    
+  end
+ 
+  def paid
+     bus = Bus.first(:conditions=>{:id=>params[:bus_id]})
+     
+     if bus.status == Bus::STATUS_PENDING
+       if confirm_preapproval(bus)
+
+         successfully_pay_bus(bus)
+         
+       end
+     end
+     
+     render :save_success
   end
 
 end

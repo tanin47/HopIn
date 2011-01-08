@@ -13,19 +13,19 @@ ActiveRecord::Schema.define(:version => 0) do
 
   create_table "buses", :force => true do |t|
     t.string   "name",                                  :null => false
-    t.string   "thumbnail_path", :default => "",       :null => false
+    t.string   "thumbnail_path",  :default => "",       :null => false
     t.text     "why",                                   :null => false
     t.float    "amount",                                :null => false
     t.integer  "capacity",                              :null => false
-    t.integer  "parent_bus_id",  :default => 0,         :null => false
-    t.string   "facebook_id",                           :null => false
-    t.integer  "charity_id"
+    t.integer  "parent_bus_id",   :default => 0,        :null => false
+    t.integer  "facebook_id",                           :null => false
     t.datetime "deadline"
     t.string   "currency_code",                         :null => false
-    t.integer  "hops",           :default => 0,         :null => false
-    t.string   "status",         :default => "ACTIVE",  :null => false
+    t.integer  "hops",            :default => 0,        :null => false
+    t.string   "status",          :default => "ACTIVE", :null => false
+    t.string   "preapproval_key", :default => "",       :null => false
+    t.float    "donated_amount",                        :null => false
     t.datetime "created_date",                          :null => false
-    t.string   "mode",           :default => "AMATEUR", :null => false
   end
 
   create_table "charities", :force => true do |t|
@@ -37,13 +37,13 @@ ActiveRecord::Schema.define(:version => 0) do
   end
 
   create_table "currencies", :force => true do |t|
-    t.string  "name"
-    t.string  "format"
-    t.string  "sign"
-    t.string  "separator"
-    t.string  "delimiter"
-    t.string  "paypal_currency_code"
-    t.integer "buyer_member_id"
+    t.string "name"
+    t.string "format"
+    t.string "sign"
+    t.string "separator"
+    t.string "delimiter"
+    t.string "paypal_currency_code"
+    t.float  "minimum"
   end
 
   create_table "error_logs", :force => true do |t|
@@ -74,12 +74,42 @@ ActiveRecord::Schema.define(:version => 0) do
     t.integer  "facebook_id",  :null => false
     t.integer  "bus_id",       :null => false
     t.text     "comment",      :null => false
+    t.float    "amount",       :null => false
     t.datetime "created_date", :null => false
   end
 
-  create_table "temporary_images", :force => true do |t|
-    t.string   "name",         :null => false
-    t.datetime "created_date", :null => false
+  create_table "paypal_ipns", :force => true do |t|
+    t.datetime "created_date",         :null => false
+    t.string   "remote_host",          :null => false
+    t.integer  "buy_offer_id",         :null => false
+    t.string   "status",               :null => false
+    t.string   "receiver_email"
+    t.string   "receiver_id"
+    t.string   "residence_country"
+    t.string   "test_ipn"
+    t.string   "transaction_subject"
+    t.string   "txn_id"
+    t.string   "txn_type"
+    t.string   "payer_email"
+    t.string   "payer_id"
+    t.string   "payer_status"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "address_city"
+    t.string   "address_country"
+    t.string   "address_country_code"
+    t.string   "address_name"
+    t.string   "address_state"
+    t.string   "address_status"
+    t.string   "address_street"
+    t.string   "address_zip"
+    t.string   "invoice"
+    t.string   "mc_gross"
+    t.string   "mc_currency"
+    t.string   "payment_date"
+    t.string   "payment_status"
+    t.string   "payment_type"
+    t.text     "raw",                  :null => false
   end
 
 end

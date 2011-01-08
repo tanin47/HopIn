@@ -1,4 +1,4 @@
-module Paypal
+module PaypalHelper
 
   def request_preapproval_key(bus)
     
@@ -50,5 +50,103 @@ module Paypal
       return nil
     end 
     
+  end
+
+  def confirm_preapproval(bus)
+    headers = {
+       "X-PAYPAL-SECURITY-USERID" => "tanin4_1266099950_biz_api1.gmail.com",
+       "X-PAYPAL-SECURITY-PASSWORD" => "1266099956",
+       "X-PAYPAL-SECURITY-SIGNATURE" => "AOGp908MTPfZOTwx64dvpnJhmHGhASV4kUXUqrq-blZfWda8hUPUaa4p",
+       #"X-PAYPAL-SECURITY-SUBJECT" => "",
+       "X-PAYPAL-REQUEST-DATA-FORMAT" => "JSON",
+       "X-PAYPAL-RESPONSE-DATA-FORMAT" => "JSON",
+       "X-PAYPAL-APPLICATION-ID" => "APP-80W284485P519543T"
+       #"X-PAYPAL-DEVICE-ID" => "",
+       #"X-PAYPAL-DEVICE-IPADDRESS" => "",
+       #"X-PAYPAL-SERVICE-VERSION" => "1.3.0"
+    }
+
+    starting_date = Time.now + 60*5
+ 
+    data = {
+      "preapprovalKey"=>bus.preapproval_key,
+      "requestEnvelope" => {"errorLanguage"=>"en_US"}
+    }
+
+    require 'net/http'
+    require 'net/https'
+    require 'uri'
+    
+    Net::HTTP.version_1_2
+
+    url = URI.parse('https://svcs.sandbox.paypal.com/AdaptivePayments/PreapprovalDetails')
+
+    http = Net::HTTP.new(url.host,url.port)
+    http.use_ssl = true
+    http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+    response = http.post(url.path,ActiveSupport::JSON.encode(data),headers)
+    print response.body
+    result = ActiveSupport::JSON.decode(response.body)
+
+    if result["approved"] == "true"
+      return true
+    else
+      return false
+    end 
+    
+  end
+  
+  def pay(bus)
+    headers = {
+       "X-PAYPAL-SECURITY-USERID" => "tanin4_1266099950_biz_api1.gmail.com",
+       "X-PAYPAL-SECURITY-PASSWORD" => "1266099956",
+       "X-PAYPAL-SECURITY-SIGNATURE" => "AOGp908MTPfZOTwx64dvpnJhmHGhASV4kUXUqrq-blZfWda8hUPUaa4p",
+       #"X-PAYPAL-SECURITY-SUBJECT" => "",
+       "X-PAYPAL-REQUEST-DATA-FORMAT" => "JSON",
+       "X-PAYPAL-RESPONSE-DATA-FORMAT" => "JSON",
+       "X-PAYPAL-APPLICATION-ID" => "APP-80W284485P519543T"
+       #"X-PAYPAL-DEVICE-ID" => "",
+       #"X-PAYPAL-DEVICE-IPADDRESS" => "",
+       #"X-PAYPAL-SERVICE-VERSION" => "1.3.0"
+    }
+    
+    charity = Charity.first(:conditions=>{:id=>bus.charity_id})
+
+    data = {
+      "actionType" => "PAY",
+      "receiverList" => {"receiver"=>[{
+                                      "email"=>charity.paypal_id,
+                                      "amount"=>((bus.amount.to_f/bus.capacity.to_f)*bus.hops.to_f).round(2).to_s,
+                                      "invoiceId"=>"hopin_bus_"+bus.id
+                                      }]},
+      "currencyCode" => bus.currency_code,
+      "cancelUrl" => "http://"+DOMAIN_NAME+"/bus/successfully_paid?id="+ bus.id,
+      "returnUrl" => "http://"+DOMAIN_NAME+"/bus/successfully_paid?id="+ bus.id,
+      "preapprovalKey" => bus.preapproval_key,
+      "requestEnvelope" => {"errorLanguage"=>"en_US"}
+    }
+
+    require 'net/http'
+    require 'net/https'
+    require 'uri'
+    
+    Net::HTTP.version_1_2
+
+    url = URI.parse('https://svcs.sandbox.paypal.com/AdaptivePayments/Pay')
+
+    http = Net::HTTP.new(url.host,url.port)
+    http.use_ssl = true
+    http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+    response = http.post(url.path,ActiveSupport::JSON.encode(data),headers)
+    print response.body
+    result = ActiveSupport::JSON.decode(response.body)
+
+    if result["responseEnvelope"]["ack"] == "Success"
+      return result["payKey"];
+    else
+      return nil
+    end 
   end
 end

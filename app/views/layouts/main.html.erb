@@ -16,7 +16,23 @@
 		<div id="fb-root">
 			<table>
 				<tr>
-					<td><img src="http://graph.facebook.com/<%=$facebook.user_id%>/picture?type=square"></td>
+					<td>
+						<img src="http://graph.facebook.com/<%=$facebook.user_id%>/picture?type=square">
+						<%=$facebook.name%><br/>
+						
+						<%
+							connection = ActiveRecord::Base.connection();
+							total_donation = connection.execute("SELECT SUM(donated_amount) FROM `buses` WHERE `status`='"+Bus::STATUS_FINISHED+"' AND `facebook_id` = '"+$facebook.user_id+"'").fetch_row()[0].to_i
+						%>
+						
+						Donation: <%=format_currency_by_code("USD",total_donation)%><br/>
+						
+						<%
+							total_hop = connection.execute("SELECT SUM(amount) FROM `hops` WHERE `facebook_id` = '"+$facebook.user_id+"'").fetch_row()[0].to_i
+						%>
+						
+						Hop: <%=format_currency_by_code("USD",total_hop)%><br/>
+					</td>
 					<td><%=yield%></td>
 				</tr>	
 			</table>
